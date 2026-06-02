@@ -77,36 +77,36 @@
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
                 <!-- 1. Professional Color Gel System -->
-                <a href="https://newnail.en.alibaba.com/search/product?SearchText=1kg+gel+polish" target="_blank" class="category-card group block">
+                <a href="javascript:void(0)" onclick="openModal('modal-colorgel')" class="category-card group block cursor-pointer">
                     <div class="bg-stone-200 aspect-square mb-6 overflow-hidden rounded-lg shadow-lg relative">
                         <img src="https://sc02.alicdn.com/kf/Ad09dae17d778470f8fe56bda27f55f2eP.png" alt="Color Gel System" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                         <div class="absolute top-4 left-4 bg-stone-900/80 text-white text-[10px] uppercase tracking-widest px-3 py-1.5 rounded-full font-bold">100% HEMA &amp; TPO FREE</div>
                     </div>
                     <h3 class="text-2xl mb-2 font-serif text-stone-900 group-hover:text-amber-600 transition">Professional Color Gel System (1kg Bulk)</h3>
                     <p class="text-stone-600 mb-4 text-sm leading-relaxed">Custom formulation (viscosity, curing speed), bespoke color matching (1000+ shades), and private label bottling. Low MOQ starts at 1kg. Complete CPNP/SGS/CE compliance for European salon channels.</p>
-                    <span class="text-amber-600 font-bold uppercase text-xs tracking-widest underline group-hover:text-amber-700 transition">Order Bulk Gel on Alibaba →</span>
+                    <span class="text-amber-600 font-bold uppercase text-xs tracking-widest underline group-hover:text-amber-700 transition">View Specifications &amp; Custom Options →</span>
                 </a>
 
                 <!-- 2. Professional Powder System -->
-                <a href="https://newnail.en.alibaba.com/search/product?SearchText=1kg+acrylic+powder" target="_blank" class="category-card group block">
+                <a href="javascript:void(0)" onclick="openModal('modal-powder')" class="category-card group block cursor-pointer">
                     <div class="bg-stone-200 aspect-square mb-6 overflow-hidden rounded-lg shadow-lg relative">
                         <img src="https://sc02.alicdn.com/kf/A8787ef4b6f9d4ab5a588777a1cd1b4cbO.png" alt="Powder System" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                         <div class="absolute top-4 left-4 bg-stone-900/80 text-white text-[10px] uppercase tracking-widest px-3 py-1.5 rounded-full font-bold">BUBBLE-FREE &amp; NON-YELLOWING</div>
                     </div>
                     <h3 class="text-2xl mb-2 font-serif text-stone-900 group-hover:text-amber-600 transition">Professional Powder System (1kg Bulk)</h3>
                     <p class="text-stone-600 mb-4 text-sm leading-relaxed">Ultra-fine Acrylic &amp; Dipping powders. Odorless formulation. Fully customizable colors, curing speeds, and jar sizes. Low wholesale MOQs. FDA/MoCRA registered for premium US distributors.</p>
-                    <span class="text-amber-600 font-bold uppercase text-xs tracking-widest underline group-hover:text-amber-700 transition">Order Bulk Powder on Alibaba →</span>
+                    <span class="text-amber-600 font-bold uppercase text-xs tracking-widest underline group-hover:text-amber-700 transition">View Specifications &amp; Custom Options →</span>
                 </a>
 
                 <!-- 3. Matching Color Collections -->
-                <a href="https://newnail.en.alibaba.com/search/product?SearchText=matching+gel+polish" target="_blank" class="category-card group block">
+                <a href="javascript:void(0)" onclick="openModal('modal-matching')" class="category-card group block cursor-pointer">
                     <div class="bg-stone-200 aspect-square mb-6 overflow-hidden rounded-lg shadow-lg relative">
                         <img src="https://sc02.alicdn.com/kf/A32717d5da8e54ff08736d67fe1d786500.png" alt="Matching Collections" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                         <div class="absolute top-4 left-4 bg-stone-900/80 text-white text-[10px] uppercase tracking-widest px-3 py-1.5 rounded-full font-bold">18-FREE VEGAN &amp; HALAL</div>
                     </div>
                     <h3 class="text-2xl mb-2 font-serif text-stone-900 group-hover:text-amber-600 transition">Matching Color Collections (Bulk &amp; Retail)</h3>
                     <p class="text-stone-600 mb-4 text-sm leading-relaxed">Innovative Gel &amp; Nail Polish matching duos. Halal-certified breathable formula. Custom packaging, bespoke shades, and rapid-turnaround labeling with extremely flexible low-MOQ setups for modern brand launches.</p>
-                    <span class="text-amber-600 font-bold uppercase text-xs tracking-widest underline group-hover:text-amber-700 transition">Order Matching Duos on Alibaba →</span>
+                    <span class="text-amber-600 font-bold uppercase text-xs tracking-widest underline group-hover:text-amber-700 transition">View Specifications &amp; Custom Options →</span>
                 </a>
 
                 <!-- 4. Professional Functional Gel -->
@@ -613,7 +613,7 @@
                     </div>
                     <div>
                         <label class="block text-xs font-bold uppercase tracking-widest mb-2">Custom Requirements &amp; Volume Notes</label>
-                        <textarea class="w-full bg-stone-50 border-b border-stone-300 py-3 h-24 focus:outline-none focus:border-amber-500 transition" placeholder="Describe your branding needs, color preferences, or specific formula viscosities..."></textarea>
+                        <textarea id="custom-requirements" class="w-full bg-stone-50 border-b border-stone-300 py-3 h-24 focus:outline-none focus:border-amber-500 transition" placeholder="Describe your branding needs, color preferences, or specific formula viscosities..."></textarea>
                     </div>
                     <button type="submit" class="w-full bg-stone-900 text-white py-5 rounded-xl font-bold uppercase tracking-widest hover:bg-stone-700 transition shadow-lg">Submit B2B Inquiry &amp; Request Samples</button>
                 </form>
@@ -653,6 +653,235 @@
             </div>
         </div>
     </footer>
+
+    <!-- ================================================================= -->
+    <!-- B2B PRODUCT SYSTEM INTERACTIVE MODALS -->
+    <!-- ================================================================= -->
+
+    <!-- Modal 1: Color Gel System -->
+    <div id="modal-colorgel" class="modal-backdrop fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex items-center justify-center hidden p-4 md:p-6 transition-all duration-300">
+        <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative flex flex-col md:flex-row">
+            <!-- Close Button -->
+            <button onclick="closeModal('modal-colorgel')" class="absolute top-4 right-4 md:top-6 md:right-6 text-stone-400 hover:text-stone-900 focus:outline-none transition z-10 p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            
+            <!-- Left: Premium Image Column -->
+            <div class="md:w-1/2 bg-stone-50 p-6 md:p-10 flex items-center justify-center border-b md:border-b-0 md:border-r border-stone-100">
+                <img src="https://sc02.alicdn.com/kf/Ad09dae17d778470f8fe56bda27f55f2eP.png" alt="Professional Color Gel System" class="rounded-xl w-full max-h-[45vh] md:max-h-[60vh] object-cover shadow-lg">
+            </div>
+            
+            <!-- Right: Content & Specifications -->
+            <div class="md:w-1/2 p-6 md:p-10 flex flex-col justify-between">
+                <div>
+                    <span class="text-[10px] uppercase tracking-widest text-amber-600 font-bold">Bulk &amp; OEM Specifications</span>
+                    <h3 class="text-2xl md:text-3xl font-serif text-stone-900 mt-2 mb-4">Professional Color Gel System</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-6">Our flagship European and US-compliant gel formulation. Engineered for high pigment density, exceptional self-leveling, and shrinkage-free curing under any professional UV/LED system.</p>
+                    
+                    <!-- Specifications Matrix -->
+                    <div class="space-y-3 text-xs text-stone-700">
+                        <div class="flex border-b border-stone-100 pb-2">
+                            <span class="w-28 font-semibold text-stone-900 flex-shrink-0">Chemical Standard</span>
+                            <span class="text-stone-600">100% HEMA-Free, TPO-Free, Acid-Free, Non-Toxic</span>
+                        </div>
+                        <div class="flex border-b border-stone-100 pb-2">
+                            <span class="w-28 font-semibold text-stone-900 flex-shrink-0">Viscosity &amp; Cure</span>
+                            <span class="text-stone-600">Medium-Low Viscosity (Self-Leveling), Cures in 30-60s LED / 120s UV</span>
+                        </div>
+                        <div class="flex border-b border-stone-100 pb-2">
+                            <span class="w-28 font-semibold text-stone-900 flex-shrink-0">OEM Capabilities</span>
+                            <span class="text-stone-600">Bespoke color matching (1000+ shades catalog), custom viscosity/curing speed adjustment</span>
+                        </div>
+                        <div class="flex border-b border-stone-100 pb-2">
+                            <span class="w-28 font-semibold text-stone-900 flex-shrink-0">Global Compliance</span>
+                            <span class="text-stone-600">CPNP Portal Registered (EU), REACH Compliant, SGS Heavy Metal Tested, CE Certified</span>
+                        </div>
+                        <div class="flex border-b border-stone-100 pb-2">
+                            <span class="w-28 font-semibold text-stone-900 flex-shrink-0">Bulk Packaging</span>
+                            <span class="text-stone-600">1kg/5kg/25kg aluminum canisters, airtight HDPE drums</span>
+                        </div>
+                        <div class="flex pb-2">
+                            <span class="w-28 font-semibold text-stone-900 flex-shrink-0">Minimum Order</span>
+                            <span class="text-stone-600">Raw Bulk: 1kg/color. Custom Label Bottles (15ml): 1000 bottles/color</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CTA inside modal -->
+                <div class="mt-8 pt-6 border-t border-stone-100">
+                    <a href="#contact" onclick="closeModal('modal-colorgel'); prefillRequirement('Professional Color Gel System (1kg Bulk)');" class="block w-full bg-stone-900 text-white text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-stone-700 transition">
+                        Request Color Gel Samples
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Powder System -->
+    <div id="modal-powder" class="modal-backdrop fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex items-center justify-center hidden p-4 md:p-6 transition-all duration-300">
+        <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative flex flex-col md:flex-row">
+            <!-- Close Button -->
+            <button onclick="closeModal('modal-powder')" class="absolute top-4 right-4 md:top-6 md:right-6 text-stone-400 hover:text-stone-900 focus:outline-none transition z-10 p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            
+            <!-- Left: Premium Image Column -->
+            <div class="md:w-1/2 bg-stone-50 p-6 md:p-10 flex items-center justify-center border-b md:border-b-0 md:border-r border-stone-100">
+                <img src="https://sc02.alicdn.com/kf/A8787ef4b6f9d4ab5a588777a1cd1b4cbO.png" alt="Professional Powder System" class="rounded-xl w-full max-h-[45vh] md:max-h-[60vh] object-cover shadow-lg">
+            </div>
+            
+            <!-- Right: Content & Specifications -->
+            <div class="md:w-1/2 p-6 md:p-10 flex flex-col justify-between">
+                <div>
+                    <span class="text-[10px] uppercase tracking-widest text-amber-600 font-bold">Bulk &amp; OEM Specifications</span>
+                    <h3 class="text-2xl md:text-3xl font-serif text-stone-900 mt-2 mb-4">Professional Powder System</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-6">Ultra-fine professional Acrylic and Dipping powders. Odorless, bubble-free, and cross-linked for extreme durability, superb adhesion, and zero yellowing.</p>
+                    
+                    <!-- Specifications Matrix -->
+                    <div class="space-y-3 text-xs text-stone-700">
+                        <div class="flex border-b border-stone-100 pb-2">
+                            <span class="w-28 font-semibold text-stone-900 flex-shrink-0">Chemical Standard</span>
+                            <span class="text-stone-600">MMA-Free, Non-Yellowing (UV-Stable), Odorless Formulation</span>
+                        </div>
+                        <div class="flex border-b border-stone-100 pb-2">
+                            <span class="w-28 font-semibold text-stone-900 flex-shrink-0">Drying Speeds</span>
+                            <span class="text-stone-600">Fast Dry (3-5 min), Medium Dry (5-7 min), Slow Dry (Custom formulation)</span>
+                        </div>
+                        <div class="flex border-b border-stone-100 pb-2">
+                            <span class="w-28 font-semibold text-stone-900 flex-shrink-0">Color Availability</span>
+                            <span class="text-stone-600">High-clarity Clear, Pure White, Milky Pink, Nudes, Glitters (Custom color-match available)</span>
+                        </div>
+                        <div class="flex border-b border-stone-100 pb-2">
+                            <span class="w-28 font-semibold text-stone-900 flex-shrink-0">Global Compliance</span>
+                            <span class="text-stone-600">FDA Facility Registered (USA), MoCRA Compliant, SGS Safe Chemical Tested</span>
+                        </div>
+                        <div class="flex border-b border-stone-100 pb-2">
+                            <span class="w-28 font-semibold text-stone-900 flex-shrink-0">Bulk Packaging</span>
+                            <span class="text-stone-600">1kg jars, 5kg bags, 25kg fiber drums, custom bulk canisters</span>
+                        </div>
+                        <div class="flex pb-2">
+                            <span class="w-28 font-semibold text-stone-900 flex-shrink-0">Minimum Order</span>
+                            <span class="text-stone-600">Raw Bulk: 1kg/color. Private Label Jars (1oz/2oz): 500 jars/color</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CTA inside modal -->
+                <div class="mt-8 pt-6 border-t border-stone-100">
+                    <a href="#contact" onclick="closeModal('modal-powder'); prefillRequirement('Professional Powder System (1kg Bulk)');" class="block w-full bg-stone-900 text-white text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-stone-700 transition">
+                        Request Powder Samples
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Matching Color Collections -->
+    <div id="modal-matching" class="modal-backdrop fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex items-center justify-center hidden p-4 md:p-6 transition-all duration-300">
+        <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative flex flex-col md:flex-row">
+            <!-- Close Button -->
+            <button onclick="closeModal('modal-matching')" class="absolute top-4 right-4 md:top-6 md:right-6 text-stone-400 hover:text-stone-900 focus:outline-none transition z-10 p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            
+            <!-- Left: Premium Image Column -->
+            <div class="md:w-1/2 bg-stone-50 p-6 md:p-10 flex items-center justify-center border-b md:border-b-0 md:border-r border-stone-100">
+                <img src="https://sc02.alicdn.com/kf/A32717d5da8e54ff08736d67fe1d786500.png" alt="Matching Color Collections" class="rounded-xl w-full max-h-[45vh] md:max-h-[60vh] object-cover shadow-lg">
+            </div>
+            
+            <!-- Right: Content & Specifications -->
+            <div class="md:w-1/2 p-6 md:p-10 flex flex-col justify-between">
+                <div>
+                    <span class="text-[10px] uppercase tracking-widest text-amber-600 font-bold">Bulk &amp; OEM Specifications</span>
+                    <h3 class="text-2xl md:text-3xl font-serif text-stone-900 mt-2 mb-4">Matching Color Collections</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-6">Coordinated product lines containing matching Gel Polish and Vegan Nail Lacquer duos. Formulated with our flagship halal and breathable ingredients for ethical premium salons.</p>
+                    
+                    <!-- Specifications Matrix -->
+                    <div class="space-y-3 text-xs text-stone-700">
+                        <div class="flex border-b border-stone-100 pb-2">
+                            <span class="w-28 font-semibold text-stone-900 flex-shrink-0">Chemical Standard</span>
+                            <span class="text-stone-600">18-Free Vegan, Cruelty-Free, Breathable Halal-Certified, Non-Toxic</span>
+                        </div>
+                        <div class="flex border-b border-stone-100 pb-2">
+                            <span class="w-28 font-semibold text-stone-900 flex-shrink-0">Color Accuracy</span>
+                            <span class="text-stone-600">Precision tone matching between LED Gel and Air-Dry Lacquer formulas (>98% match rate)</span>
+                        </div>
+                        <div class="flex border-b border-stone-100 pb-2">
+                            <span class="w-28 font-semibold text-stone-900 flex-shrink-0">Customization</span>
+                            <span class="text-stone-600">Custom dual-box gift sets, coordinated glass bottle molds, custom gold-embossed caps</span>
+                        </div>
+                        <div class="flex border-b border-stone-100 pb-2">
+                            <span class="w-28 font-semibold text-stone-900 flex-shrink-0">Global Compliance</span>
+                            <span class="text-stone-600">FDA and CPNP Registered, Halal Certified, REACH Compliant, MSDS Verified</span>
+                        </div>
+                        <div class="flex border-b border-stone-100 pb-2">
+                            <span class="w-28 font-semibold text-stone-900 flex-shrink-0">Packaging Option</span>
+                            <span class="text-stone-600">Coordinated B2B luxury double boxes, bulk matching kits, salon distributor displays</span>
+                        </div>
+                        <div class="flex pb-2">
+                            <span class="w-28 font-semibold text-stone-900 flex-shrink-0">Minimum Order</span>
+                            <span class="text-stone-600">Custom Label Sets: 1,000 sets per color. Raw bulk matching oil: 5kg/color</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CTA inside modal -->
+                <div class="mt-8 pt-6 border-t border-stone-100">
+                    <a href="#contact" onclick="closeModal('modal-matching'); prefillRequirement('Matching Color Collections (Bulk & Retail)');" class="block w-full bg-stone-900 text-white text-center py-4 rounded-xl text-xs font-bold uppercase tracking-wider hover:bg-stone-700 transition">
+                        Request Coordinated Samples
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Interaction Script -->
+    <script>
+        function openModal(id) {
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.classList.remove('hidden');
+                document.body.classList.add('overflow-hidden'); // Lock background scroll
+            }
+        }
+
+        function closeModal(id) {
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden'); // Unlock background scroll
+            }
+        }
+
+        function prefillRequirement(productSystem) {
+            const textarea = document.getElementById('custom-requirements');
+            if (textarea) {
+                textarea.value = `Hello, I clicked on the "${productSystem}" specifications. We are interested in requesting a physical sample kit of this system for our market validation.\n\nTarget Market: \nPreferred Options: \nQuestions on Customization: `;
+                // Focus and smooth scroll
+                setTimeout(() => {
+                    textarea.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    textarea.focus();
+                }, 100);
+            }
+        }
+
+        // Close on escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const activeModals = document.querySelectorAll('.modal-backdrop:not(.hidden)');
+                activeModals.forEach(modal => {
+                    closeModal(modal.id);
+                });
+            }
+        });
+
+        // Close on clicking backdrop
+        document.addEventListener('click', function(event) {
+            if (event.target.classList.contains('modal-backdrop')) {
+                closeModal(event.target.id);
+            }
+        });
+    </script>
 
 </body>
 </html>
