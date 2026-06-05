@@ -747,7 +747,7 @@
                 </div>
             </div>
             <div class="bg-[#FCFBF7] p-12 rounded-3xl shadow-2xl border border-[#F1EAE0]">
-                <form action="https://formsubmit.co/business@gznewnail.com" method="POST" class="space-y-6">
+                <form action="https://formsubmit.co/rose@lukarosy.com" method="POST" class="space-y-6">
                     <!-- FormSubmit Configuration -->
                     <input type="hidden" name="_next" value="https://gznewnail.com/#contact">
                     <input type="hidden" name="_subject" value="New B2B Inquiry from gznewnail.com">
@@ -1436,6 +1436,16 @@
         });
 
         // Close on clicking backdrop
+        document.addEventListener('click', function(event) {
+            if (event.target.classList.contains('modal-backdrop')) {
+                closeModal(event.target.id);
+            }
+        });
+    </script>
+
+</body>
+</html>
+ clicking backdrop
         document.addEventListener('click', function(event) {
             if (event.target.classList.contains('modal-backdrop')) {
                 closeModal(event.target.id);
