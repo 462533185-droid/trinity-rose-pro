@@ -3,6 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="lm6W4vGvRznizvf3-6qLIlNkznobVW3MdGaC-OPIdoo" />
+    
+    <!-- B2B Factory Schema Markup (JSON-LD) for Google B2B Search Trust -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NailSalon",
+      "name": "Trinity Rose Professional",
+      "image": "https://sc02.alicdn.com/kf/A2149ab61d1494a90b9e9a6ed3da6b15f6.png",
+      "@id": "https://gznewnail.com/#website",
+      "url": "https://gznewnail.com",
+      "telephone": "+86-20-86005555",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Guangzhou Industrial Zone",
+        "addressLocality": "Guangzhou",
+        "addressRegion": "Guangdong",
+        "postalCode": "510000",
+        "addressCountry": "CN"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://newnail.en.alibaba.com"
+      ]
+    }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trinity Rose Professional | Global B2B Nail Gel & Acrylic Powder Manufacturer</title>
     <meta name="description" content="Trinity Rose Professional is a leading B2B nail manufacturer specializing in premium 100% Vegan, HEMA-free & TPO-free gel polishes, acrylic powders, and luxury salon spa products compliant with EU CPNP & US MoCRA standards.">
@@ -711,25 +747,30 @@
                 </div>
             </div>
             <div class="bg-[#FCFBF7] p-12 rounded-3xl shadow-2xl border border-[#F1EAE0]">
-                <form class="space-y-6">
+                <form action="https://formsubmit.co/business@gznewnail.com" method="POST" class="space-y-6">
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_next" value="https://gznewnail.com/#contact">
+                    <input type="hidden" name="_subject" value="New B2B Inquiry from gznewnail.com">
+                    <input type="hidden" name="_captcha" value="false">
+
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-xs font-bold uppercase tracking-widest mb-2 text-[#2D1B13]">Contact Name</label>
-                            <input type="text" required class="w-full bg-[#FAF6EE] border-b border-[#D48D1D]/30 py-3 px-4 rounded-t-lg focus:outline-none focus:border-[#D48D1D] transition" placeholder="John Doe">
+                            <input type="text" name="name" required class="w-full bg-[#FAF6EE] border-b border-[#D48D1D]/30 py-3 px-4 rounded-t-lg focus:outline-none focus:border-[#D48D1D] transition" placeholder="John Doe">
                         </div>
                         <div>
                             <label class="block text-xs font-bold uppercase tracking-widest mb-2 text-[#2D1B13]">Company Email</label>
-                            <input type="email" required class="w-full bg-[#FAF6EE] border-b border-[#D48D1D]/30 py-3 px-4 rounded-t-lg focus:outline-none focus:border-[#D48D1D] transition" placeholder="john@company.com">
+                            <input type="email" name="email" required class="w-full bg-[#FAF6EE] border-b border-[#D48D1D]/30 py-3 px-4 rounded-t-lg focus:outline-none focus:border-[#D48D1D] transition" placeholder="john@company.com">
                         </div>
                     </div>
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-xs font-bold uppercase tracking-widest mb-2 text-[#2D1B13]">Company Name</label>
-                            <input type="text" required class="w-full bg-[#FAF6EE] border-b border-[#D48D1D]/30 py-3 px-4 rounded-t-lg focus:outline-none focus:border-[#D48D1D] transition" placeholder="Nail Brand Ltd.">
+                            <input type="text" name="company" required class="w-full bg-[#FAF6EE] border-b border-[#D48D1D]/30 py-3 px-4 rounded-t-lg focus:outline-none focus:border-[#D48D1D] transition" placeholder="Nail Brand Ltd.">
                         </div>
                         <div>
                             <label class="block text-xs font-bold uppercase tracking-widest mb-2 text-[#2D1B13]">Target Market / Destination</label>
-                            <select class="w-full bg-[#FAF6EE] border-b border-[#D48D1D]/30 py-3 px-4 rounded-t-lg focus:outline-none focus:border-[#D48D1D] transition">
+                            <select name="target_market" class="w-full bg-[#FAF6EE] border-b border-[#D48D1D]/30 py-3 px-4 rounded-t-lg focus:outline-none focus:border-[#D48D1D] transition">
                                 <option>United States (USA)</option>
                                 <option>European Union (EU)</option>
                                 <option>Middle East (Dubai/UAE)</option>
@@ -741,7 +782,7 @@
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-xs font-bold uppercase tracking-widest mb-2 text-[#2D1B13]">Business Type</label>
-                            <select class="w-full bg-[#FAF6EE] border-b border-[#D48D1D]/30 py-3 px-4 rounded-t-lg focus:outline-none focus:border-[#D48D1D] transition">
+                            <select name="business_type" class="w-full bg-[#FAF6EE] border-b border-[#D48D1D]/30 py-3 px-4 rounded-t-lg focus:outline-none focus:border-[#D48D1D] transition">
                                 <option>Wholesaler / Distributor</option>
                                 <option>Private Label Brand Owner</option>
                                 <option>Salon Chain Purchasing</option>
@@ -750,7 +791,7 @@
                         </div>
                         <div>
                             <label class="block text-xs font-bold uppercase tracking-widest mb-2 text-[#2D1B13]">Est. Monthly Volume</label>
-                            <select class="w-full bg-[#FAF6EE] border-b border-[#D48D1D]/30 py-3 px-4 rounded-t-lg focus:outline-none focus:border-[#D48D1D] transition">
+                            <select name="monthly_volume" class="w-full bg-[#FAF6EE] border-b border-[#D48D1D]/30 py-3 px-4 rounded-t-lg focus:outline-none focus:border-[#D48D1D] transition">
                                 <option>Trial / Startup Sample Unit</option>
                                 <option>Less than $5,000 / month</option>
                                 <option>$5,000 - $20,000 / month</option>
@@ -763,26 +804,26 @@
                         <label class="block text-xs font-bold uppercase tracking-widest mb-2 text-[#2D1B13]">Request Free Sample Kit (Select up to 2)</label>
                         <div class="grid grid-cols-2 gap-4 mt-2 text-sm text-[#2D1B13]">
                             <label class="flex items-center space-x-2 cursor-pointer">
-                                <input type="checkbox" class="rounded text-[#D48D1D] focus:ring-[#D48D1D]" value="ColorGel">
+                                <input type="checkbox" name="sample_kit[]" class="rounded text-[#D48D1D] focus:ring-[#D48D1D]" value="ColorGel">
                                 <span>Pro Color Gel (HEMA-Free)</span>
                             </label>
                             <label class="flex items-center space-x-2 cursor-pointer">
-                                <input type="checkbox" class="rounded text-[#D48D1D] focus:ring-[#D48D1D]" value="BuilderGel">
+                                <input type="checkbox" name="sample_kit[]" class="rounded text-[#D48D1D] focus:ring-[#D48D1D]" value="BuilderGel">
                                 <span>Builder / BIAB System</span>
                             </label>
                             <label class="flex items-center space-x-2 cursor-pointer">
-                                <input type="checkbox" class="rounded text-[#D48D1D] focus:ring-[#D48D1D]" value="Powder">
+                                <input type="checkbox" name="sample_kit[]" class="rounded text-[#D48D1D] focus:ring-[#D48D1D]" value="Powder">
                                 <span>Acrylic/Dipping Powder</span>
                             </label>
                             <label class="flex items-center space-x-2 cursor-pointer">
-                                <input type="checkbox" class="rounded text-[#D48D1D] focus:ring-[#D48D1D]" value="Spa">
+                                <input type="checkbox" name="sample_kit[]" class="rounded text-[#D48D1D] focus:ring-[#D48D1D]" value="Spa">
                                 <span>Organic Spa Essentials</span>
                             </label>
                         </div>
                     </div>
                     <div>
                         <label class="block text-xs font-bold uppercase tracking-widest mb-2 text-[#2D1B13]">Custom Requirements &amp; Volume Notes</label>
-                        <textarea id="custom-requirements" class="w-full bg-[#FAF6EE] border-b border-[#D48D1D]/30 py-3 px-4 rounded-t-lg h-24 focus:outline-none focus:border-[#D48D1D] transition" placeholder="Describe your branding needs, color preferences, or specific formula viscosities..."></textarea>
+                        <textarea id="custom-requirements" name="requirements" class="w-full bg-[#FAF6EE] border-b border-[#D48D1D]/30 py-3 px-4 rounded-t-lg h-24 focus:outline-none focus:border-[#D48D1D] transition" placeholder="Describe your branding needs, color preferences, or specific formula viscosities..."></textarea>
                     </div>
                     <button type="submit" class="w-full bg-[#D48D1D] text-white py-5 rounded-xl font-bold uppercase tracking-widest hover:bg-[#B57512] transition shadow-lg">Submit B2B Inquiry &amp; Request Samples</button>
                 </form>
