@@ -1,307 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="google-site-verification" content="lm6W4vGvRznizvf3-6qLIlNkznobVW3MdGaC-OPIdoo" />
-    
-    <!-- B2B Factory Schema Markup -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "NailSalon",
-      "name": "Trinity Rose Professional",
-      "image": "../assets/images/hero.webp",
-      "@id": "https://gznewnail.com/#website",
-      "url": "https://gznewnail.com",
-      "telephone": "+86-20-86005555",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Guangzhou Industrial Zone",
-        "addressLocality": "Guangzhou",
-        "addressRegion": "Guangdong",
-        "postalCode": "510000",
-        "addressCountry": "CN"
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "09:00",
-        "closes": "18:00"
-      },
-      "sameAs": ["https://newnail.en.alibaba.com"]
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trinity Rose Professional | Nail Product Systems Catalog</title>
+  <meta name="description" content="Explore our complete catalog of professional nail products: gel polish, acrylic systems, builder gels, and salon essentials." />
+
+  <style>
+    :root {
+      --black: #111111;
+      --dark: #2b2b2b;
+      --gray: #666666;
+      --light: #f7f3ec;
+      --soft: #fbfaf7;
+      --line: #e7dfd2;
+      --gold: #b9935a;
+      --gold-dark: #8f6e3d;
+      --white: #ffffff;
+      --shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+      --radius: 22px;
     }
-    </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trinity Rose Professional | Complete Professional Catalog</title>
-    <meta name="description" content="Explore Trinity Rose Professional's full B2B catalog: HEMA-free gels, acrylic systems, builder gels, and spa care products. Global OEM/ODM manufacturing.">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        h1, h2, h3 { font-family: 'Playfair Display', serif; }
-        .category-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-        .category-card:hover { transform: translateY(-10px); }
-    </style>
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, Helvetica, sans-serif; color: var(--black); background: var(--soft); line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .container { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+
+    .topbar { background: var(--black); color: var(--white); font-size: 13px; padding: 8px 0; }
+    .topbar .container { display: flex; justify-content: space-between; }
+
+    header { position: sticky; top: 0; z-index: 20; background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+    .nav { height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .logo { font-size: 24px; font-weight: 800; letter-spacing: 2px; display: flex; align-items: center; gap: 10px; }
+    .logo img { height: 32px; }
+    .logo span { color: var(--gold); }
+
+    .menu { display: flex; gap: 24px; align-items: center; font-size: 14px; color: var(--dark); font-weight: 700; text-transform: uppercase; }
+    .dropdown { position: relative; }
+    .dropdown-content { display: none; position: absolute; background: var(--white); min-width: 260px; box-shadow: var(--shadow); border: 1px solid var(--line); border-radius: 12px; padding: 10px 0; top: 100%; left: 0; }
+    .dropdown:hover .dropdown-content { display: block; }
+    .dropdown-content a { color: var(--dark); padding: 10px 20px; display: block; font-size: 12px; transition: 0.2s; }
+    .dropdown-content a:hover { background: var(--light); color: var(--gold-dark); }
+
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 13px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; cursor: pointer; transition: 0.2s; }
+    .btn-dark { background: var(--black); color: var(--white); }
+    .btn-dark:hover { background: var(--gold-dark); }
+
+    section { padding: 88px 0; }
+    h1 { font-size: 48px; text-align: center; margin-bottom: 48px; }
+
+    .category-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+    .category-card { background: var(--white); border-radius: var(--radius); padding: 30px; border: 1px solid var(--line); transition: 0.3s; }
+    .category-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+    .category-card h3 { font-size: 22px; margin-bottom: 15px; color: var(--gold-dark); }
+    .category-card p { font-size: 14px; color: var(--gray); margin-bottom: 20px; }
+    .category-card .btn { width: 100%; }
+
+    footer { padding: 60px 0; background: #080808; color: rgba(255, 255, 255, 0.7); text-align: center; font-size: 14px; }
+  </style>
 </head>
-<body class="bg-[#FCFBF7] text-[#2D1B13] scroll-smooth">
 
-    <!-- Header -->
-    <header class="fixed w-full z-50 bg-[#FCFBF7]/90 backdrop-blur-md border-b border-[#F1EAE0]">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <img src="../assets/images/logo.webp" alt="Trinity Rose Logo" class="h-10">
-                <span class="text-xl font-bold tracking-widest text-[#2D1B13] uppercase">Trinity Rose Professional</span>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div>Private Label Nail Product Factory for EU & US Buyers</div>
+      <div>SDS · COA · Ingredient List · Label Review</div>
+    </div>
+  </div>
+
+  <header>
+    <div class="container nav">
+      <a class="logo" href="../index.html">
+        <img src="../assets/images/logo.webp" alt="Trinity Rose Professional Logo">
+        TRINITY<span>ROSE</span>
+      </a>
+      <nav class="menu">
+        <div class="dropdown">
+            <a href="../index.html#products">Products</a>
+            <div class="dropdown-content">
+                <a href="private-label-gel-polish/">Private Label Gel Polish</a>
+                <a href="function-gel/">Funation Gel</a>
+                <a href="uv-gel-painting/">UV Gel</a>
+                <a href="acrylic-dipping-system/">Acrylic&Dipping Nail System</a>
+                <a href="remove-clean/">Remove&Clean</a>
+                <a href="nail-polish-system/">Nail Polish System</a>
+                <a href="builder-extension-gel/">Builder Gel & Extension Gel</a>
+                <a href="nail-care/">Nail Care</a>
+                <a href="machine-tools/">Machine&Tools</a>
+                <a href="salon-products/">Salon Products</a>
+                <a href="../about-us/">About us -OEM / ODM Service</a>
             </div>
-            <nav class="hidden lg:flex space-x-6 text-sm font-semibold uppercase tracking-wider">
-                <a href="../index.html" class="hover:text-[#D48D1D] transition">Home</a>
-                <a href="#systems" class="hover:text-[#D48D1D] transition">Solutions</a>
-                <a href="#full-line" class="hover:text-[#D48D1D] transition">Catalog</a>
-                <a href="../about-us/index.html" class="hover:text-[#D48D1D] transition">Our Factory</a>
-                <a href="#contact" class="bg-[#D48D1D] text-white px-5 py-2 rounded-full hover:bg-[#B57512] transition">B2B Inquiry</a>
-            </nav>
         </div>
-    </header>
+        <a href="../index.html#factory">Factory</a>
+        <a href="../about-us/index.html">About Us</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-dark" href="../index.html#contact">B2B Inquiry</a>
+      </div>
+    </div>
+  </header>
 
-    <main class="pt-24">
-        <!-- Manufacturing Solutions -->
-        <section id="systems" class="py-24">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="text-center mb-20">
-                    <h1 class="text-4xl md:text-5xl mb-4">Industrial Manufacturing Solutions</h1>
-                    <p class="text-stone-500 max-w-2xl mx-auto text-lg">Precision-engineered nail systems designed for global B2B compliance and brand excellence.</p>
-                </div>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- 1. Private Label Gel Polish -->
-                    <div class="category-card p-8 bg-white border border-[#F1EAE0] rounded-2xl shadow-sm">
-                        <div class="text-[#D48D1D] mb-4">
-                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Gel Polish Systems</h3>
-                        <p class="text-xs text-stone-500 mb-6">HEMA-Free colors, base/top coats, and breathable lacquers for professional brands.</p>
-                        <ul class="text-[10px] uppercase tracking-widest space-y-2 text-[#8A7968] font-bold">
-                            <li>• 15ml Signature Series</li>
-                            <li>• Water-Based Lacquer</li>
-                            <li>• High-Gloss Top Coats</li>
-                        </ul>
-                    </div>
-
-                    <!-- 2. Builder & Extension -->
-                    <div class="category-card p-8 bg-white border border-[#F1EAE0] rounded-2xl shadow-sm">
-                        <div class="text-[#D48D1D] mb-4">
-                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z"/></svg>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Builder & Extension</h3>
-                        <p class="text-xs text-stone-500 mb-6">High-tenacity acrylic powders, EMA monomers, and low-heat builder gels.</p>
-                        <ul class="text-[10px] uppercase tracking-widest space-y-2 text-[#8A7968] font-bold">
-                            <li>• 3-in-1 Dipping System</li>
-                            <li>• Acrylic Powder & Liquid</li>
-                            <li>• BIAB Builder Gels</li>
-                        </ul>
-                    </div>
-
-                    <!-- 3. Bulk & Raw Materials -->
-                    <div class="category-card p-8 bg-white border border-[#F1EAE0] rounded-2xl shadow-sm">
-                        <div class="text-[#D48D1D] mb-4">
-                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Bulk Supply</h3>
-                        <p class="text-xs text-stone-500 mb-6">Industrial canisters (1kg-25kg) for distributors and large salon chains.</p>
-                        <ul class="text-[10px] uppercase tracking-widest space-y-2 text-[#8A7968] font-bold">
-                            <li>• 1kg Bulk Gel Polish</li>
-                            <li>• Raw Base Materials</li>
-                            <li>• Custom R&D Service</li>
-                        </ul>
-                    </div>
-
-                    <!-- 4. SPA & Specialized -->
-                    <div class="category-card p-8 bg-white border border-[#F1EAE0] rounded-2xl shadow-sm">
-                        <div class="text-[#D48D1D] mb-4">
-                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">SPA & Specialized</h3>
-                        <p class="text-xs text-stone-500 mb-6">Luxury body care, exfoliating scrubs, and high-performance art gels.</p>
-                        <ul class="text-[10px] uppercase tracking-widest space-y-2 text-[#8A7968] font-bold">
-                            <li>• Body Scrub & Lotion</li>
-                            <li>• Cuticle Oil Pens</li>
-                            <li>• Teardrop Jewelry Gel</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Complete Catalog Grid -->
-        <section id="full-line" class="py-24 bg-white border-t border-[#F1EAE0]">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="text-center mb-20">
-                    <h2 class="text-4xl md:text-5xl mb-4 font-serif">Complete Professional Catalog</h2>
-                    <p class="text-stone-500 max-w-2xl mx-auto text-lg">Our comprehensive suite of salon-grade systems, engineered for global excellence.</p>
-                </div>
-                
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-
-                    <!-- 01. Magic Mirror Chrome Top Coat -->
-                    <a href="magic-mirror-chrome-top-coat.html" class="group block">
-                        <div class="aspect-[4/5] mb-6 overflow-hidden rounded-2xl bg-[#FAF6EE] border border-[#F1EAE0] shadow-sm relative">
-                            <img src="../assets/images/magic-mirror-chrome-top-coat/主图1.webp" alt="Magic Mirror Chrome Top Coat" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <h3 class="text-lg font-bold tracking-tight text-[#2D1B13] mb-1">Magic Mirror Chrome Top Coat</h3>
-                        <p class="text-sm text-stone-500 line-clamp-2">Specifically engineered for maximum adhesion of chrome powders.</p>
-                        <span class="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-[#D48D1D]">View Details →</span>
-                    </a>
-
-                    <!-- 02. Bulk Professional Gel Polish -->
-                    <a href="bulk-professional-gel-polish.html" class="group block">
-                        <div class="aspect-[4/5] mb-6 overflow-hidden rounded-2xl bg-[#FAF6EE] border border-[#F1EAE0] shadow-sm relative">
-                            <img src="../assets/images/bulk-professional-gel-polish/1.webp" alt="Bulk Professional Gel Polish" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <h3 class="text-lg font-bold tracking-tight text-[#2D1B13] mb-1">Bulk Professional Gel Polish</h3>
-                        <p class="text-sm text-stone-500 line-clamp-2">Wholesale 1kg/Gallon High-Pigment UV/LED Soak-Off Gel.</p>
-                        <span class="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-[#D48D1D]">View Details →</span>
-                    </a>
-
-                    <!-- 03. Professional Seamless Nail Tips -->
-                    <a href="professional-seamless-nail-tips.html" class="group block">
-                        <div class="aspect-[4/5] mb-6 overflow-hidden rounded-2xl bg-[#FAF6EE] border border-[#F1EAE0] shadow-sm relative">
-                            <img src="../assets/images/professional-seamless-nail-tips/1.webp" alt="Professional Seamless Nail Tips" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <h3 class="text-lg font-bold tracking-tight text-[#2D1B13] mb-1">Professional Seamless Nail Tips</h3>
-                        <p class="text-sm text-stone-500 line-clamp-2">3D Ultra-Thin Traceless ABS Full Cover Fake Nails.</p>
-                        <span class="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-[#D48D1D]">View Details →</span>
-                    </a>
-
-                    <!-- 04. 15ml Signature Gel Polish -->
-                    <a href="15ml-signature-gel-polish.html" class="group block">
-                        <div class="aspect-[4/5] mb-6 overflow-hidden rounded-2xl bg-[#FAF6EE] border border-[#F1EAE0] shadow-sm relative">
-                            <img src="../assets/images/15ml-signature-gel-polish/1.webp" alt="15ml Signature Gel Polish" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <h3 class="text-lg font-bold tracking-tight text-[#2D1B13] mb-1">15ml Signature Gel Polish</h3>
-                        <p class="text-sm text-stone-500 line-clamp-2">Luxury High-Gloss Soak-Off Gel - HEMA-Free TPO-Free.</p>
-                        <span class="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-[#D48D1D]">View Details →</span>
-                    </a>
-
-                    <!-- 05. Exfoliating Detox Body Scrub -->
-                    <a href="exfoliating-detox-body-scrub.html" class="group block">
-                        <div class="aspect-[4/5] mb-6 overflow-hidden rounded-2xl bg-[#FAF6EE] border border-[#F1EAE0] shadow-sm relative">
-                            <img src="../assets/images/exfoliating-detox-body-scrub/1.webp" alt="Exfoliating Detox Body Scrub" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <h3 class="text-lg font-bold tracking-tight text-[#2D1B13] mb-1">Exfoliating Detox Body Scrub</h3>
-                        <p class="text-sm text-stone-500 line-clamp-2">Natural Sea Salt & Essential Oil Smoothing Treatment.</p>
-                        <span class="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-[#D48D1D]">View Details →</span>
-                    </a>
-
-                    <!-- 06. 3-in-1 Professional Acrylic Dipping System -->
-                    <a href="3-in-1-acrylic-dipping-system.html" class="group block">
-                        <div class="aspect-[4/5] mb-6 overflow-hidden rounded-2xl bg-[#FAF6EE] border border-[#F1EAE0] shadow-sm relative">
-                            <img src="../assets/images/products/3-in-1/1.webp" alt="3-in-1 Acrylic Dipping System" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <h3 class="text-lg font-bold tracking-tight text-[#2D1B13] mb-1">3-in-1 Acrylic Dipping System</h3>
-                        <p class="text-sm text-stone-500 line-clamp-2">Multi-Functional Nail Extension & Dip System - MMA-Free.</p>
-                        <span class="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-[#D48D1D]">View Details →</span>
-                    </a>
-
-                    <!-- 07. Deep Hydration Body Lotion -->
-                    <a href="deep-hydration-body-lotion.html" class="group block">
-                        <div class="aspect-[4/5] mb-6 overflow-hidden rounded-2xl bg-[#FAF6EE] border border-[#F1EAE0] shadow-sm relative">
-                            <img src="../assets/images/products/body-lotion/1.webp" alt="Deep Hydration Body Lotion" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <h3 class="text-lg font-bold tracking-tight text-[#2D1B13] mb-1">Deep Hydration Body Lotion</h3>
-                        <p class="text-sm text-stone-500 line-clamp-2">24-Hour Moisture Lock Shea Butter SPA Treatment.</p>
-                        <span class="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-[#D48D1D]">View Details →</span>
-                    </a>
-
-                    <!-- 08. No-Wipe Teardrop / Jewelry Gel Set -->
-                    <a href="teardrop-jewelry-gel-set.html" class="group block">
-                        <div class="aspect-[4/5] mb-6 overflow-hidden rounded-2xl bg-[#FAF6EE] border border-[#F1EAE0] shadow-sm relative">
-                            <img src="../assets/images/products/water-drop-set/1.webp" alt="Teardrop Jewelry Gel Set" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <h3 class="text-lg font-bold tracking-tight text-[#2D1B13] mb-1">Teardrop Jewelry Gel Set</h3>
-                        <p class="text-sm text-stone-500 line-clamp-2">3D Sculpture No-Wipe Gel for Precision Art.</p>
-                        <span class="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-[#D48D1D]">View Details →</span>
-                    </a>
-
-                    <!-- 09. Premium Acrylic Powder -->
-                    <a href="premium-acrylic-powder.html" class="group block">
-                        <div class="aspect-[4/5] mb-6 overflow-hidden rounded-2xl bg-[#FAF6EE] border border-[#F1EAE0] shadow-sm relative">
-                            <img src="../assets/images/products/crystal-powder/首图1.webp" alt="Premium Acrylic Powder" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <h3 class="text-lg font-bold tracking-tight text-[#2D1B13] mb-1">Premium Acrylic Powder</h3>
-                        <p class="text-sm text-stone-500 line-clamp-2">Extra Fine Non-Yellowing Salon Quality Powder.</p>
-                        <span class="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-[#D48D1D]">View Details →</span>
-                    </a>
-
-                    <!-- 10. EMA Professional Monomer Liquid -->
-                    <a href="ema-professional-monomer-liquid.html" class="group block">
-                        <div class="aspect-[4/5] mb-6 overflow-hidden rounded-2xl bg-[#FAF6EE] border border-[#F1EAE0] shadow-sm relative">
-                            <img src="../assets/images/products/crystal-liquid/首图.webp" alt="EMA Monomer Liquid" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <h3 class="text-lg font-bold tracking-tight text-[#2D1B13] mb-1">EMA Monomer Liquid</h3>
-                        <p class="text-sm text-stone-500 line-clamp-2">High Adhesion UV-Stabilized Cross-Link Monomer.</p>
-                        <span class="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-[#D48D1D]">View Details →</span>
-                    </a>
-
-                    <!-- 11. Water-Based Breathable Nail Polish -->
-                    <a href="water-based-breathable-nail-polish.html" class="group block">
-                        <div class="aspect-[4/5] mb-6 overflow-hidden rounded-2xl bg-[#FAF6EE] border border-[#F1EAE0] shadow-sm relative">
-                            <img src="../assets/images/products/water-based-nail-polish/水性1.webp" alt="Water-Based Nail Polish" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <h3 class="text-lg font-bold tracking-tight text-[#2D1B13] mb-1">Water-Based Nail Polish</h3>
-                        <p class="text-sm text-stone-500 line-clamp-2">Non-Toxic Odorless Peel-Off Lacquer - Halal Certified.</p>
-                        <span class="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-[#D48D1D]">View Details →</span>
-                    </a>
-
-                    <!-- 12. Professional Builder Extension Gel -->
-                    <a href="professional-builder-extension-gel.html" class="group block">
-                        <div class="aspect-[4/5] mb-6 overflow-hidden rounded-2xl bg-[#FAF6EE] border border-[#F1EAE0] shadow-sm relative">
-                            <img src="../assets/images/products/extension-gel/product1.webp" alt="Builder Extension Gel" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <h3 class="text-lg font-bold tracking-tight text-[#2D1B13] mb-1">Builder Extension Gel</h3>
-                        <p class="text-sm text-stone-500 line-clamp-2">Low-Heat Spike BIAB - High Viscosity Hard Gel.</p>
-                        <span class="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-[#D48D1D]">View Details →</span>
-                    </a>
-
-                    <!-- 13. Vitamin Enriched Cuticle Oil Pen -->
-                    <a href="vitamin-enriched-cuticle-oil-pen.html" class="group block">
-                        <div class="aspect-[4/5] mb-6 overflow-hidden rounded-2xl bg-[#FAF6EE] border border-[#F1EAE0] shadow-sm relative">
-                            <img src="../assets/images/products/cuticle-oil/product1.webp" alt="Cuticle Oil Pen" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <h3 class="text-lg font-bold tracking-tight text-[#2D1B13] mb-1">Cuticle Oil Pen</h3>
-                        <p class="text-sm text-stone-500 line-clamp-2">Precision Leak-Proof Vitamin E Hydration Pen.</p>
-                        <span class="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-[#D48D1D]">View Details →</span>
-                    </a>
-
-                    <!-- 14. High-Performance Regular Nail Lacquer -->
-                    <a href="high-performance-regular-nail-lacquer.html" class="group block">
-                        <div class="aspect-[4/5] mb-6 overflow-hidden rounded-2xl bg-[#FAF6EE] border border-[#F1EAE0] shadow-sm relative">
-                            <img src="../assets/images/products/oil-nail-polish/product1.webp" alt="Regular Nail Lacquer" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <h3 class="text-lg font-bold tracking-tight text-[#2D1B13] mb-1">Regular Nail Lacquer</h3>
-                        <p class="text-sm text-stone-500 line-clamp-2">Quick-Dry High-Gloss Salon Grade 10-Free Lacquer.</p>
-                        <span class="inline-block mt-4 text-xs font-bold uppercase tracking-widest text-[#D48D1D]">View Details →</span>
-                    </a>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- B2B Inquiry Section -->
-        <section id="contact" class="py-24 bg-[#FAF6EE] border-t border-[#F1EAE0]">
-            <div class="max-w-4xl mx-auto px-6 text-center">
-                <h2 class="text-4xl mb-6 font-serif">Global B2B Wholesale Inquiry</h2>
-                <p class="text-stone-500 mb-12">Connect with our specialists for custom labeling, bulk pricing, and compliance documentation.</p>
-                <a href="mailto:newnail001@gznewnail.com" class="inline-block bg-[#2D1B13] text-white px-12 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-[#D48D1D] transition shadow-xl">Contact Factory Manager</a>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="py-16 bg-[#1E1611] text-white border-t border-[#2D1B13]">
-        <div class="max-w-7xl mx-auto px-6 text-center text-xs text-stone-500 uppercase tracking-widest">
-            <p>© 2026 Trinity Rose Professional. All Rights Reserved.</p>
+  <main class="container">
+    <section>
+      <h1>Nail Product Systems</h1>
+      <div class="category-grid">
+        <div class="category-card">
+          <h3>Private Label Gel Polish</h3>
+          <p>Luxury high-gloss soak-off gel polish. HEMA-Free and TPO-Free options.</p>
+          <a href="private-label-gel-polish/" class="btn btn-dark">View Products</a>
         </div>
-    </footer>
+        <div class="category-card">
+          <h3>Funation Gel</h3>
+          <p>Base coat, top coat, Russian self-leveling and tip glue gel systems.</p>
+          <a href="function-gel/" class="btn btn-dark">View Products</a>
+        </div>
+        <div class="category-card">
+          <h3>UV Gel</h3>
+          <p>Precision art gels, painting gels, and professional art design solutions.</p>
+          <a href="uv-gel-painting/" class="btn btn-dark">View Products</a>
+        </div>
+        <div class="category-card">
+          <h3>Acrylic&Dipping Nail System</h3>
+          <p>Professional acrylic powder, EMA monomer, and 3-in-1 dipping systems.</p>
+          <a href="acrylic-dipping-system/" class="btn btn-dark">View Products</a>
+        </div>
+        <div class="category-card">
+          <h3>Remove&Clean</h3>
+          <p>Acetone removers, gel polish remover, and professional brush cleaners.</p>
+          <a href="remove-clean/" class="btn btn-dark">View Products</a>
+        </div>
+        <div class="category-card">
+          <h3>Nail Polish System</h3>
+          <p>Oil-based air-dry and water-based breathable nail polish solutions.</p>
+          <a href="nail-polish-system/" class="btn btn-dark">View Products</a>
+        </div>
+        <div class="category-card">
+          <h3>Builder Gel & Extension Gel</h3>
+          <p>High-viscosity builder gels, BIAB, and poly extension gel systems.</p>
+          <a href="builder-extension-gel/" class="btn btn-dark">View Products</a>
+        </div>
+        <div class="category-card">
+          <h3>Nail Care</h3>
+          <p>Cuticle oils, nourish treatments, and professional hand care products.</p>
+          <a href="nail-care/" class="btn btn-dark">View Products</a>
+        </div>
+        <div class="category-card">
+          <h3>Machine&Tools</h3>
+          <p>Drills, lamps, files, and professional tools for nail technicians.</p>
+          <a href="machine-tools/" class="btn btn-dark">View Products</a>
+        </div>
+        <div class="category-card">
+          <h3>Salon Products</h3>
+          <p>Professional spa products, retail items, and salon service essentials.</p>
+          <a href="salon-products/" class="btn btn-dark">View Products</a>
+        </div>
+        <div class="category-card">
+          <h3>About us -OEM / ODM Service</h3>
+          <p>Custom formula development, color matching, and private label support.</p>
+          <a href="../about-us/" class="btn btn-dark">Learn More</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer>
+    <div class="container">
+      <p>© 2026 Trinity Rose Professional. All Rights Reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>

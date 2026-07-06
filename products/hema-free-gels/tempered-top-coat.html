@@ -16,25 +16,83 @@
             border: 1px solid #F1EAE0;
         }
     </style>
+
+    <style>
+        :root {
+            --black: #111111;
+            --dark: #2b2b2b;
+            --gray: #666666;
+            --light: #f7f3ec;
+            --soft: #fbfaf7;
+            --line: #e7dfd2;
+            --gold: #b9935a;
+            --gold-dark: #8f6e3d;
+            --white: #ffffff;
+            --rose: #f3e4df;
+            --shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+            --radius: 22px;
+        }
+        .topbar {
+          background: var(--black);
+          color: var(--white);
+          font-size: 13px;
+          letter-spacing: 0.2px;
+          padding: 8px 0;
+        }
+        .topbar .container {
+          display: flex;
+          justify-content: space-between;
+          width: min(1180px, calc(100% - 40px));
+          margin: 0 auto;
+          gap: 20px;
+          flex-wrap: wrap;
+        }
+        .group:hover .group-hover\:block {
+            display: block !important;
+        }
+    </style>
 </head>
 <body class="bg-[#FCFBF7] text-[#2D1B13] scroll-smooth">
 
-    <!-- Header (Consistent with Main Site) -->
-    <header class="fixed w-full z-50 bg-[#FCFBF7]/90 backdrop-blur-md border-b border-[#F1EAE0]">
+    
+    
+    <div class="topbar">
+      <div class="container">
+        <div>Private Label Nail Product Factory for EU & US Buyers</div>
+        <div>SDS · COA · Ingredient List · Label Review · OEM/ODM Support</div>
+      </div>
+    </div>
+
+    <header class="fixed w-full z-50 bg-[#FCFBF7]/90 backdrop-blur-md border-b border-[#F1EAE0] top-0">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <img src="../../assets/images/logo.webp" alt="Trinity Rose Logo" class="h-10">
-                <span class="text-xl font-bold tracking-widest text-[#2D1B13] uppercase">Trinity Rose Professional</span>
-            </div>
-            <nav class="hidden lg:flex space-x-6 text-sm font-semibold uppercase tracking-wider">
-                <a href="../../index.html" class="hover:text-[#D48D1D] transition">Home</a>
-                <a href="../index.html" class="hover:text-[#D48D1D] transition">Systems</a>
-                <a href="../../index.html#bulk-supply" class="hover:text-[#D48D1D] transition">Bulk Supply</a>
-                <a href="../../about-us/index.html" class="hover:text-[#D48D1D] transition">Our Factory</a>
+            <a class="flex items-center space-x-2" href="../../../index.html">
+                <img src="../../../assets/images/logo.webp" alt="Trinity Rose Logo" class="h-10">
+                <span class="text-xl font-bold tracking-widest text-[#2D1B13] uppercase">Trinity<span>Rose</span></span>
+            </a>
+            <nav class="hidden lg:flex space-x-6 text-sm font-semibold uppercase tracking-wider items-center">
+                <a href="../../../index.html" class="hover:text-[#D48D1D] transition">Home</a>
+                <div class="relative group">
+                    <a href="../../../index.html#products" class="hover:text-[#D48D1D] transition">Products</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-xl border border-[#F1EAE0] rounded-xl py-4 min-w-[280px] -left-10 top-full">
+                        <a href="../private-label-gel-polish/" class="block px-6 py-2 text-[10px] hover:bg-[#FAF6EE] hover:text-[#D48D1D]">Private Label Gel Polish</a>
+                        <a href="../function-gel/" class="block px-6 py-2 text-[10px] hover:bg-[#FAF6EE] hover:text-[#D48D1D]">Funation Gel (Top/Base/Russian/Glue)</a>
+                        <a href="../uv-gel-painting/" class="block px-6 py-2 text-[10px] hover:bg-[#FAF6EE] hover:text-[#D48D1D]">UV Gel (Painting)</a>
+                        <a href="../acrylic-dipping-system/" class="block px-6 py-2 text-[10px] hover:bg-[#FAF6EE] hover:text-[#D48D1D]">Acrylic&Dipping Nail System</a>
+                        <a href="../remove-clean/" class="block px-6 py-2 text-[10px] hover:bg-[#FAF6EE] hover:text-[#D48D1D]">Remove&Clean</a>
+                        <a href="../nail-polish-system/" class="block px-6 py-2 text-[10px] hover:bg-[#FAF6EE] hover:text-[#D48D1D]">Nail Polish System (Oil/Water)</a>
+                        <a href="../builder-extension-gel/" class="block px-6 py-2 text-[10px] hover:bg-[#FAF6EE] hover:text-[#D48D1D]">Builder Gel & Extension Gel</a>
+                        <a href="../nail-care/" class="block px-6 py-2 text-[10px] hover:bg-[#FAF6EE] hover:text-[#D48D1D]">Nail Care</a>
+                        <a href="../machine-tools/" class="block px-6 py-2 text-[10px] hover:bg-[#FAF6EE] hover:text-[#D48D1D]">Machine&Tools</a>
+                        <a href="../salon-products/" class="block px-6 py-2 text-[10px] hover:bg-[#FAF6EE] hover:text-[#D48D1D]">Salon Products</a>
+                    </div>
+                </div>
+                <a href="../../../index.html#factory" class="hover:text-[#D48D1D] transition">Factory</a>
+                <a href="../../about-us/index.html" class="hover:text-[#D48D1D] transition">About Us</a>
                 <a href="#contact" class="bg-[#D48D1D] text-white px-5 py-2 rounded-full hover:bg-[#B57512] transition">B2B Inquiry</a>
             </nav>
         </div>
     </header>
+
 
     <main class="pt-32 pb-24">
         <div class="max-w-7xl mx-auto px-6">
@@ -43,12 +101,12 @@
             <nav class="flex mb-8 text-xs uppercase tracking-widest text-[#8A7968]" aria-label="Breadcrumb">
                 <ol class="inline-flex items-center space-x-1 md:space-x-3">
                     <li class="inline-flex items-center">
-                        <a href="../../index.html" class="hover:text-[#D48D1D]">Home</a>
+                        <a href="../../../index.html" class="hover:text-[#D48D1D]">Home</a>
                     </li>
                     <li>
                         <div class="flex items-center">
                             <span class="mx-2">/</span>
-                            <a href="../index.html" class="hover:text-[#D48D1D]">Products</a>
+                            <a href="../../index.html" class="hover:text-[#D48D1D]">Products</a>
                         </div>
                     </li>
                     <li aria-current="page">
@@ -66,11 +124,11 @@
                 <div class="space-y-6">
                     <div class="product-image-container aspect-square rounded-3xl overflow-hidden shadow-xl">
                         <!-- Placeholder for WebP Image -->
-                        <img src="../../assets/images/placeholder-product.webp" alt="Tempered Top Coat" class="w-full h-full object-cover">
+                        <img src="../../../assets/images/placeholder-product.webp" alt="Tempered Top Coat" class="w-full h-full object-cover">
                     </div>
                     <div class="grid grid-cols-4 gap-4">
                         <div class="aspect-square rounded-xl product-image-container overflow-hidden cursor-pointer opacity-80 hover:opacity-100 transition">
-                             <img src="../../assets/images/placeholder-thumb.webp" class="w-full h-full object-cover">
+                             <img src="../../../assets/images/placeholder-thumb.webp" class="w-full h-full object-cover">
                         </div>
                         <!-- More thumbnails... -->
                     </div>
@@ -282,17 +340,13 @@
     </section>
 
     <!-- Footer -->
+    
     <footer class="py-16 bg-[#1E1611] text-white border-t border-[#2D1B13]">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center text-xs text-stone-500 uppercase tracking-widest">
-                <p>© 2026 Trinity Rose Professional. B2B Excellence.</p>
-                <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a href="../../index.html" class="hover:text-[#D48D1D]">Main Site</a>
-                    <a href="mailto:newnail001@gznewnail.com" class="hover:text-[#D48D1D]">Contact Support</a>
-                </div>
-            </div>
+        <div class="max-w-7xl mx-auto px-6 text-center text-xs text-stone-500 uppercase tracking-widest">
+            <p>© 2026 Trinity Rose Professional. All Rights Reserved.</p>
         </div>
     </footer>
+
 
 </body>
 </html>
