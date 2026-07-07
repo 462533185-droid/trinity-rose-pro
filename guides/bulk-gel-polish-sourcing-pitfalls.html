@@ -10,6 +10,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
+        :root {
+          --nn-black: #111111;
+          --nn-dark: #1d1d1d;
+          --nn-gold: #b9924d;
+          --nn-gold-light: #d8b874;
+          --nn-cream: #f8f4ec;
+          --nn-soft: #f5efe6;
+          --nn-white: #ffffff;
+          --nn-gray: #5b5b5b;
+          --nn-border: rgba(185, 146, 77, 0.24);
+          --nn-shadow: 0 22px 60px rgba(0, 0, 0, 0.08);
+        }
         body { font-family: 'Inter', sans-serif; }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
         .guide-content h2 { @apply text-3xl mb-6 mt-12 border-b border-[#F1EAE0] pb-2; }
@@ -19,6 +31,18 @@
         .guide-content table { @apply w-full mb-8 border-collapse; }
         .guide-content th { @apply bg-[#FAF6EE] text-left p-4 border border-[#F1EAE0] font-bold text-sm uppercase tracking-widest; }
         .guide-content td { @apply p-4 border border-[#F1EAE0] text-sm; }
+
+        .nn-logo { display: flex; align-items: center; gap: 12px; font-weight: 900; letter-spacing: 1px; font-size: 22px; }
+        .nn-logo-mark { width: 42px; height: 42px; border-radius: 50%; background: linear-gradient(135deg, var(--nn-black), #3a3a3a); color: var(--nn-gold-light); display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 16px; }
+        .nn-nav { display: flex; align-items: center; gap: 28px; color: #333; font-size: 14px; font-weight: 700; }
+        .nn-nav a:hover { color: var(--nn-gold); }
+        .dropdown { position: relative; }
+        .dropdown-content { display: none; position: absolute; background: var(--nn-white); min-width: 260px; box-shadow: var(--nn-shadow); border: 1px solid var(--nn-border); border-radius: 12px; padding: 10px 0; top: 100%; left: 0; }
+        .dropdown:hover .dropdown-content { display: block; }
+        .dropdown-content a { color: var(--nn-black); padding: 10px 20px; display: block; font-size: 13px; transition: 0.2s; text-transform: none; font-weight: normal; }
+        .dropdown-content a:hover { background: var(--nn-soft); color: var(--nn-gold); }
+        .nn-header-btn { padding: 12px 22px; border-radius: 999px; background: var(--nn-black); color: var(--nn-white); font-weight: 800; font-size: 14px; }
+        @media (max-width: 1180px) { .nn-nav { display: none; } }
     </style>
 
     <!-- Structured Data: Article -->
