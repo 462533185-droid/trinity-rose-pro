@@ -1,1642 +1,2561 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NEW NAIL | Private Label Nail Product Manufacturer</title>
-  <meta name="description" content="NEW NAIL is a professional private label nail product manufacturer offering gel polish, builder gel, acrylic powder, nail polish, nail art gel and salon supply OEM/ODM solutions." />
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GZ New Nail | OEM Nail Product Factory & Product Catalog</title>
+  <meta name="description" content="Explore GZ New Nail product catalog: gel polish, base top, nail art gel, acrylic dipping, nail prep, nail polish, builder gel, nail care, machines, salon products and private label kits.">
   <style>
     :root {
-      --nn-black: #111111;
-      --nn-dark: #1d1d1d;
-      --nn-gold: #b9924d;
-      --nn-gold-light: #d8b874;
-      --nn-cream: #f8f4ec;
-      --nn-soft: #f5efe6;
-      --nn-white: #ffffff;
-      --nn-gray: #5b5b5b;
-      --nn-border: rgba(185, 146, 77, 0.24);
-      --nn-shadow: 0 22px 60px rgba(0, 0, 0, 0.08);
+      --ink: #151515;
+      --muted: #62646b;
+      --paper: #ffffff;
+      --soft: #f6f1ec;
+      --line: #e6d9cf;
+      --rose: #b65b70;
+      --rose-deep: #7e3148;
+      --champagne: #c59a5b;
+      --sage: #6f8375;
+      --blue: #506a84;
+      --shadow: 0 18px 46px rgba(21, 21, 21, 0.10);
+      --radius: 8px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--nn-black);
-      background: var(--nn-white);
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      letter-spacing: 0;
     }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button, input, select, textarea { font: inherit; }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    .nn-container {
-      width: min(1280px, calc(100% - 40px));
+    .wrap {
+      width: min(1200px, calc(100% - 40px));
       margin: 0 auto;
     }
 
-    .nn-topbar {
-      background: var(--nn-black);
-      color: #e9e1d2;
+    .topbar {
+      background: #151515;
+      color: rgba(255,255,255,.86);
+      padding: 9px 0;
       font-size: 13px;
-      letter-spacing: 0.2px;
-      padding: 10px 0;
     }
-
-    .nn-topbar-inner {
+    .topbar .wrap {
       display: flex;
       justify-content: space-between;
-      gap: 20px;
+      gap: 18px;
       align-items: center;
-      flex-wrap: wrap;
     }
 
-    .nn-header {
+    .nav {
       position: sticky;
       top: 0;
       z-index: 30;
-      background: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      background: rgba(255,255,255,.94);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(14px);
     }
-
-    .nn-header-inner {
-      min-height: 76px;
+    .nav .wrap {
+      min-height: 74px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 30px;
+      gap: 22px;
     }
-
-    .nn-logo {
+    .brand {
       display: flex;
       align-items: center;
       gap: 12px;
-      font-weight: 900;
-      letter-spacing: 1px;
       font-size: 22px;
-    }
-
-    .nn-logo-mark {
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--nn-black), #3a3a3a);
-      color: var(--nn-gold-light);
-      display: flex;
-      align-items: center;
-      justify-content: center;
       font-weight: 900;
-      font-size: 16px;
-    }
-
-    .nn-nav {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-      color: #333;
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    .nn-nav a:hover {
-      color: var(--nn-gold);
-    }
-
-    .dropdown { position: relative; }
-    .dropdown-content { display: none; position: absolute; background: var(--nn-white); min-width: 260px; box-shadow: var(--nn-shadow); border: 1px solid var(--nn-border); border-radius: 12px; padding: 10px 0; top: 100%; left: 0; }
-    .dropdown:hover .dropdown-content { display: block; }
-    .dropdown-content a { color: var(--nn-black); padding: 10px 20px; display: block; font-size: 13px; transition: 0.2s; text-transform: none; font-weight: normal; }
-    .dropdown-content a:hover { background: var(--nn-soft); color: var(--nn-gold); }
-
-    .nn-header-btn {
-      padding: 12px 22px;
-      border-radius: 999px;
-      background: var(--nn-black);
-      color: var(--nn-white);
-      font-weight: 800;
-      font-size: 14px;
-    }
-
-    .nn-hero {
-      position: relative;
-      min-height: 720px;
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-      background:
-        linear-gradient(115deg, rgba(17, 17, 17, 0.92) 0%, rgba(17, 17, 17, 0.76) 42%, rgba(255, 255, 255, 0.08) 100%),
-        radial-gradient(circle at 80% 20%, rgba(216, 184, 116, 0.35), transparent 32%),
-        linear-gradient(135deg, #151515, #5c5140);
-      color: var(--nn-white);
-    }
-
-    .nn-hero::after {
-      content: "";
-      position: absolute;
-      right: -160px;
-      bottom: -180px;
-      width: 620px;
-      height: 620px;
-      border-radius: 50%;
-      background: rgba(216, 184, 116, 0.14);
-      filter: blur(6px);
-    }
-
-    .nn-hero-grid {
-      position: relative;
-      z-index: 2;
-      display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      gap: 56px;
-      align-items: center;
-    }
-
-    .nn-label {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      color: var(--nn-gold-light);
-      font-size: 13px;
-      font-weight: 900;
-      letter-spacing: 2.2px;
-      text-transform: uppercase;
-      margin-bottom: 22px;
-    }
-
-    .nn-label::before {
-      content: "";
-      width: 42px;
-      height: 1px;
-      background: var(--nn-gold-light);
-    }
-
-    .nn-hero h1 {
-      font-size: clamp(42px, 5vw, 72px);
-      line-height: 1.06;
-      margin: 0 0 24px;
-      letter-spacing: -1.8px;
-      font-weight: 900;
-    }
-
-    .nn-hero p {
-      color: #e9e1d7;
-      font-size: 18px;
-      line-height: 1.78;
-      max-width: 710px;
-      margin: 0 0 34px;
-    }
-
-    
-    .nn-hero-subtitle {
-      font-size: 20px;
-      color: var(--nn-gold-light);
-      margin-bottom: 20px;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-    }
-
-    .nn-hero-actions {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-      align-items: center;
-      margin-bottom: 42px;
-    }
-
-    .nn-primary-btn,
-    .nn-secondary-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 52px;
-      border-radius: 999px;
-      padding: 0 28px;
-      font-weight: 900;
-      font-size: 15px;
-    }
-
-    .nn-primary-btn {
-      background: linear-gradient(135deg, var(--nn-gold-light), var(--nn-gold));
-      color: #141414;
-      box-shadow: 0 16px 34px rgba(216, 184, 116, 0.28);
-    }
-
-    .nn-secondary-btn {
-      border: 1px solid rgba(255, 255, 255, 0.38);
-      color: #fff;
-    }
-
-    .nn-hero-stats {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      max-width: 850px;
-    }
-
-    .nn-stat {
-      padding: 12px 20px;
-      border-radius: 12px;
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(12px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .nn-stat strong {
-      display: block;
-      font-size: 14px;
-      color: var(--nn-gold-light);
-      margin-bottom: 0;
-      font-weight: 900;
-    }
-
-    .nn-stat span {
-      display: none;
-    }
-
-    .nn-hero-card {
-      position: relative;
-      background: rgba(255, 255, 255, 0.12);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      border-radius: 36px;
-      padding: 18px 18px 22px;
-      box-shadow: 0 28px 80px rgba(0, 0, 0, 0.22);
-      backdrop-filter: blur(18px);
-      overflow: hidden;
-    }
-
-    .nn-hero-carousel {
-      position: relative;
-    }
-
-    .nn-hero-slides {
-      position: relative;
-    }
-
-    .nn-hero-slide {
-      display: none;
-      animation: nnFade 0.55s ease;
-    }
-
-    .nn-hero-slide.active {
-      display: block;
-    }
-
-    .nn-hero-image-box {
-      width: 100%;
-      height: 360px;
-      border-radius: 24px;
-      overflow: hidden;
-      background: rgba(255,255,255,0.08);
-      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
-    }
-
-    .nn-hero-slide img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center center;
-      display: block;
-    }
-
-    .nn-hero-meta {
-      padding: 18px 10px 0;
-      color: #f2ede5;
-    }
-
-    .nn-hero-meta span {
-      display: inline-block;
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--nn-gold-light);
-      margin-bottom: 8px;
-    }
-
-    .nn-hero-meta h3 {
-      margin: 0 0 10px;
-      font-size: 24px;
-      color: #fff;
-      line-height: 1.2;
-    }
-
-    .nn-hero-meta p {
-      margin: 0;
-      font-size: 14.5px;
-      line-height: 1.68;
-      color: #e7dfd3;
-    }
-
-    .nn-carousel-controls {
-      position: absolute;
-      top: 180px;
-      left: 0;
-      right: 0;
-      transform: translateY(-50%);
-      display: flex;
-      justify-content: space-between;
-      padding: 0 14px;
-      pointer-events: none;
-    }
-
-    .nn-carousel-btn {
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      border: 1px solid rgba(255,255,255,0.22);
-      background: rgba(17,17,17,0.55);
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
-      cursor: pointer;
-      pointer-events: auto;
-      transition: all 0.3s ease;
-    }
-
-    .nn-carousel-btn:hover {
-      background: rgba(185,146,77,0.88);
-      color: #111;
-    }
-
-    .nn-carousel-dots {
-      display: flex;
-      justify-content: center;
-      gap: 9px;
-      margin-top: 16px;
-    }
-
-    .nn-carousel-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.34);
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    .nn-carousel-dot.active {
-      width: 28px;
-      border-radius: 999px;
-      background: var(--nn-gold-light);
-    }
-
-    @keyframes nnFade {
-      from { opacity: 0.25; transform: translateY(8px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .nn-section {
-      padding: 96px 0;
-    }
-
-    .nn-section-head {
-      max-width: 850px;
-      margin-bottom: 46px;
-    }
-
-    .nn-section-kicker {
-      display: inline-block;
-      color: var(--nn-gold);
-      font-size: 13px;
-      letter-spacing: 2.6px;
-      font-weight: 900;
-      margin-bottom: 14px;
-      text-transform: uppercase;
-    }
-
-    .nn-section-head h2 {
-      margin: 0 0 18px;
-      font-size: clamp(32px, 3.5vw, 48px);
-      line-height: 1.14;
-      letter-spacing: -0.8px;
-      font-weight: 900;
-    }
-
-    .nn-section-head p {
-      margin: 0;
-      color: var(--nn-gray);
-      font-size: 17px;
-      line-height: 1.75;
-    }
-
-    .nn-factory {
-      background: var(--nn-white);
-    }
-
-    .nn-factory-grid {
-      display: grid;
-      grid-template-columns: 0.95fr 1.05fr;
-      gap: 34px;
-      align-items: stretch;
-    }
-
-    .nn-factory-visual {
-      min-height: 480px;
-      border-radius: 34px;
-      overflow: hidden;
-      background:
-        linear-gradient(135deg, rgba(17,17,17,0.26), rgba(185,146,77,0.24)),
-        repeating-linear-gradient(90deg, #dfd7c8 0 18px, #f6f2eb 18px 36px);
-      position: relative;
-      box-shadow: var(--nn-shadow);
-    }
-
-    .nn-factory-visual::before {
-      content: "";
-      position: absolute;
-      inset: 52px;
-      border-radius: 24px;
-      background:
-        linear-gradient(90deg, rgba(255,255,255,0.85), rgba(255,255,255,0.22)),
-        repeating-linear-gradient(0deg, transparent 0 54px, rgba(17,17,17,0.08) 54px 56px);
-      border: 1px solid rgba(255,255,255,0.8);
-    }
-
-    .nn-factory-visual::after {
-      content: "MODERN FACTORY · R&D · FILLING LINE · QC · PACKAGING";
-      position: absolute;
-      left: 34px;
-      right: 34px;
-      bottom: 34px;
-      background: rgba(17,17,17,0.86);
-      color: var(--nn-gold-light);
-      padding: 20px 22px;
-      border-radius: 18px;
-      font-weight: 900;
-      font-size: 14px;
-      letter-spacing: 1.3px;
-    }
-
-    .nn-factory-video {
-      min-height: 480px;
-      border-radius: 34px;
-      overflow: hidden;
-      position: relative;
-      box-shadow: var(--nn-shadow);
-      border: 1px solid rgba(185, 146, 77, 0.22);
-      background: #111;
-    }
-
-    .nn-factory-video video {
-      width: 100%;
-      height: 100%;
-      min-height: 480px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .nn-factory-video::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(0deg, rgba(17,17,17,0.55), rgba(17,17,17,0.04) 58%),
-        linear-gradient(90deg, rgba(17,17,17,0.26), rgba(17,17,17,0));
-      pointer-events: none;
-    }
-
-    .nn-factory-video-caption {
-      position: absolute;
-      left: 34px;
-      right: 34px;
-      bottom: 34px;
-      z-index: 2;
-      background: rgba(17,17,17,0.82);
-      color: var(--nn-gold-light);
-      padding: 20px 22px;
-      border-radius: 18px;
-      font-weight: 900;
-      font-size: 14px;
-      letter-spacing: 1.3px;
-      backdrop-filter: blur(10px);
-    }
-
-    .nn-factory-list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-    }
-
-    .nn-factory-item {
-      padding: 30px;
-      border-radius: 26px;
-      background: linear-gradient(135deg, #fff, #fbf7ef);
-      border: 1px solid var(--nn-border);
-      box-shadow: 0 16px 42px rgba(0,0,0,0.05);
-    }
-
-    .nn-factory-item strong {
-      display: block;
-      font-size: 30px;
-      color: var(--nn-black);
-      margin-bottom: 10px;
-      font-weight: 900;
-    }
-
-    .nn-factory-item span {
-      display: block;
-      color: var(--nn-gray);
-      line-height: 1.62;
-      font-size: 15px;
-      font-weight: 700;
-    }
-
-    /* Production Process Styles */
-    .nn-process { background: #111; color: #fff; }
-    .nn-process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
-    .nn-process-step { padding: 24px 18px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; text-align: center; transition: 0.3s; }
-    .nn-process-step:hover { background: rgba(255,255,255,0.08); border-color: var(--nn-gold-light); }
-    .nn-process-step i { display: block; font-size: 24px; color: var(--nn-gold-light); margin-bottom: 12px; font-weight: 900; font-style: normal; }
-    .nn-process-step span { font-size: 13px; line-height: 1.4; font-weight: 700; display: block; color: #e5dfd4; }
-
-    /* Inquiry Form Styles */
-    .nn-cta-box {
-      display: grid;
-      grid-template-columns: 0.8fr 1.2fr;
-      gap: 56px;
-      align-items: start;
-    }
-    .nn-inquiry-form { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; background: rgba(255,255,255,0.04); padding: 40px; border-radius: 32px; border: 1px solid rgba(255,255,255,0.1); }
-    .nn-form-group { display: flex; flex-direction: column; gap: 8px; }
-    .nn-form-group.full { grid-column: span 2; }
-    .nn-form-label { font-size: 12px; font-weight: 900; text-transform: uppercase; letter-spacing: 1.5px; color: var(--nn-gold-light); }
-    .nn-form-input, .nn-form-select, .nn-form-textarea { padding: 14px 18px; border-radius: 12px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: #fff; font-size: 15px; outline: none; transition: 0.3s; width: 100%; }
-    .nn-form-input:focus, .nn-form-select:focus, .nn-form-textarea:focus { border-color: var(--nn-gold-light); background: rgba(255,255,255,0.12); }
-    .nn-form-select option { background: #111; color: #fff; }
-    .nn-form-checkbox-group { display: flex; gap: 24px; flex-wrap: wrap; margin: 10px 0; }
-    .nn-checkbox-item { display: flex; align-items: center; gap: 10px; font-size: 13px; cursor: pointer; color: #e5dfd4; font-weight: 700; }
-    .nn-checkbox-item input { accent-color: var(--nn-gold-light); width: 16px; height: 16px; }
-    .nn-form-submit { margin-top: 10px; cursor: pointer; border: none; width: 100%; }
-
-    .nn-products-section {
-      background: linear-gradient(135deg, #f8f5ef 0%, #ffffff 45%, #f4efe7 100%);
-      padding: 98px 0;
-      color: #1f1f1f;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .nn-products-section::before {
-      content: "";
-      position: absolute;
-      width: 540px;
-      height: 540px;
-      right: -180px;
-      top: -220px;
-      border-radius: 50%;
-      background: rgba(185, 146, 77, 0.12);
-    }
-
-    .nn-products-container {
-      position: relative;
-      z-index: 2;
-    }
-
-    .nn-products-header {
-      display: grid;
-      grid-template-columns: 0.85fr 1.15fr;
-      gap: 46px;
-      align-items: end;
-      margin-bottom: 48px;
-    }
-
-    .nn-products-title .nn-section-label {
-      display: inline-block;
-      font-size: 13px;
-      letter-spacing: 2.8px;
-      font-weight: 900;
-      color: var(--nn-gold);
-      margin-bottom: 14px;
-      text-transform: uppercase;
-    }
-
-    .nn-products-title h2 {
-      font-size: clamp(34px, 4vw, 54px);
-      line-height: 1.08;
-      margin: 0;
-      font-weight: 900;
-      color: #151515;
-      letter-spacing: -1.2px;
-    }
-
-    .nn-products-intro p {
-      font-size: 17px;
-      line-height: 1.78;
-      color: #555;
-      margin: 0 0 20px;
-    }
-
-    .nn-products-tags {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .nn-products-tags span {
-      padding: 9px 14px;
-      border-radius: 999px;
-      background: #151515;
-      color: #d8b46a;
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: 0.4px;
-    }
-
-    .nn-products-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 22px;
-    }
-
-    .nn-product-card {
-      position: relative;
-      background: rgba(255,255,255,0.94);
-      border: 1px solid rgba(176,138,74,0.25);
-      border-radius: 24px;
-      padding: 30px 24px 24px;
-      min-height: 288px;
-      box-shadow: 0 18px 45px rgba(0,0,0,0.06);
-      overflow: hidden;
-      transition: all 0.35s ease;
-    }
-
-    .nn-product-card::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 98px;
-      height: 98px;
-      background: linear-gradient(135deg, rgba(176,138,74,0.2), rgba(176,138,74,0));
-      border-bottom-left-radius: 98px;
-    }
-
-    .nn-product-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 24px 64px rgba(0,0,0,0.1);
-      border-color: rgba(176,138,74,0.62);
-    }
-
-    .nn-product-number {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: #151515;
-      color: #d8b46a;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 13px;
-      font-weight: 900;
-      margin-bottom: 22px;
-      position: relative;
-      z-index: 2;
-    }
-
-    .nn-product-card h3 {
-      font-size: 20px;
-      line-height: 1.33;
-      margin: 0 0 14px;
-      color: #151515;
-      font-weight: 900;
-      position: relative;
-      z-index: 2;
-    }
-
-    .nn-product-card p {
-      font-size: 14.5px;
-      line-height: 1.72;
-      color: #5a5a5a;
-      margin: 0 0 20px;
-      position: relative;
-      z-index: 2;
-    }
-
-    .nn-product-card span {
-      display: block;
-      font-size: 13px;
-      line-height: 1.5;
-      color: #9b7638;
-      font-weight: 900;
-      position: relative;
-      z-index: 2;
-    }
-
-    .nn-products-bottom {
-      margin-top: 36px;
-      background: #151515;
-      border-radius: 28px;
-      padding: 32px 36px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 28px;
-      box-shadow: 0 22px 52px rgba(0,0,0,0.12);
-    }
-
-    .nn-products-bottom strong {
-      display: block;
-      font-size: 23px;
-      color: #ffffff;
-      margin-bottom: 8px;
-      font-weight: 900;
-    }
-
-    .nn-products-bottom p {
-      margin: 0;
-      color: #cfcfcf;
-      font-size: 15px;
-      line-height: 1.6;
-    }
-
-    .nn-products-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
       white-space: nowrap;
-      background: linear-gradient(135deg, #d7b56d, #a87b32);
-      color: #151515;
-      padding: 16px 30px;
-      border-radius: 999px;
-      font-weight: 900;
-      font-size: 15px;
-      transition: all 0.3s ease;
     }
-
-    .nn-products-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 26px rgba(216,180,106,0.35);
-    }
-
-    .nn-oem {
-      background: #111;
-      color: #fff;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .nn-oem::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(circle at 15% 20%, rgba(216,184,116,0.24), transparent 32%),
-        radial-gradient(circle at 85% 70%, rgba(255,255,255,0.08), transparent 30%);
-    }
-
-    .nn-oem .nn-container {
-      position: relative;
-      z-index: 2;
-    }
-
-    .nn-oem .nn-section-head h2 {
-      color: #fff;
-    }
-
-    .nn-oem .nn-section-head p {
-      color: #d8d2c7;
-    }
-
-    .nn-oem-grid {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: 14px;
-    }
-
-    .nn-oem-step {
-      padding: 24px 18px;
-      border-radius: 20px;
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.12);
-      min-height: 150px;
-    }
-
-    .nn-oem-step b {
-      display: block;
-      color: var(--nn-gold-light);
-      font-size: 18px;
-      margin-bottom: 12px;
-    }
-
-    .nn-oem-step span {
-      color: #e5dfd4;
-      line-height: 1.52;
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    .nn-quality {
-      background: #fff;
-    }
-
-    .nn-quality-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    .nn-quality-card {
-      padding: 34px;
-      border-radius: 28px;
-      background: linear-gradient(135deg, #fff, #f8f4ec);
-      border: 1px solid var(--nn-border);
-      box-shadow: 0 18px 45px rgba(0,0,0,0.05);
-    }
-
-    .nn-quality-icon {
-      width: 54px;
-      height: 54px;
-      border-radius: 17px;
-      background: #151515;
-      color: var(--nn-gold-light);
+    .mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
       display: grid;
       place-items: center;
-      font-size: 22px;
-      font-weight: 900;
-      margin-bottom: 22px;
-    }
-
-    .nn-quality-card h3 {
-      margin: 0 0 14px;
-      font-size: 23px;
-      font-weight: 900;
-    }
-
-    .nn-quality-card p {
-      margin: 0;
-      color: var(--nn-gray);
-      line-height: 1.72;
-      font-size: 15.5px;
-    }
-
-    .nn-cta {
-      padding: 84px 0;
-      background:
-        linear-gradient(135deg, rgba(17,17,17,0.92), rgba(17,17,17,0.86)),
-        linear-gradient(90deg, #c9ad75, #f8f4ec);
       color: #fff;
+      background: linear-gradient(135deg, var(--rose), var(--champagne));
+    }
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 800;
+      color: #333;
     }
 
-    .nn-cta-box {
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 12px 18px;
+      border-radius: var(--radius);
+      border: 1px solid transparent;
+      font-weight: 900;
+      font-size: 14px;
+      cursor: pointer;
+      text-align: center;
+    }
+    .btn-primary { background: var(--rose-deep); color: #fff; }
+    .btn-light { background: #fff; color: var(--ink); border-color: var(--line); }
+    .btn-soft { background: #f7e7ed; color: var(--rose-deep); border-color: #ecd0d9; }
+    .btn-dark { background: #151515; color: #fff; }
+
+    .hero {
+      min-height: 760px;
+      color: #fff;
       display: grid;
-      grid-template-columns: 1fr auto;
+      align-items: stretch;
+      position: relative;
+      overflow: hidden;
+      background: #151515;
+    }
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      background-position: center;
+      background-size: cover;
+      opacity: 0;
+      animation: heroFade 24s infinite;
+      transform: scale(1.02);
+    }
+    .hero-slide:after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(15,13,12,.90), rgba(15,13,12,.60), rgba(15,13,12,.14));
+    }
+    .hero-slide:nth-child(1) {
+      background-image: url("assets/gel-polish-bottles-variety.png");
+      opacity: 1;
+    }
+    .hero-slide:nth-child(2) {
+      background-image: url("assets/hero-factory-production.png");
+      animation-delay: 6s;
+    }
+    .hero-slide:nth-child(3) {
+      background-image: url("assets/hero-laboratory-rd.png");
+      animation-delay: 12s;
+    }
+    .hero-slide:nth-child(4) {
+      background-image: url("assets/hero-real-certificates.png");
+      animation-delay: 18s;
+    }
+    @keyframes heroFade {
+      0% { opacity: 0; transform: scale(1.02); }
+      5% { opacity: 1; transform: scale(1); }
+      22% { opacity: 1; transform: scale(1); }
+      29% { opacity: 0; transform: scale(1.02); }
+      100% { opacity: 0; transform: scale(1.02); }
+    }
+    .hero .wrap {
+      display: grid;
+      grid-template-columns: 1fr .72fr;
       gap: 36px;
       align-items: center;
+      padding: 88px 0 54px;
+      position: relative;
+      z-index: 2;
+    }
+    .eyebrow {
+      display: inline-flex;
+      padding: 7px 12px;
+      border: 1px solid rgba(255,255,255,.32);
+      border-radius: 999px;
+      background: rgba(255,255,255,.12);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .8px;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      margin: 22px 0 18px;
+      max-width: 760px;
+      font-size: clamp(42px, 6vw, 76px);
+      line-height: .98;
+    }
+    .hero-copy p {
+      max-width: 690px;
+      color: rgba(255,255,255,.88);
+      font-size: 18px;
+      line-height: 1.72;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 30px 0;
+    }
+    .hero-shelf {
+      align-self: end;
+      background: rgba(255,255,255,.13);
+      border: 1px solid rgba(255,255,255,.26);
+      backdrop-filter: blur(16px);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: 0 24px 70px rgba(0,0,0,.22);
+    }
+    .shelf-title {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 14px;
+      font-weight: 900;
+    }
+    .shelf-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .shelf-item {
+      min-height: 94px;
+      padding: 13px;
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.94);
+      color: var(--ink);
+    }
+    .shelf-item strong {
+      display: block;
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+    .shelf-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.4;
+    }
+    .trust-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .trust {
+      min-height: 88px;
+      padding: 15px;
+      border: 1px solid rgba(255,255,255,.24);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.12);
+    }
+    .trust strong {
+      display: block;
+      font-size: 21px;
+      margin-bottom: 5px;
+    }
+    .trust span {
+      color: rgba(255,255,255,.78);
+      font-size: 13px;
+      line-height: 1.4;
+    }
+    .carousel-dots {
+      display: flex;
+      gap: 9px;
+      align-items: center;
+      margin-top: 22px;
+    }
+    .carousel-dots span {
+      width: 42px;
+      height: 4px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.32);
+      overflow: hidden;
+      position: relative;
+    }
+    .carousel-dots span:after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: #fff;
+      transform: scaleX(0);
+      transform-origin: left;
+      animation: dotFill 24s infinite;
+    }
+    .carousel-dots span:nth-child(2):after { animation-delay: 6s; }
+    .carousel-dots span:nth-child(3):after { animation-delay: 12s; }
+    .carousel-dots span:nth-child(4):after { animation-delay: 18s; }
+    @keyframes dotFill {
+      0%, 29%, 100% { transform: scaleX(0); }
+      5%, 22% { transform: scaleX(1); }
     }
 
-    .nn-cta h2 {
-      margin: 0 0 16px;
-      font-size: clamp(32px, 4vw, 52px);
-      line-height: 1.12;
+    section { padding: 86px 0; }
+    .soft { background: var(--soft); }
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 26px;
+      align-items: end;
+      margin-bottom: 30px;
+    }
+    .section-head > div:first-child { max-width: 760px; }
+    .label {
+      color: var(--rose-deep);
+      font-size: 13px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .8px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: clamp(30px, 4vw, 50px);
+      line-height: 1.08;
+      margin-bottom: 14px;
+    }
+    .intro, .section-head p {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .category-nav {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding: 0 0 14px;
+      margin-bottom: 18px;
+    }
+    .video-section {
+      background:
+        linear-gradient(180deg, #fff 0%, #f7f2ee 100%);
+      padding-top: 78px;
+    }
+    .video-layout {
+      display: grid;
+      grid-template-columns: .72fr 1.28fr;
+      gap: 28px;
+      align-items: center;
+    }
+    .video-copy {
+      padding: 10px 0;
+    }
+    .video-points {
+      display: grid;
+      gap: 12px;
+      margin-top: 22px;
+    }
+    .video-points div {
+      padding: 14px 15px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.82);
+      box-shadow: 0 10px 26px rgba(0,0,0,.035);
+    }
+    .video-points strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 15px;
+    }
+    .video-points span {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .video-frame {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #111;
+      border: 1px solid rgba(197,154,91,.28);
+      box-shadow: 0 28px 70px rgba(21, 21, 21, .18);
+    }
+    .video-frame:before {
+      content: "";
+      display: block;
+      aspect-ratio: 16 / 9;
+    }
+    .video-frame video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      background: #111;
+    }
+    .video-caption {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: center;
+      padding: 14px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .video-caption strong {
+      color: var(--ink);
+      font-size: 14px;
+    }
+    .category-nav a {
+      flex: 0 0 auto;
+      padding: 10px 13px;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid var(--line);
+      color: #333;
+      font-size: 13px;
       font-weight: 900;
     }
 
-    .nn-cta p {
-      margin: 0;
-      color: #e5dfd4;
-      font-size: 17px;
-      line-height: 1.72;
-      max-width: 760px;
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    .category-card, .product-card, .factory-card, .cert-card, .quote-panel {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 10px 30px rgba(0,0,0,.045);
+    }
+    .category-card {
+      min-height: 190px;
+      padding: 19px;
+      position: relative;
+      overflow: hidden;
+    }
+    .category-card:before {
+      content: "";
+      position: absolute;
+      right: -28px;
+      bottom: -34px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: rgba(182,91,112,.12);
+    }
+    .category-card h3 {
+      font-size: 19px;
+      line-height: 1.2;
+      margin-bottom: 10px;
+      position: relative;
+    }
+    .category-card p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
+      margin-bottom: 14px;
+      position: relative;
+    }
+    .mini-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      position: relative;
+    }
+    .mini-tags span {
+      padding: 7px 8px;
+      border-radius: 999px;
+      background: #faf4f1;
+      border: 1px solid #eadbd2;
+      font-size: 11px;
+      font-weight: 800;
+      color: #3e3e3e;
     }
 
-    .nn-footer {
-      background: #090909;
-      color: #bdbdbd;
-      padding: 32px 0;
+    .directory {
+      display: grid;
+      gap: 18px;
+    }
+    .directory-block {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 18px;
+      align-items: stretch;
+      scroll-margin-top: 96px;
+    }
+    .directory-title {
+      padding: 22px;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, #151515, #3c2a2f);
+      color: #fff;
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--shadow);
+    }
+    .directory-title h3 {
+      font-size: 24px;
+      line-height: 1.18;
+      margin-bottom: 12px;
+    }
+    .directory-title p {
+      color: rgba(255,255,255,.74);
+      line-height: 1.55;
+      font-size: 14px;
+      margin: 0;
+    }
+    .directory-title a {
+      color: #fff;
+      font-weight: 900;
+      font-size: 13px;
+      margin-top: 18px;
+    }
+    .subcategory-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .subcategory-card {
+      padding: 17px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: #fff;
+      box-shadow: 0 10px 28px rgba(0,0,0,.04);
+    }
+    .subcategory-card h4 {
+      margin: 0 0 11px;
+      font-size: 17px;
+      line-height: 1.24;
+    }
+    .product-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+    .product-tags span {
+      padding: 7px 9px;
+      border-radius: 999px;
+      background: #faf4f1;
+      border: 1px solid #eadbd2;
+      color: #3f3f3f;
+      font-size: 12px;
+      line-height: 1.2;
+      font-weight: 750;
+    }
+    .directory-note {
+      margin-top: 20px;
+      padding: 16px 18px;
+      border-radius: var(--radius);
+      border: 1px solid #e5d3c8;
+      background: #fffaf6;
+      color: var(--muted);
+      line-height: 1.65;
       font-size: 14px;
     }
 
-    .nn-footer-inner {
+    .featured-layout {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+    .feature-visual {
+      min-height: 610px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: url("assets/packaging-workers.png") center / cover;
+      position: relative;
+      box-shadow: var(--shadow);
+    }
+    .feature-visual:after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(0,0,0,.52), transparent 62%);
+    }
+    .visual-caption {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      bottom: 24px;
+      z-index: 2;
+      color: #fff;
+    }
+    .visual-caption strong {
+      display: block;
+      font-size: 27px;
+      margin-bottom: 8px;
+    }
+    .visual-caption span {
+      color: rgba(255,255,255,.82);
+      line-height: 1.6;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .product-card { overflow: hidden; }
+    .product-card img {
+      width: 100%;
+      height: 185px;
+      object-fit: cover;
+    }
+    .product-body { padding: 19px; }
+    .product-body h3 {
+      font-size: 21px;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+    .product-body p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+    .spec-list {
+      display: grid;
+      gap: 8px;
+      margin: 15px 0 16px;
+    }
+    .spec-list span {
+      display: block;
+      padding: 9px 10px;
+      border-radius: var(--radius);
+      background: #faf7f3;
+      color: #333;
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .factory-proof {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    .factory-card { overflow: hidden; }
+    .factory-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .factory-card div { padding: 18px; }
+    .factory-card h3 {
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+    .factory-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .cert-layout {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 22px;
+      align-items: start;
+    }
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+    .cert-card {
+      padding: 19px;
+      min-height: 138px;
+    }
+    .cert-card strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 17px;
+    }
+    .cert-card span {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.52;
+    }
+
+    .quote-layout {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 22px;
+      align-items: start;
+    }
+    .quote-panel { padding: 24px; }
+    .quote-points {
+      display: grid;
+      gap: 12px;
+      margin-top: 22px;
+    }
+    .quote-points div {
+      padding: 15px;
+      border-radius: var(--radius);
+      background: #fff;
+      border: 1px solid var(--line);
+    }
+    .quote-points strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .quote-points span {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .field-full { grid-column: 1 / -1; }
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+    input, select, textarea {
+      width: 100%;
+      min-height: 48px;
+      padding: 12px 13px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+    }
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    footer {
+      background: #151515;
+      color: rgba(255,255,255,.72);
+      padding: 34px 0;
+      font-size: 13px;
+    }
+    footer .wrap {
       display: flex;
       justify-content: space-between;
       gap: 20px;
+      align-items: center;
+    }
+
+    @media (max-width: 1080px) {
+      .nav-links { display: none; }
+      .hero .wrap,
+      .featured-layout,
+      .cert-layout,
+      .quote-layout,
+      .video-layout { grid-template-columns: 1fr; }
+      .catalog-grid,
+      .factory-proof { grid-template-columns: repeat(2, 1fr); }
+      .directory-block { grid-template-columns: 1fr; }
+      .subcategory-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 720px) {
+      .topbar .wrap,
+      .section-head,
+      footer .wrap { display: block; }
+      .hero { min-height: auto; }
+      .hero .wrap { padding: 72px 0 36px; }
+      .hero-copy p { font-size: 16px; }
+      .trust-row,
+      .shelf-grid,
+      .catalog-grid,
+      .subcategory-grid,
+      .product-grid,
+      .factory-proof,
+      .cert-grid,
+      .form-grid { grid-template-columns: 1fr; }
+      .feature-visual { min-height: 440px; }
+      .video-section { padding-top: 58px; }
+      .video-caption { display: block; }
+      section { padding: 62px 0; }
+      .btn { width: 100%; }
+    }
+    /* Smart catalog */
+    #catalog .category-nav,
+    #catalog .directory,
+    #catalog .directory-note { display: none; }
+    .catalog-tools {
+      display: grid;
+      grid-template-columns: minmax(260px, 1fr) auto;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 18px;
+      padding: 14px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      position: sticky;
+      top: 78px;
+      z-index: 8;
+      box-shadow: 0 12px 34px rgba(0,0,0,.06);
+    }
+    .catalog-search {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+      border: 1px solid #d8d4d1;
+      padding: 0 14px;
+      background: #fff;
+      border-radius: 6px;
+    }
+    .catalog-search svg { width: 19px; flex: 0 0 auto; color: #6f6762; }
+    .catalog-search input {
+      width: 100%;
+      height: 46px;
+      border: 0;
+      outline: 0;
+      font: inherit;
+      color: var(--ink);
+      background: transparent;
+    }
+    .catalog-count {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+      white-space: nowrap;
+      padding-right: 6px;
+    }
+    .smart-catalog {
+      display: grid;
+      grid-template-columns: 290px minmax(0, 1fr);
+      min-height: 620px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 18px 50px rgba(0,0,0,.055);
+    }
+    .catalog-sidebar {
+      padding: 16px;
+      background: #171717;
+      color: #fff;
+    }
+    .catalog-sidebar-label {
+      padding: 7px 10px 13px;
+      color: #bea996;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+    }
+    .catalog-tabs {
+      display: grid;
+      gap: 4px;
+    }
+    .catalog-tab {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 28px 1fr auto;
+      gap: 8px;
+      align-items: center;
+      padding: 11px 10px;
+      border: 0;
+      border-radius: 5px;
+      background: transparent;
+      color: rgba(255,255,255,.76);
+      font: inherit;
+      font-size: 13px;
+      font-weight: 800;
+      text-align: left;
+      cursor: pointer;
+    }
+    .catalog-tab:hover,
+    .catalog-tab.active { background: #fff; color: #171717; }
+    .catalog-tab .tab-index {
+      color: #b65b70;
+      font-size: 11px;
+      font-weight: 950;
+    }
+    .catalog-tab .tab-count {
+      min-width: 26px;
+      text-align: center;
+      padding: 3px 6px;
+      border-radius: 20px;
+      color: inherit;
+      background: rgba(255,255,255,.11);
+      font-size: 10px;
+    }
+    .catalog-tab.active .tab-count { background: #f2e7e3; }
+    .catalog-main { padding: 30px; min-width: 0; }
+    .catalog-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      padding-bottom: 22px;
+      border-bottom: 1px solid var(--line);
+    }
+    .catalog-heading h3 { margin: 5px 0 7px; font-size: 29px; line-height: 1.15; }
+    .catalog-heading p { margin: 0; color: var(--muted); line-height: 1.55; max-width: 690px; }
+    .catalog-heading .btn { flex: 0 0 auto; }
+    .subcategory-list { display: grid; margin-top: 4px; }
+    .smart-subcategory {
+      display: grid;
+      grid-template-columns: 210px minmax(0, 1fr);
+      gap: 22px;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .smart-subcategory:last-child { border-bottom: 0; }
+    .subcategory-name h4 { margin: 0 0 6px; font-size: 17px; line-height: 1.3; }
+    .subcategory-name span { color: #9a8d84; font-size: 12px; font-weight: 800; }
+    .smart-products { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+    .smart-product {
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 12px;
+      border: 1px solid #e4dfdc;
+      border-radius: 5px;
+      color: #252321;
+      background: #fff;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 800;
+      text-align: left;
+      cursor: pointer;
+    }
+    .smart-product:after { content: "+"; color: #b65b70; font-size: 18px; font-weight: 500; }
+    .smart-product:hover { border-color: #b65b70; background: #fff9f7; }
+    .smart-product.catalog-listed {
+      width: 100%;
+      min-height: 76px;
+      justify-content: flex-start;
+      padding: 8px;
+      border-color: #c9a38d;
+      background: #fffaf7;
+    }
+    .smart-product.catalog-listed:after {
+      content: "View";
+      margin-left: auto;
+      padding-right: 5px;
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    .smart-product.catalog-listed img {
+      width: 58px;
+      height: 58px;
+      flex: 0 0 58px;
+      object-fit: contain;
+      border-radius: 3px;
+      background: #fff;
+      border: 1px solid #eee7e2;
+    }
+    .smart-product.catalog-listed span { display: block; min-width: 0; }
+    .smart-product.catalog-listed small {
+      display: block;
+      margin-bottom: 4px;
+      color: #b65b70;
+      font-size: 9px;
+      font-weight: 950;
+      text-transform: uppercase;
+    }
+    .smart-product.catalog-listed strong {
+      display: block;
+      margin-top: 4px;
+      color: #151312;
+      font-size: 11px;
+      line-height: 1.25;
+    }
+    .catalog-listed-price {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 6px;
+      padding: 4px 7px;
+      border: 1px solid #e1c6b6;
+      border-radius: 3px;
+      background: #fff;
+      color: #9b4559;
+      font-size: 10px;
+      font-weight: 950;
+      font-style: normal;
+      line-height: 1.2;
+    }
+    .listed-category-node {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: 190px minmax(0, 1fr);
+      gap: 14px;
+      align-items: stretch;
+      padding: 12px;
+      border: 1px solid #e2d7d1;
+      border-radius: 6px;
+      background: #fff;
+    }
+    .tertiary-category-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 12px;
+      border-left: 3px solid #b65b70;
+      background: #faf6f3;
+    }
+    .tertiary-category-title small {
+      color: #9a8c83;
+      font-size: 9px;
+      font-weight: 950;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    .tertiary-category-title strong { font-size: 14px; line-height: 1.35; }
+    .factory-price-box {
+      margin: 12px 0 16px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+      padding: 12px 14px;
+      border: 1px solid #e1c6b6;
+      border-radius: 5px;
+      background: linear-gradient(135deg, #fffaf7, #fff);
+    }
+    .factory-price-box small {
+      display: block;
+      margin-bottom: 3px;
+      color: #9b8b82;
+      font-size: 10px;
+      font-weight: 950;
+      text-transform: uppercase;
+    }
+    .factory-price-box strong {
+      color: #171717;
+      font-size: 18px;
+      line-height: 1.2;
+    }
+    .factory-price-box span {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 750;
+      text-align: right;
+      line-height: 1.35;
+    }
+    .catalog-empty { padding: 70px 20px; text-align: center; color: var(--muted); }
+    .catalog-mobile-tabs { display: none; }
+    .selected-product-note {
+      display: none;
+      margin: 0 0 14px;
+      padding: 12px 14px;
+      border-left: 3px solid #b65b70;
+      background: #fff8f5;
+      color: #4c4541;
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .selected-product-note.visible { display: block; }
+    .listed-product {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: 220px minmax(0, 1fr);
+      border: 1px solid #d9d1cc;
+      border-radius: 7px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 14px 34px rgba(0,0,0,.06);
+    }
+    .listed-product-media {
+      position: relative;
+      min-height: 300px;
+      background: #fff;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .listed-product-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+    .listed-product-badge {
+      position: absolute;
+      left: 12px;
+      top: 12px;
+      padding: 6px 9px;
+      border-radius: 3px;
+      background: #171717;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    .listed-product-body { padding: 22px; }
+    .listed-product-body h5 {
+      margin: 0 0 10px;
+      font-size: 21px;
+      line-height: 1.3;
+    }
+    .listed-product-body > p {
+      margin: 0 0 15px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    .listed-product-features {
+      display: flex;
       flex-wrap: wrap;
+      gap: 7px;
+      margin: 0 0 16px;
     }
-
-    @media (max-width: 1180px) {
-      .nn-products-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .nn-oem-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      .nn-nav {
-        display: none;
-      }
+    .listed-product-features span {
+      padding: 6px 9px;
+      border: 1px solid #e2d7d1;
+      border-radius: 3px;
+      background: #fff9f6;
+      color: #514944;
+      font-size: 11px;
+      font-weight: 850;
     }
-
+    .product-specs {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 17px;
+    }
+    .product-specs div { padding: 12px 10px 12px 0; }
+    .product-specs small {
+      display: block;
+      color: #9b8d84;
+      font-size: 10px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .product-specs strong { font-size: 12px; line-height: 1.35; }
+    .listed-product-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .listed-product-actions .btn { min-height: 42px; padding: 11px 15px; font-size: 12px; }
+    .listed-product-actions .smart-product {
+      width: auto;
+      display: inline-flex;
+      border-radius: 4px;
+      text-align: center;
+    }
+    .listed-product-actions .smart-product:after { display: none; }
+    .product-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: rgba(12,12,12,.72);
+    }
+    .product-modal.open { display: flex; }
+    .product-modal-panel {
+      width: min(1120px, 100%);
+      max-height: calc(100vh - 48px);
+      overflow: auto;
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(340px, .9fr) minmax(0, 1.1fr);
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 30px 90px rgba(0,0,0,.32);
+    }
+    .product-modal-image {
+      min-height: 680px;
+      padding: 24px;
+      background: #f7f4f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .product-modal-image img {
+      width: 100%;
+      max-height: 660px;
+      object-fit: contain;
+      display: block;
+    }
+    .product-modal-content { padding: 42px; }
+    .product-modal-content h2 { margin: 8px 0 14px; font-size: 32px; line-height: 1.16; }
+    .product-modal-content > p { color: var(--muted); line-height: 1.7; }
+    .product-modal-close {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      z-index: 2;
+      width: 38px;
+      height: 38px;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      background: #fff;
+      color: #171717;
+      font-size: 25px;
+      line-height: 1;
+      cursor: pointer;
+    }
+    .detail-table {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin: 22px 0;
+      border-top: 1px solid var(--line);
+      border-left: 1px solid var(--line);
+    }
+    .detail-table div {
+      padding: 12px 14px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .detail-table small { display: block; color: #92867f; font-size: 10px; font-weight: 900; text-transform: uppercase; margin-bottom: 4px; }
+    .detail-table strong { font-size: 13px; }
+    .detail-section { margin: 22px 0; }
+    .detail-section h3 { margin: 0 0 10px; font-size: 17px; }
+    .detail-section ul, .detail-section ol { margin: 0; padding-left: 20px; color: var(--muted); line-height: 1.75; font-size: 13px; }
+    body.modal-open { overflow: hidden; }
+    .upload-product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .upload-product-card {
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 12px 34px rgba(0,0,0,.05);
+    }
+    .mini-carousel {
+      position: relative;
+      aspect-ratio: 1 / 1;
+      background: #f7f5f3;
+      overflow: hidden;
+    }
+    .mini-carousel img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: none;
+    }
+    .mini-carousel img.active { display: block; }
+    .zoomable-media {
+      position: relative;
+      overflow: hidden;
+      cursor: zoom-in;
+      background: #fff;
+    }
+    .zoomable-media:after {
+      content: "Hover to zoom";
+      position: absolute;
+      right: 12px;
+      top: 12px;
+      z-index: 4;
+      padding: 7px 10px;
+      border: 1px solid rgba(0,0,0,.12);
+      border-radius: 3px;
+      background: rgba(255,255,255,.92);
+      color: #171717;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: .02em;
+      text-transform: uppercase;
+      box-shadow: 0 8px 22px rgba(0,0,0,.12);
+      pointer-events: none;
+      opacity: .88;
+    }
+    .zoomable-media.is-zooming:after { content: "Click to lock"; }
+    .zoomable-media.zoom-locked:after { content: "Zoom locked"; background: #171717; color: #fff; }
+    .zoomable-media img,
+    .product-card img {
+      transition: transform .18s ease, transform-origin .05s linear;
+      transform-origin: var(--zoom-x, 50%) var(--zoom-y, 50%);
+      will-change: transform, transform-origin;
+    }
+    .zoomable-media.is-zooming img.active,
+    .listed-product-media.zoomable-media.is-zooming img,
+    .product-modal-image.zoomable-media.is-zooming img {
+      transform: scale(2.25);
+    }
+    .detail-carousel.zoomable-media.is-zooming img.active {
+      transform: scale(2.15);
+    }
+    .zoomable-media.zoom-locked { cursor: zoom-out; }
+    .zoomable-media.zoom-locked img.active,
+    .listed-product-media.zoomable-media.zoom-locked img,
+    .product-modal-image.zoomable-media.zoom-locked img {
+      transform: scale(2.25);
+    }
+    .carousel-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(0,0,0,.14);
+      border-radius: 50%;
+      background: rgba(255,255,255,.94);
+      color: #171717;
+      font-size: 20px;
+      cursor: pointer;
+      z-index: 2;
+    }
+    .carousel-arrow.prev { left: 10px; }
+    .carousel-arrow.next { right: 10px; }
+    .carousel-dots {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      z-index: 2;
+    }
+    .carousel-dots button {
+      width: 8px;
+      height: 8px;
+      padding: 0;
+      border: 1px solid #171717;
+      border-radius: 50%;
+      background: #fff;
+      cursor: pointer;
+    }
+    .carousel-dots button.active { background: #171717; }
+    .upload-product-body { padding: 19px; }
+    .upload-product-body h3 { margin: 7px 0 9px; font-size: 20px; line-height: 1.25; }
+    .upload-product-body p { margin: 0 0 15px; color: var(--muted); font-size: 13px; line-height: 1.6; min-height: 62px; }
+    .customization-strip {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      margin: 20px 0;
+      border-top: 1px solid var(--line);
+      border-left: 1px solid var(--line);
+    }
+    .customization-strip div {
+      padding: 12px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      text-align: center;
+    }
+    .customization-strip strong { display: block; font-size: 12px; margin-bottom: 3px; }
+    .customization-strip span { color: var(--muted); font-size: 10px; line-height: 1.35; }
+    .catalog-product-modal .product-modal-panel { grid-template-columns: minmax(380px, .95fr) minmax(0, 1.05fr); }
+    .detail-carousel { position: relative; width: 100%; }
+    .detail-carousel img { width: 100%; max-height: 600px; object-fit: contain; display: none; }
+    .detail-carousel img.active { display: block; }
     @media (max-width: 900px) {
-      .nn-hero {
-        min-height: auto;
-        padding: 80px 0;
+      .catalog-tools { position: static; grid-template-columns: 1fr; }
+      .catalog-count { padding: 0 2px; }
+      .smart-catalog { grid-template-columns: 1fr; min-height: 0; overflow: visible; }
+      .catalog-sidebar { display: none; }
+      .catalog-mobile-tabs {
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        padding: 12px;
+        background: #171717;
+        scrollbar-width: thin;
       }
-
-      .nn-hero-grid,
-      .nn-factory-grid,
-      .nn-products-header,
-      .nn-cta-box {
-        grid-template-columns: 1fr;
-      }
-
-      .nn-hero-card {
-        display: none;
-      }
-
-      .nn-quality-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .nn-factory-list {
-        grid-template-columns: 1fr;
-      }
-      .nn-factory-video,
-      .nn-factory-video video {
-        min-height: 300px;
-      }
-
-      .nn-factory-video-caption {
-        left: 18px;
-        right: 18px;
-        bottom: 18px;
+      .catalog-mobile-tabs button {
+        flex: 0 0 auto;
+        padding: 9px 12px;
+        border: 1px solid rgba(255,255,255,.22);
+        border-radius: 4px;
+        background: transparent;
+        color: #fff;
+        font: inherit;
         font-size: 12px;
-        line-height: 1.5;
+        font-weight: 850;
       }
-
+      .catalog-mobile-tabs button.active { background: #fff; color: #171717; }
+      .catalog-main { padding: 22px 18px; }
+      .catalog-heading { display: block; }
+      .catalog-heading .btn { margin-top: 16px; }
+      .smart-subcategory { grid-template-columns: 1fr; gap: 12px; }
+      .product-modal-panel { grid-template-columns: 1fr; }
+      .catalog-product-modal .product-modal-panel { grid-template-columns: 1fr; }
+      .product-modal-image { min-height: 360px; }
+      .product-modal-content { padding: 28px 22px; }
+      .upload-product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .customization-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
-
-    @media (max-width: 680px) {
-      .nn-container {
-        width: min(100% - 28px, 1280px);
-      }
-
-      .nn-topbar-inner {
-        font-size: 12px;
-      }
-
-      .nn-header-inner {
-        min-height: 68px;
-      }
-
-      .nn-header-btn {
-        display: none;
-      }
-
-      .nn-hero-stats,
-      .nn-products-grid,
-      .nn-oem-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .nn-hero-image-box {
-        height: 250px;
-      }
-
-      .nn-section,
-      .nn-products-section {
-        padding: 64px 0;
-      }
-
-      .nn-products-bottom {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .nn-products-btn,
-      .nn-primary-btn,
-      .nn-secondary-btn {
-        width: 100%;
-      }
+    @media (max-width: 560px) {
+      .smart-products { grid-template-columns: 1fr; }
+      .listed-category-node { grid-template-columns: 1fr; }
+      .factory-price-box { grid-template-columns: 1fr; }
+      .factory-price-box span { text-align: left; }
+      .catalog-heading h3 { font-size: 24px; }
+      .listed-product { grid-template-columns: 1fr; }
+      .listed-product-media { min-height: 230px; }
+      .product-specs { grid-template-columns: repeat(2, 1fr); }
+      .upload-product-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
-
 <body>
-
-  <div class="nn-topbar">
-    <div class="nn-container nn-topbar-inner">
-      <div>Private Label Nail Product Manufacturer for Global Beauty Brands</div>
-      <div>OEM / ODM · Factory Direct Supply · Custom Formula & Packaging</div>
+  <div class="topbar">
+    <div class="wrap">
+      <span>OEM/ODM nail product factory for private label brands, distributors and salon chains</span>
+      <span>Email: sales@gznewnail.com | WhatsApp: +8618686858175</span>
     </div>
   </div>
 
-  <header class="nn-header">
-    <div class="nn-container nn-header-inner">
-      <a href="#" class="nn-logo">
-        <span class="nn-logo-mark">NN</span>
-        <span>NEW NAIL</span>
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="#home" aria-label="GZ New Nail home">
+        <span class="mark">N</span>
+        <span>GZ New Nail</span>
       </a>
+      <div class="nav-links">
+        <a href="#catalog">Product Catalog</a>
+        <a href="#featured">Featured Products</a>
+        <a href="#factory">Factory</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#quote">Request Quote</a>
+      </div>
+      <a class="btn btn-primary" href="#quote">Get Catalog & Quote</a>
+    </div>
+  </nav>
 
-      <nav class="nn-nav">
-        <div class="dropdown">
-            <a href="#products">Product Systems</a>
-            <div class="dropdown-content">
-                <a href="products/private-label-gel-polish/">Private Label Gel Polish</a>
-                <a href="products/function-gel/">Functional Gel</a>
-                <a href="products/uv-gel-painting/">UV Gel</a>
-                <a href="products/acrylic-dipping-system/">Acrylic&Dipping Nail System</a>
-                <a href="products/remove-clean/">Remove&Clean</a>
-                <a href="products/nail-polish-system/">Nail Polish System</a>
-                <a href="products/builder-extension-gel/">Builder Gel & Extension Gel</a>
-                <a href="products/nail-care/">Nail Care</a>
-                <a href="products/machine-tools/">Machine&Tools</a>
-                <a href="products/salon-products/">Salon Products</a>
-                <a href="about-us/">About us -OEM / ODM Service</a>
-            </div>
+  <header id="home" class="hero">
+    <div class="hero-slide" aria-hidden="true"></div>
+    <div class="hero-slide" aria-hidden="true"></div>
+    <div class="hero-slide" aria-hidden="true"></div>
+    <div class="hero-slide" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="eyebrow">Product Catalog · Real Factory Production · R&amp;D Lab · Certificate Files</span>
+        <h1>Launch Your Nail Product Line from One Factory</h1>
+        <p>
+          Browse our full nail product catalog and choose the product systems you want to develop.
+          We support gel polish, base/top, nail art, acrylic, dipping, prep liquids, nail polish,
+          builder gel, nail care, salon tools, kits, private label packaging and export documents.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#catalog">Browse Product Catalog</a>
+          <a class="btn btn-light" href="#featured">View Featured Products</a>
         </div>
-        <a href="#oem">OEM/ODM Service</a>
-        <a href="#factory">Factory Strength</a>
-        <a href="#quality">QC & Documents</a>
-        <a href="#contact">Request Quote</a>
-      </nav>
+        <div class="trust-row">
+          <div class="trust"><strong>10,000+ sqm</strong><span>Factory area for production, filling, packing and warehouse</span></div>
+          <div class="trust"><strong>10,000+ Colors</strong><span>Color library and custom collection development</span></div>
+          <div class="trust"><strong>OEM/ODM</strong><span>Formula, packaging, label, box and kit support</span></div>
+          <div class="trust"><strong>EU/US Files</strong><span>SDS, COA, ingredient list and testing coordination</span></div>
+        </div>
+        <div class="carousel-dots" aria-label="Hero carousel slides">
+          <span title="Product catalog"></span>
+          <span title="Factory production"></span>
+          <span title="R&D laboratory"></span>
+          <span title="Certificate files"></span>
+        </div>
+      </div>
 
-      <a href="#contact" class="nn-header-btn">Request Quote</a>
+      <aside class="hero-shelf" aria-label="Quick product shelf">
+        <div class="shelf-title">
+          <span>Quick Product Shelf</span>
+          <a href="#catalog">View All</a>
+        </div>
+        <div class="shelf-grid">
+          <div class="shelf-item"><strong>Gel Polish System</strong><span>Color gel, cat eye, glitter, platinum, painting gel</span></div>
+          <div class="shelf-item"><strong>Base &amp; Top</strong><span>Base coat, top coat, rubber base, no-wipe, matte</span></div>
+          <div class="shelf-item"><strong>Builder &amp; Extension</strong><span>BIAB, builder gel, extension gel, poly gel</span></div>
+          <div class="shelf-item"><strong>Product Kits</strong><span>Starter kits, salon kits, private label gift sets</span></div>
+        </div>
+      </aside>
     </div>
   </header>
 
-  <section class="nn-hero">
-    <div class="nn-container nn-hero-grid">
-      <div>
-        <div class="nn-label">OEM/ODM Factory</div>
-        <h1>Private Label Nail Product Factory for EU & US Brands</h1>
-        <p>
-          We manufacture gel polish, acrylic powder, EMA monomer, builder gel, Halal Nail Polish and Normal Nail Polish with formula development, color matching, packaging, QC and export document support.
-        </p>
-
-        <div class="nn-hero-actions">
-          <a href="#contact" class="nn-primary-btn">Get OEM Factory Proposal</a>
-          <a href="#products" class="nn-secondary-btn">View Product Systems</a>
-        </div>
-
-        <div class="nn-hero-stats">
-          <div class="nn-stat">
-            <strong>OEM/ODM Factory</strong>
-          </div>
-          <div class="nn-stat">
-            <strong>10,000+ sqm Facility</strong>
-          </div>
-          <div class="nn-stat">
-            <strong>10,000+ Custom Colors</strong>
-          </div>
-          <div class="nn-stat">
-            <strong>SDS / COA / Ingredient List Support</strong>
-          </div>
-          <div class="nn-stat">
-            <strong>HEMA-Free & TPO-Free Options</strong>
-          </div>
-        </div>
-      </div>
-
-      <div class="nn-hero-card">
-        <div class="nn-hero-carousel" id="nnHeroCarousel">
-          <div class="nn-hero-slides">
-            <div class="nn-hero-slide active">
-              <div class="nn-hero-image-box">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABGIAAAJECAIAAADSdBXZAAEAAElEQVR4nHz96ZdtyXUfiO0dEeecO9+cM99cE6oKQKGImaTIFkVyiVK3KFmS1Vbb1lrttfzv2cuf/cHuZbXaEpokAIKYCjW9+eWcd75niIjtDxF7R9wHuROoqsx7zxCxx98eIgL/+I9+jAAACAhAEP6RH/kDMfyNgIBEBAAIsHspyRUAiEDEj0R5MMmzUJ5PgMi3ymcEGF8JiBiejXGggICACARKa61V27bbetvvl+89fvInf/zD73zn48PptNAaAIiIvCMiIvKEAKAUIiAg+PBqQFAAAEQ+PT68FcgTIaICBQjkPQEhIlCYEREhEnkCCJ8DEBGE9xB48BhGjeiJAEAhk5gQw7yICCPFArHCHAPpAJEoPBkBSaEiICYfkidUGG8jQETyBAgEngAVokLwHghIKRU4FkYY3htuDLSNryP0kQcECEQ8MABiPsVhhgkACqsAkMCDj6MlIgCS6XoCQFRRxnycBIL3HgiUUkDgybOMgScCAqVQ7lbhTiIWDCICVAqIInWAUAEA+MBmVJH7YUaBUSRDigKoABwRICEohCiFQigCUOFRRBRkhRkaBsDDQAT05BExKEckDpFC9EhEoBCIEIgCGRHQx8tYdYgQlQJ0PGZEDEwLE/RACBRlKMguIKoojTJmgDieMH4RS4y8QwREjcaYsizLsl+UpdaF0hqVUloRIDhvvXXW2rbturprm65prLUgOkSBAhCkRYEilpagHEFbFShE9ORBhDbaBU8ISMwJZGmBwDJPGGYZ5DlpHMTbkAgAKWola1+UcKXAExMkiquH8HxEgKitgEFmgMkXxqkiazzJNUjkCVFhnEYkpI9KB/F6IuF+Zg3YVPHwMBofDATBoJhICCooKQEg6sDVaIWYckGKAMATAaKK1iZaKgomJxi0YHzC7IM2ASmM00TAcPeOzMhbWLt1GA8Fhkc7rhQGRjsiIFKIgBjEVSsdpBrYXANioCei8iCaw8ZQKZZSH8kFAISKtSnKmZAu05rEbqYRiapEOxVsl2g9RicSx5WEEURTkhjEd2XEYZ+USOQCFwOJAsGDFgOCAkUERJ45E/8bZukhigQAeO8BQKMCAAceARAVRbcAChUF9gWPFVwNgEKVDxUAyXuZFaWBBr6hQv6colSHe5nUweCwEUEEir4mUpuNYfBSRMFYISTW7AgSAhCBZ20iCj6IB8HaIX/xvZnWhMEHliHkvFB8DSokHxTfi7IDJGEOrEm+L1wf/4izyYU/8TqSzwNEcLCrQSI54Nn7MIUAg7NAYqGJbFKoANB755wl77yzbdt2TWO7pmnqpt5Y25Lz8qgdLaCoUJ48ypAC+6KPYNIBmKKs+qPeaK/ojYqqX1aVMaU2RmkDBEDeWeucdba1bd21tbcdsZMmAMUGx0c4lAMHCtcE4XfWlkVRt9uuo/e++cnh0fGXv/mVMdW73/q+LuDl579d3V32+tV0f99o3TbbzXK5nC3KftXrDawHVVS98d5oPG4265vLSwI4OnswPThWRUWeFJAj54mcdYHdSgFioZRCrbXWShlE9KCUQrJtW69t19i2e/XyxYtnX2qFB/vTXmXaZjO/my9uFwQdou9qRxrLquiVZdPUt3fzB48++OGf/EnT1L/62d822+XJ8Ul/0F9vtl3dDsfj47N7/fHUFL2qKsi1s8vL2ezGtVvy3hSaADebbjgeD8e92dV127WlqRwBIdjWApLRSmuNypiyLIqqrHqmqIqyKspK6YKMUUpZ65RSSmlr3WQy+OwXP13f3j58dL+1zpj+5Gh/Mbs9f/GCVDu7mvUHva5z95988O6H3767uVrMZg8ePpzd3lycvyiUL7QBgOnBuO2g2XRVryxK3bYdAfb6o+nBCaji7ubcu64qqs16Pbs9t11LEWsrZj0qpVmnSDQr..." />
-              </div>
-              <div class="nn-hero-meta">
-                <span>01 / 05 · Factory Highlights</span>
-                <h3>Advanced Production Capability</h3>
-                <p>Modern filling lines, skilled technicians and efficient production workflow support stable OEM / ODM supply for global nail brands.</p>
-              </div>
-            </div>
-            <div class="nn-hero-slide">
-              <div class="nn-hero-image-box">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABGIAAAJECAIAAADSdBXZAAEAAElEQVR4nGT969OvW1Ydho0xn98+py9009D0RYI2AnGRQDcuhbplFAQSRqAgXI5Tzl+bfPC3VKVSsZJSnEocWw6RkIksCbr7nL3fZ858GGPM9ez2hu7e+31/l/WsNeeYY14X/8F3fwvEDEgSAGbAmSEAYDAEAQwHIAYkCMyMXj7A6E0AyeffAcAfjQH0O5CDAUD9sock9CN9txYB6HtJf1fWA9K/xvhbSFYVr6vvD5//8LPXu09/7ud/8Vf+1q//0t/4lZ/65re/8KUvv959gkLfc9+3Fjmd55pBoXsKJAuY7iZRrNn1DAA9L6H1gKPnGvb05VWwH/swMwWwqAWyqu8bRHcjm90zPHuFnikWwZ5uNMFi9cw5BW2FNmVmZop5CqJ7UJgeAMXSerxsTM+NQZU/fwjtvA9rtP8zGHoNA33vioIfec6HYPRJVZzxw18kBj2tH3hDZkgOZwYgizWDxl1k8cJgBoMGOUB3Y3QEo22MWAHMOvR/A5DdrW/RlxavHEEDKBDA3ffMsMqils2cFWZKDMCqmenuQT5qxvKqY+quIlH+uiqQfbcOdSSZRc4AqKq7m8MhunslXNtbVSTvvgkWSfCenmmSQHlh2Uc/8exuTNVKLAH2NICLBKu7WSXRyMmQkPat9I5EvJDjA6qqu2caKB2rPtYy7+0CwIkC5pjKnwltJyfKW+dYp6qGnL79TMBTTqRB5c+fVQ3LOElSz8sofwCnunv19J6WZpE13gML8/Sw9mMh2ZDM69FmZh9NGopp8jJwSbO6V2yOYgrk4L/3tHVrDpBay4Jp0sQLOr5ZBBwMBgRYF2buufN2GvoMOJLSGuDuN4LRTW1qe+MGFVEXOAymu0Es4GiFIxQCr8va91A9nkfrOwJJSXtkDD3ttbXUtGIHxgc+ejRtr9evr7aw6/8EREckaMm3zbEhAlj01i2w6qSuuqan0VzzRhK4ipgu8kUWBtMcafTDrpH3zH3jBnvYmLaRYs9I0rQkv2Pm1o6vynIq4NnTJIgao8NBEmHsVUfPBzYbetjuJlBVEwUUaEhUXlWFIeZVxOAe3DNvApfH4wDoHpv1AJp3HHgAyAx0fIKO1j53214KDANQRnNta+fnRM1MFXOO6J6qGotBc0UuQGf+McMAToFjxmFpGW+jNCv7RMxM9zw1fYFuIBpjcOPawpkBq0rPPhxL6a7Yf7p4gZhuYY2+CCYGj/3UHsas2+6YQkyWyukZgzZkZzECpJESAQI3fISN+bKy8ZKtb7KsQQOZD5vGAsG7W7tG1uSD1oLI+N+2cQErHfFwQbWRbQvB8MkKKstkTvaiyNhTg7me/X95NKCoBYp1sV+sTy5+cvHFIRqY+55bCjUoXkZF/T/AbnA4HPDu++5p4G0wje55s2kp6dkif4XdxW5WYwDEbMErp9lppL1JGM1EGKZDlGUILV3aeomEAZ/snqsOiOldFQp3XQUf0+5Ztnqmx0xMR3koOjn+yeynaXnaImlWVRHVfR8zPcNwb5KXLAVmhm8zoPjX2rMj3mKh3TfN1kwJBpxBT0MatNzd/9UAqy7OhA3SKAtRLzsaNNABHEl1LNWI5PcYQKZvEsRlUAVY1xQ5Tbz12/v7B//+/X/8//7Fn/13f/Hnf4r+vF7v6rp6Br0baAxe1ru22IR5EfLxh9/77m8h79Ur2tJw6KRke/JzHnLiT8zrvcndbSwQ+mElzMSUj81k/iZpnnWRfLpzGA33f4nwsavquq63D+8/vP/wta//1C//yt/5lb/167/wN371x7/2U+Jab3fftyxlNgWsMpPgbpkeYZlzg3UBM+JkZQkYs54hrWYxyiYNlt0qgXj3XHWB7J66aB9J9Gu3wpujbe2Dj0YUE5hzzOsf2tASRN/98F9FXha2sr5wHsZXrKrl..." />
-              </div>
-              <div class="nn-hero-meta">
-                <span>02 / 05 · Factory Highlights</span>
-                <h3>Modern Factory Exterior</h3>
-                <p>A clean, professional manufacturing environment with organized facilities helps build confidence for international buyers and beauty brands.</p>
-              </div>
-            </div>
-            <div class="nn-hero-slide">
-              <div class="nn-hero-image-box">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABGIAAAJECAIAAADSdBXZAAEAAElEQVR4nFz9a5dtWZIViE0zW3uf435vROSzMqkH9QASVNCAoFHT3VL3GBpI+hP61H9VQ2gMSaOppoFOiuJRRb2yIjPjce91P2evZTb7g5nt40lARd7w635877WWmc057bHkn/43/zUAQgQAKQICoCD/lxQRIP8OyL8XkED/Rf3D+n+SXxcSAgiA+kgCAhGQEBGyv5jfBBD8lY8UKAQqAK6b/doXzz/6/vPzbsPEBAJVVRBkePjtOD693O8rnBayUQyqECHkmOvTp5cPH75+efnka6ng6TK+8/7dd94/P18vl31cr/vYbDMzFVG97Pv1cn1+ul4v1+vl6fr0tG272RA1ERNVUaUoREiA+QqRCxURApCsfwEkmf8CBLnGhAgZAAUKQEREhYDknyG5uiRrUxTb2FSUsSLmcdyPeXx6ff346ePHTx98LVPT/H4BAc3/ESHzeSAqIrJt22fv379///n16d316d2+X23stpnKiAj3CHo9qiAgoioiogNmqpZ7KyKi2geDQUoAwuijEhHo0yECUgGqgrkM+Zy9RJKLAlFVIRnL/Vjz8DWPeaw1l69gAFAoBOGxGCBABoOMiBDoeaLyd6oqBLn2HkGEQvK0MCJPoJAkQ8gIIfJdQPYnQyFksLcSJAQeke8ogn3f3z1d310v+77bftn2Z7XNxg5Rku5eh7s+0j08lh/rOI7bmlMEqrZt2xj79fpktqvZWn67vXz69PHDh48//+rrn//8l58+vjCiDIxUEYBj2Pv318/eP71/fnp+errmM6jVW5IRIXlEAQYRy90BhZhDnURwkRGgk+Bca64VpImqUFU3UzNRVRMlY8UKX/Rw97VmHnWIiIqomQ0VfWPMJCPSrAOQeqTTpeSD1WawPIiIMChql8vl+d27zz777LPPPnt+9/769M7MoOpr+TyO4/b68vLx4ze3Tx/9uEttKiBCkbXWcp/LPT+dgEBVLpfLu+fn9+8/+/zzz67Xd/vTk+hGeqxjzXncj48fP/78519++83XEbGPzVTMFCIQIeAe99u8zeM+V55kycMtiOB5PMgQhakJJAKHx20uJ24rXm/z0+vrPO7D9GkfT8O2YUN1G8PU1PSNy6inFuSrBckIRh9Ngh6OgEBr3ciIIPNsAyQICoPBIIA0r3pskEQQQEjuDSmQYKA3o607SJjY02V8/rx957PnL95dn6+Xy/WitlMHdbs7bocvd1XdhgzBrrXhwnU/7l9/fP3FN5+++XRfKxj0OgYhIvlSqK/kU9chKctpD4sghO5BIHcb7XJVVVVFJN0gkJFH9m1874vrD754/t5nz9fLZds2tU1EoeNwfrz5x5cj6ArZhigD5H0ec65vP3765sOnbz69fPvx9unT65xzuUPE8reYbtvYho1hY9i+7SYmKqpiZsOGdmATiGpahIIZCBkBMoBg/u8ZPDv4ieTRAslts+d3z5+9f//++fn5+flyedovVxsbxZb7/T5f7/fb/Xh5fb3db8sdgJmJqIAg4Mv9iHX4/TjmvcxWqGKqeoZ9SccO8YjyrETwtFm6Rz0SzvfSMVRV1NRUh1l5cQGA8Ih2AM48iwUpVETVcr8gGZfAoIgE66xLwwkRpFdRFYCioiJDhwhUM1Dmukl9j4iqiQANM6QDUf6vqJzR8AxS+Yf+sjANueKyQuT67rPv/ui3vvvDX//8ix88Pb2/Pj2NsYskAqHHOubxent5+fjNV7/8y7/6iz+7ffzI8LmO5SGiOoaKmIgqhuqmaipKisJULIOpCjqAZohNJ5lmmOcpXxlAbi+kfggVaaFmqjpUE8uIiJqqKAGkc0a6AiWharkfAET0NPk8qB02mN4jA1C77gzedUoheUgkv//c6EKQvW+1yOwYUD6njr8HVcUztBwvX375V3/yJ3/2..." />
-              </div>
-              <div class="nn-hero-meta">
-                <span>03 / 05 · Factory Highlights</span>
-                <h3>Custom Packaging Solutions</h3>
-                <p>From bottle and label design to color box development, we support flexible private label packaging for salons, distributors and retail brands.</p>
-              </div>
-            </div>
-            <div class="nn-hero-slide">
-              <div class="nn-hero-image-box">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABGIAAAJECAIAAADSdBXZAAEAAElEQVR4nGT9WbMkS3IeCOpi5u4RcU7m3WoFqoBiFUASAIGhkDKDln6Yp+n/TRmRkRZ0DwjuJBoksdZ6t8w8J8LdzFR1HlTVIhKTJZX3ZJwID3dbVL/v08XwT/8f/9rAEBAAwAAQzAyRwNTATA0AEQEADQD9twBmAGD+GwPIz5qqob8dzAAQyfytiGgAAP47BEAAQFQzfzsTqlkt/Ls/+Ownv/3F01pATc1UVdVExP81hgxRUxVVUQWDMYb6P8VURUT7kDaGqREiI2FBIlJVNP393/3R//J//1e//eMfcV3MABAQkagQF2ZGIkQiYiQmIiQCQEQCJL9tQEAANdPRx+imYgZmBqimBgAiYqZghgbqD25mZv60AGam8YpB/Bb8Z0MDAAXtJs1UEIEAuVQivwEEJAD0e4MYTiBEMBBVAAMzAL+g/wzqN+FfpXb/RjU19XtQUzVDAzAQE18BgGhgCAzkI4BEhEhIiERIDPl0iOhTbwYImA8Wl/FlYAAE4G8yn/r5HrgPhb+uqmCgoL4wYv2YGhgYIqCBwnwq/8vQH98AzIwAc3zMNFef+izE7RBhfjLmhoh8Tcelc6n6O33uEeMBEXKZ+/ZABDMkX9RghoA+gYZcynbmcuKlEhIxl3oq6wVLRRVpN9NB9URlNVPp17HfkJGXjaiajNFeQUZdLsvpGetivuC0owFyxVJBdbSrSiMqZTlRqQZIxIaMCNJu/fUbaa+AhoiEBZCBGQEAFBARkZAgFjkiESD5skIijHkDn8B4ciAfJF8YaQvCKEDOE5jGGjMDVVMxEzM1FVUx8V3dRURFRAboUFGRrjJMhsgQEVUxNQJEwttx/MPPf/Gf/tv/+Dd/9u//w1/+NRiWWolwqaWUui51WZfTtm3relrXpVAphZkZSU11SOujjb4fR+u99aYipdSny+VyOj09XU7buizVDYYbPTNV09FljNF7P1rfj/167Lfr0Xq73Y7jOPbe+hhjiIqaKQASETEREjP6P8Hc+CET+ktg5n9b7iBCZEZE4sJujIiJmfNi6DudkHz43fT6bgIw831nBgrEuCz1ct7ePF3ePJ+fL6eny2lb1tNpe37z5vntJ8+fvDk/vd1OFy4FkET0OI7r6/X2et2v13bcRu82hpmpqsgARAQz8Q0IZgLmJgIAwNRUdaj2PkRk7/04eu993/fbftyO43bsvfU+unQdKkNG76JqajKGDRmq2mSoiAxVtVhKgAhAhESISIWIGNnHiIgQmQgQmZmJpqHw8Yj3EDIzABCzqZqZ+wtfz2ZGRGbmrmT0oapiBtM0AACYDBUVMxuiYwwREbEuMkSHDFXJpR/GDf2PWy3fHoiAEFaTAIGACC2Mi8YNuw1ipngQHwhVzd03v2WaIPfJhBgWOP5CNNVpTg3dZlnuU0P0IXVTjtO2FWYiAgMiIsZCXApzqZWplFKYSuXqXhKRCCuXulREqoXNsPX2/sOH96+v+60ZKCOdz6eny+X56bJuCyH79AxVXzAqImBm0I8+ZLTWRcVExLT37lNJiAbARKWUWgozEnGpXJgJsS5lW5ZtWZgZ0EzNl18fAgp1KUst2+n0fDqdz6ellspcChKyQTgqBBgmvUkfo/V+HEfrbYxhZqY2xhhDb62/v+4fXvfj6AhQSllqXde6nbbLabuct7UuhRAZCEjG6CJm7kyICBJUIIXfpmVZllKZ0QAIUURVVEyGiHQZMo6jt9b66L2Po7U+htsJBHRTgIhqxkQAICZLWX77B9/78W9//4vPP3t684xIpuYOfrrVu52ANB1psAnJfaKF3UaYP8TfgOndIV25+/wEFuZLDBIHPPhtdDOVXsJ3nvtgQ8eEiHPvGFqCSscgeSE0AHJUk3hg2h/AxKXgwxSYAgnnP+67wAFBeP/AqmEU..." />
-              </div>
-              <div class="nn-hero-meta">
-                <span>04 / 05 · Factory Highlights</span>
-                <h3>International Trade Show Presence</h3>
-                <p>We connect with global buyers through international exhibitions, presenting our latest nail product systems, custom solutions and factory strength.</p>
-              </div>
-            </div>
-            <div class="nn-hero-slide">
-              <div class="nn-hero-image-box">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABGIAAAJECAIAAADSdBXZAAEAAElEQVR4nHT9aZMkSXIlCD5mEVUz8yPOzKzMrKwLhcbRaBSubmwfQ0O0f36Jdmk+LO30LAazg97FUYWsPCIjwt3NTFVFmPcDH6KePRONzopwN9NDhI/3+BL6j3/770FQJQJAIEBVAQAgIgVUQQRAASIiKGCfIRDs7/YBACr+ZWViu4Z9Egr7rl1A4V9RARGgSnEPKEBQFSIiyschAhTq17Fnixv7T+zJ4o7MXEoRka01Fn3z5uWvfvGzX/3yZz/55O2L25vbm9N8mGopoMJECiIiJia227JdX/3B1J4Kirgp+SJARJXBIF8TBkR1t1IAkT85M0AgYh6vYNdSAoHsJv5qsLuDiakwc2H/ui+T9A4R0S4iqh1q6wt/ZrVFZ8Siqb8FAWrrTLZc5FsTu0g7MVCR3ratrcu6Leenp8vl/Pj09PT0eD5fW++AHuZ5mqab0+l0Ot7e3t7e3t/c3h+ON/PhME0HrhX+XCCG9r5ta2trb1tvXUVFVUkJFM8DUagKoFBfZC5EYICYiQoRMXNFKf4mth1KJnEmbrb+4qLDUAiUoARSqEmLiIujLbvfHmSXUAVISUltm3Jx7BeQZ4KRD+BLO0TaVUQ1xN9ejAWmcmxLPfSO/K3toynhIsrkuiYAgZgp3ov8i66VRMz+d5dkmIgxs0lpqGw+IYVGu3qTKkhBJN1WUTT+hPz5S/nrqYKZiYfZUAWYWIlYVURURXNBQOR3I9KwNhSGxR7YF0QUroswpYSGSCtUhaCSyyBqlxYFICbK0oXIlkftYyriahSrI6p2KRCrCBGrPUBqPUhVVAUhpTAbBRLfPhArExGzAhySSgTE3rsK59sSEcBEChCTgiD2GgRAdxbTjaIbXCB2X4kYDPL1op38mCbHzf0R8oUAkN9Ybb00JEihzC42IYNsGhPmwa7AxCCQq5FI7723trWlretyvS7rsq7btm1du4pOtZYyzYfZ/tRaa51LrbUUvygTgYlAzHFXSi3S0CQR0d6k93Vdetvatqzrer1e121tvasoE+Z5PkzT4Xg6Ho7z4TBN8zwfeJ5LmcpUlIovvYshme0ge3/fM4iGsSSCQlTcSogA1H3TRURgjqCLqMBlP8XYrsdulaGm8+Y50p0plEih7ol86U0x3V6NbQUpEII0/AVAICUZ2+SGK/9rUuJ6H+9uCkXxtMMFmLG0q6oA6UxCgwH1dUO+bLykunyDBObjFCA3yGxaI/GEEFG7ossbSHUYJ9OyxAG+NsO62rcEbibARGE9YWpihjDWgWC21yyPbUO8lUDR0wcI2aXsojA/IuymBGNHVCnUb9g4dYut8ZCiyiFSDGjsbewLBaoJGGAiSApRwyUqQhyfT0+BsSi2vKadjuqURIWYVSTW1A1FPDJUAoCpshtkdWwg5lDdB9kvGCQito+6QyzkhhFEIJBA9qJr3sdcsKYHUE3RCzyplPruUCRuEVtFpIBfzeCirxUcOrrEGQiVwK5hesO2Ktn6EqlK+DJfn3DkJnMScMS+E1sTjsqX3W4+JM3XhIh190mYOYUaKktI5/jP/JEJlaHl0IVA3Ag3pv5WfkceLtIhBKkIwqOIP5V76FQeDX+aoFoVqp1AxbaMyTCZGUqV8EREqgIBETkKcZdl9lN9VQDTxNguf22msBnMGv7NN5lQSmUqqpC+iTZTTXs3Wzs3XKlrAJfi9zUgH/bLNsukxVybKEDYtvV8vl6ul6fz+Xe//d0///a3//q7r6/Xa1eUWhLxgFCRWhFSlMbI4T6piDK7aQhckUj6GZd55tPCXCbv2uG+1AP/a2JEtzqmDo4OTOVdqlKLcstTmp11MJVSusj1cnlxe/tvfvmzn331xS9//tWXn31yOh5qLURsnqx3YYYyKzGIlYhM9wzshf02qqIQuNkNhkZQ..." />
-              </div>
-              <div class="nn-hero-meta">
-                <span>05 / 05 · Factory Highlights</span>
-                <h3>R&D and QC & Documents</h3>
-                <p>Our technical team supports formula development, sample evaluation and quality control to help customers launch reliable private label products.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="nn-carousel-controls">
-            <button class="nn-carousel-btn" type="button" data-dir="prev" aria-label="Previous slide">&#10094;</button>
-            <button class="nn-carousel-btn" type="button" data-dir="next" aria-label="Next slide">&#10095;</button>
-          </div>
-
-          <div class="nn-carousel-dots" aria-label="Carousel navigation">
-            <span class="nn-carousel-dot active" data-slide="0"></span>
-            <span class="nn-carousel-dot" data-slide="1"></span>
-            <span class="nn-carousel-dot" data-slide="2"></span>
-            <span class="nn-carousel-dot" data-slide="3"></span>
-            <span class="nn-carousel-dot" data-slide="4"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="nn-section nn-factory" id="factory">
-    <div class="nn-container">
-      <div class="nn-section-head">
-        <span class="nn-section-kicker">Factory Strength</span>
-        <h2>A Nail Product Factory Built for Private Label Brands</h2>
-        <p>
-          NEW NAIL supports overseas buyers from product development to export-ready delivery, combining formula R&D, color matching, production, filling, QC and document preparation.
-        </p>
-      </div>
-
-      <div class="nn-factory-grid">
-        <div class="nn-factory-video">
-          <video autoplay muted loop playsinline preload="auto" >
-            <source src="data:video/mp4;base64,AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAjTbW9vdgAAAGxtdmhkAAAAAAAAAAAAAAAAAAAD6AAAE4gAAQAAAQAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAB/50cmFrAAAAXHRraGQAAAADAAAAAAAAAAAAAAABAAAAAAAAE4gAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAABAAAAABkAAAAKuAAAAAAAkZWR0cwAAABxlbHN0AAAAAAAAAAEAABOIAAAEAAABAAAAAAd2bWRpYQAAACBtZGhkAAAAAAAAAAAAAAAAAAAwAAAA8ABVxAAAAAAALWhkbHIAAAAAAAAAAHZpZGUAAAAAAAAAAAAAAABWaWRlb0hhbmRsZXIAAAAHIW1pbmYAAAAUdm1oZAAAAAEAAAAAAAAAAAAAACRkaW5mAAAAHGRyZWYAAAAAAAAAAQAAAAx1cmwgAAAAAQAABuFzdGJsAAAAxXN0c2QAAAAAAAAAAQAAALVhdmMxAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAABkACrgBIAAAASAAAAAAAAAABFUxhdmM2MS4xOS4xMDEgbGlieDI2NAAAAAAAAAAAAAAAGP//AAAAO2F2Y0MBZAAg/+EAH2dkACCs2UBkBX+sBbgQEC0oAAADAAgAAAMBgHjBjLABAAVo6+csi/34+AAAAAAQcGFzcAAAAAEAAAABAAAAFGJ0cnQAAAAAABOp9AAAAAAAAAAYc3R0cwAAAAAAAAABAAAAeAAAAgAAAAAgc3RzcwAAAAAAAAAEAAAAAQAAAB8AAAA9AAAAWwAAA7hjdHRzAAAAAAAAAHUAAAABAAAEAAAAAAEAAAoAAAAAAQAABAAAAAABAAAAAAAAAAEAAAIAAAAAAQAACgAAAAABAAAEAAAAAAEAAAAAAAAAAQAAAgAAAAABAAAKAAAAAAEAAAQAAAAAAQAAAAAAAAABAAACAAAAAAEAAAoAAAAAAQAABAAAAAABAAAAAAAAAAEAAAIAAAAAAQAACgAAAAABAAAEAAAAAAEAAAAAAAAAAQAAAgAAAAABAAAKAAAAAAEAAAQAAAAAAQAAAAAAAAABAAACAAAAAAEAAAoAAAAAAQAABAAAAAABAAAAAAAAAAEAAAIAAAAAAQAACgAAAAABAAAEAAAAAAEAAAAAAAAAAQAAAgAAAAACAAAEAAAAAAEAAAoAAAAAAQAABAAAAAABAAAAAAAAAAEAAAIAAAAAAQAACgAAAAABAAAEAAAAAAEAAAAAAAAAAQAAAgAAAAABAAAKAAAAAAEAAAQAAAAAAQAAAAAAAAABAAACAAAAAAEAAAoAAAAAAQAABAAAAAABAAAAAAAAAAEAAAIAAAAAAQAACgAAAAABAAAEAAAAAAEAAAAAAAAAAQAAAgAAAAABAAAKAAAAAAEAAAQAAAAAAQAAAAAAAAABAAACAAAAAAIAAAQAAAAAAQAACgAAAAABAAAEAAAAAAEAAAAAAAAAAQAAAgAAAAABAAAKAAAAAAEAAAQAAAAAAQAAAAAAAAABAAACAAAAAAEAAAoAAAAAAQAABAAAAAABAAAAAAAAAAEAAAIAAAAAAQAACgAAAAABAAAEAAAAAAEAAAAAAAAAAQAAAgAAAAABAAAKAAAAAAEAAAQAAAAAAQAAAAAAAAABAAACAAAAAAEAAAoAAAAAAQAABAAAAAABAAAAAAAAAAEAAAIAAAAAAQAACgAAAAABAAAEAAAAAAEAAAAAAAAAAQAAAgAAAAACAAAEAAAAAAEAAAoAAAAAAQAABAAAAAABAAAAAAAAAAEAAAIAAAAAAQAACgAAAAABAAAEAAAAA...
-          </video>
-          <div class="nn-factory-video-caption">
-            <span>MODERN FACTORY · R&amp;D · FILLING LINE · QC · PACKAGING</span>
-          </div>
-        </div>
-
-        <div class="nn-factory-list">
-          <div class="nn-factory-item">
-            <strong>10,000+ sqm</strong>
-            <span>Factory area for production, filling, packing and storage</span>
-          </div>
-          <div class="nn-factory-item">
-            <strong>100+ Staff</strong>
-            <span>Production, R&D, QC, packaging and export service team</span>
-          </div>
-          <div class="nn-factory-item">
-            <strong>10,000+ Colors</strong>
-            <span>Custom color library for gel polish and private label collections</span>
-          </div>
-          <div class="nn-factory-item">
-            <strong>R&D Lab</strong>
-            <span>Formula development, sample testing and color matching support</span>
-          </div>
-          <div class="nn-factory-item">
-            <strong>QC Process</strong>
-            <span>Inspection before filling, packing and shipment</span>
-          </div>
-          <div class="nn-factory-item">
-            <strong>Documents</strong>
-            <span>SDS, COA, ingredient list and label information support</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="nn-section nn-process" id="process">
-    <div class="nn-container">
-      <div class="nn-section-head">
-        <span class="nn-section-kicker">Production Process</span>
-        <h2>From Formula Development to Export-Ready Delivery</h2>
-        <p>
-          Every private label project follows a clear production path, helping buyers control product quality, packaging details and export preparation.
-        </p>
-      </div>
-
-      <div class="nn-process-grid">
-        <div class="nn-process-step">
-          <i>01</i>
-          <span><b>Requirement Review</b>: Confirm product type, target market, quantity, packaging and document needs.</span>
-        </div>
-        <div class="nn-process-step">
-          <i>02</i>
-          <span><b>Formula & Color Development</b>: Develop samples, match colors and adjust formulas for selected product lines.</span>
-        </div>
-        <div class="nn-process-step">
-          <i>03</i>
-          <span><b>Raw Material Inspection</b>: Check incoming materials before production starts.</span>
-        </div>
-        <div class="nn-process-step">
-          <i>04</i>
-          <span><b>Mixing & Stability Check</b>: Control mixing, texture, color performance and product consistency.</span>
-        </div>
-        <div class="nn-process-step">
-          <i>05</i>
-          <span><b>Filling & Labeling</b>: Fill bottles, apply private label packaging and prepare product sets.</span>
-        </div>
-        <div class="nn-process-step">
-          <i>06</i>
-          <span><b>QC Inspection</b>: Inspect appearance, quantity, packaging and key product details before shipment.</span>
-        </div>
-        <div class="nn-process-step">
-          <i>07</i>
-          <span><b>Packing & Export Documents</b>: Pack goods and support SDS, COA, ingredient list and export document preparation.</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= PRODUCTS CATEGORY SECTION START ================= -->
-  <section class="nn-products-section" id="products">
-    <div class="nn-container nn-products-container">
-
-      <div class="nn-products-header">
-        <div class="nn-products-title">
-        <span class="nn-section-label">Product Systems</span>
-        <h2>Complete Nail Product Systems</h2>
-        </div>
-
-        <div class="nn-products-intro">
-          <p>
-            Build a complete product line from one factory. Our product systems cover
-            professional salon use, private label retail brands, distributors and customized
-            OEM / ODM projects.
+  <section id="factory-video" class="video-section">
+    <div class="wrap">
+      <div class="video-layout">
+        <div class="video-copy">
+          <div class="label">Factory Video</div>
+          <h2>See Our Factory, Products and Production Capability</h2>
+          <p class="intro">
+            A real video helps buyers understand your factory faster than text alone.
+            Use it to show production environment, product handling, packing details and OEM/ODM capability.
           </p>
-          <div class="nn-products-tags">
-            <span>Private Label</span>
-            <span>OEM / ODM</span>
-            <span>Bulk Wholesale</span>
-            <span>Custom Packaging</span>
+          <div class="video-points">
+            <div><strong>Real Factory Impression</strong><span>Let overseas buyers see production, team operation and order handling.</span></div>
+            <div><strong>Better B2B Trust</strong><span>Video makes the site feel more credible before customers send an inquiry.</span></div>
+            <div><strong>Private Label Confidence</strong><span>Support buyers who care about factory strength, packaging and export readiness.</span></div>
           </div>
         </div>
-      </div>
-
-      <div class="nn-products-grid">
-
-        <div class="nn-product-card">
-          <div class="nn-product-number">01</div>
-          <h3>Gel Polish System</h3>
-          <p>
-            Private label gel polish with rich color payoff, smooth application,
-            long-lasting wear and salon-ready performance.
-          </p>
-          <span>Color Gel · HEMA-Free Options · Custom Label</span>
-        </div>
-
-        <div class="nn-product-card">
-          <div class="nn-product-number">02</div>
-          <h3>Base, Top & Functional Gel System</h3>
-          <p>
-            Complete base coat, top coat and functional gel solutions for professional
-            manicure systems and brand product lines.
-          </p>
-          <span>Base Gel · Top Gel · Strengthening Gel</span>
-        </div>
-
-        <div class="nn-product-card">
-          <div class="nn-product-number">03</div>
-          <h3>Builder Gel & Extension Gel</h3>
-          <p>
-            Builder gel, BIAB gel and extension gel systems designed for structure,
-            strength and flexible nail enhancement.
-          </p>
-          <span>BIAB · Builder Gel · Extension Gel</span>
-        </div>
-
-        <div class="nn-product-card">
-          <div class="nn-product-number">04</div>
-          <h3>Acrylic & Dip Powder System</h3>
-          <p>
-            Acrylic powder, dip powder and EMA monomer solutions for nail extensions,
-            salon services and wholesale supply.
-          </p>
-          <span>Acrylic Powder · Dip Powder · EMA Monomer</span>
-        </div>
-
-        <div class="nn-product-card">
-          <div class="nn-product-number">05</div>
-          <h3>Nail Polish System</h3>
-          <p>
-            Air-dry nail polish and water-based nail polish options for retail brands,
-            salons and halal-friendly product lines.
-          </p>
-          <span>Air-Dry Polish · Water-Based Polish · Halal Nail Polish · Normal Nail Polish</span>
-        </div>
-
-        <div class="nn-product-card">
-          <div class="nn-product-number">06</div>
-          <h3>Nail Art Gel System</h3>
-          <p>
-            Nail art gel products for creative designs, including painting gel, liner gel,
-            cat eye gel and special effect gel.
-          </p>
-          <span>Cat Eye · Painting Gel · Special Effect Gel</span>
-        </div>
-
-        <div class="nn-product-card">
-          <div class="nn-product-number">07</div>
-          <h3>Nail Prep, Remover & Cleaner</h3>
-          <p>
-            Professional preparation, removal and cleaning products to support complete
-            salon workflow and product performance.
-          </p>
-          <span>Primer · Dehydrator · Remover · Cleanser</span>
-        </div>
-
-        <div class="nn-product-card">
-          <div class="nn-product-number">08</div>
-          <h3>Nail Care, Tools & Salon Supplies</h3>
-          <p>
-            Nail care products, manicure tools and salon accessories for wholesale,
-            private label and complete product line development.
-          </p>
-          <span>Nail Care · Tools · Salon Supplies</span>
-        </div>
-
-      </div>
-
-      <div class="nn-products-bottom">
         <div>
-          <strong>OEM / ODM Customization Available</strong>
-          <p>Custom formula, bottle shape, color matching, logo, label, packaging and product line planning support.</p>
-        </div>
-        <a href="#contact" class="nn-products-btn">Request Quote</a>
-      </div>
-
-    </div>
-  </section>
-  <!-- ================= PRODUCTS CATEGORY SECTION END ================= -->
-
-  <section class="nn-section nn-oem" id="oem">
-    <div class="nn-container">
-      <div class="nn-section-head">
-        <span class="nn-section-kicker">OEM/ODM Service</span>
-        <h2>From Product Idea to Finished Private Label Nail Brand</h2>
-        <p>
-          We support global beauty brands with flexible customization, stable production
-          and complete product line development.
-        </p>
-      </div>
-
-      <div class="nn-oem-grid">
-        <div class="nn-oem-step">
-          <b>01</b>
-          <span>Product line planning and formula selection</span>
-        </div>
-        <div class="nn-oem-step">
-          <b>02</b>
-          <span>Color matching and sample development</span>
-        </div>
-        <div class="nn-oem-step">
-          <b>03</b>
-          <span>Bottle, brush, cap and packaging options</span>
-        </div>
-        <div class="nn-oem-step">
-          <b>04</b>
-          <span>Logo, label and color box customization</span>
-        </div>
-        <div class="nn-oem-step">
-          <b>05</b>
-          <span>Bulk production and quality inspection</span>
-        </div>
-        <div class="nn-oem-step">
-          <b>06</b>
-          <span>Export-ready supply for distributors</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="nn-section nn-quality" id="quality">
-    <div class="nn-container">
-      <div class="nn-section-head">
-        <span class="nn-section-kicker">QC & Documents</span>
-        <h2>Document Support for Overseas Private Label Buyers</h2>
-        <p>
-          We support private label buyers with SDS, COA, ingredient list, label information review and export document preparation according to project requirements. HEMA-free, TPO-free, vegan and halal nail product options are available for selected product lines.
-        </p>
-        <div class="nn-products-tags" style="margin-top: 20px;">
-            <span>SDS / MSDS</span>
-            <span>COA</span>
-            <span>Ingredient List</span>
-            <span>Label Information Review</span>
-            <span>Export File Support</span>
-            <span>HEMA-Free / TPO-Free Options</span>
-        </div>
-      </div>
-
-      <div class="nn-quality-grid">
-        <div class="nn-quality-card">
-          <div class="nn-quality-icon">01</div>
-          <h3>Formula Stability</h3>
-          <p>
-            Product performance is checked across texture, application, curing,
-            color consistency and long-term storage stability.
-          </p>
-        </div>
-
-        <div class="nn-quality-card">
-          <div class="nn-quality-icon">02</div>
-          <h3>Batch Control</h3>
-          <p>
-            Standardized production and inspection workflow help buyers maintain
-            consistent quality across repeated orders.
-          </p>
-        </div>
-
-        <div class="nn-quality-card">
-          <div class="nn-quality-icon">03</div>
-          <h3>Document Support</h3>
-          <p>
-            Full documentation support including SDS, COA and ingredient lists to 
-            help your brand comply with local market regulations.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="nn-cta" id="contact">
-    <div class="nn-container nn-cta-box">
-      <div>
-        <h2>Request a Factory Quote</h2>
-        <p><strong>Tell Us About Your Private Label Nail Product Project</strong></p>
-        <p>
-          Share your product type, target market, quantity and packaging needs. Our team will help prepare a suitable OEM/ODM proposal.
-        </p>
-      </div>
-      
-      <form class="nn-inquiry-form" id="inquiryForm">
-        <div class="nn-form-group">
-          <label class="nn-form-label">Name</label>
-          <input type="text" name="name" class="nn-form-input" placeholder="Your Name" required>
-        </div>
-        <div class="nn-form-group">
-          <label class="nn-form-label">Company</label>
-          <input type="text" name="company" class="nn-form-input" placeholder="Your Company">
-        </div>
-        <div class="nn-form-group">
-          <label class="nn-form-label">Email</label>
-          <input type="email" name="email" class="nn-form-input" placeholder="Your Business Email" required>
-        </div>
-        <div class="nn-form-group">
-          <label class="nn-form-label">WhatsApp</label>
-          <input type="text" name="whatsapp" class="nn-form-input" placeholder="Country Code + Number">
-        </div>
-        <div class="nn-form-group">
-          <label class="nn-form-label">Product Type</label>
-          <select name="product_type" class="nn-form-select">
-            <option value="gel_polish">Gel Polish System</option>
-            <option value="builder_gel">Builder & Extension Gel</option>
-            <option value="acrylic_dip">Acrylic & Dip Powder</option>
-            <option value="nail_polish">Nail Polish System</option>
-            <option value="other">Other Supplies</option>
-          </select>
-        </div>
-        <div class="nn-form-group">
-          <label class="nn-form-label">Target Quantity</label>
-          <input type="text" name="quantity" class="nn-form-input" placeholder="e.g. 1000 pcs / 100 kg">
-        </div>
-        <div class="nn-form-group full">
-          <label class="nn-form-label">Target Market</label>
-          <input type="text" name="market" class="nn-form-input" placeholder="e.g. EU, US, Middle East">
-        </div>
-        <div class="nn-form-group full">
-          <div class="nn-form-checkbox-group">
-            <label class="nn-checkbox-item">
-              <input type="checkbox" name="need_private_label"> Need Private Label Packaging?
-            </label>
-            <label class="nn-checkbox-item">
-              <input type="checkbox" name="need_docs"> Need SDS / COA / Ingredient List?
-            </label>
+          <div class="video-frame">
+            <video controls preload="metadata" playsinline poster="assets/factory-hero.png">
+              <source src="assets/factory-introduction-video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="video-caption">
+            <span><strong>GUANGZHOU NEWNAIL COSMETICS CO.,LTD</strong> · OEM/ODM Nail Product Factory</span>
+            <span>Video file: factory-introduction-video.mp4</span>
           </div>
         </div>
-        <div class="nn-form-group full">
-          <label class="nn-form-label">Message</label>
-          <textarea name="message" class="nn-form-textarea" rows="4" placeholder="Describe your project requirements..."></textarea>
-        </div>
-        <div class="nn-form-group full">
-          <button type="submit" class="nn-primary-btn nn-form-submit">Request OEM Factory Quote</button>
-        </div>
-      </form>
+      </div>
     </div>
   </section>
 
-  <footer class="nn-footer">
-    <div class="nn-container nn-footer-inner">
-      <div>© 2026 NEW NAIL Professional. Private Label Nail Product Manufacturer.</div>
-      <div>Gel Polish · Builder Gel · Acrylic System · Nail Polish · Salon Supplies</div>
+  <section id="catalog" class="soft">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="label">Product Catalog</div>
+          <h2>Find the Right Nail Product System</h2>
+          <p>Search by product name or browse complete systems. Select any product to add it directly to your factory inquiry.</p>
+        </div>
+        <a class="btn btn-dark" href="#quote">Request Full Catalog</a>
+      </div>
+
+      <div class="catalog-tools">
+        <label class="catalog-search" aria-label="Search the product catalog">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+          <input id="catalogSearch" type="search" placeholder="Search products: cat eye, builder gel, remover...">
+        </label>
+        <div id="catalogCount" class="catalog-count"></div>
+      </div>
+
+      <div id="smartCatalog" class="smart-catalog">
+        <aside class="catalog-sidebar">
+          <div class="catalog-sidebar-label">Product systems</div>
+          <div id="catalogTabs" class="catalog-tabs"></div>
+        </aside>
+        <div>
+          <div id="catalogMobileTabs" class="catalog-mobile-tabs"></div>
+          <main id="catalogMain" class="catalog-main"></main>
+        </div>
+      </div>
+
+      <div class="category-nav">
+        <a href="#gel">Gel Polish</a>
+        <a href="#base">Base &amp; Top</a>
+        <a href="#art">Nail Art</a>
+        <a href="#acrylic">Acrylic &amp; Dipping</a>
+        <a href="#prep">Prep / Remover</a>
+        <a href="#polish">Nail Polish</a>
+        <a href="#builder">Builder Gel</a>
+        <a href="#care">Nail Care</a>
+        <a href="#tools">Machine &amp; Tools</a>
+        <a href="#salon">Salon</a>
+        <a href="#kits">Kits</a>
+      </div>
+
+      <div class="directory">
+        <article id="gel" class="directory-block">
+          <div class="directory-title">
+            <div>
+              <h3>Gel Polish System</h3>
+              <p>Core color gel products for private label collections, salons and distributors.</p>
+            </div>
+            <a href="#quote">Quote Gel Polish System</a>
+          </div>
+          <div class="subcategory-grid">
+            <div class="subcategory-card"><h4>Color &amp; Effect Gel</h4><div class="product-tags"><span>Color Gel</span><span>French Collection</span><span>Platinum Gel</span><span>Neon Gel</span><span>Glow In Dark Gel</span><span>Diamond Gel</span></div></div>
+            <div class="subcategory-card"><h4>Special Collections</h4><div class="product-tags"><span>Temperature Changing Gel</span><span>Cat Eye Gel</span><span>One Step Gel</span><span>New Season Arrival</span></div></div>
+          </div>
+        </article>
+
+        <article id="base" class="directory-block">
+          <div class="directory-title">
+            <div>
+              <h3>Base, Top &amp; Functional Gel System</h3>
+              <p>Complete functional support for gel polish, salon application and private label systems.</p>
+            </div>
+            <a href="#quote">Quote Base / Top System</a>
+          </div>
+          <div class="subcategory-grid">
+            <div class="subcategory-card"><h4>Top Coat</h4><div class="product-tags"><span>Stainless Steel Top</span><span>Diamond Top</span><span>Wear Resistant Top</span><span>Glossy Strong Top</span><span>Super Shiny Top</span><span>Velvet Matte Top</span><span>Chrome Top</span><span>Classical Wipe Top</span><span>Crystal Plating Top</span></div></div>
+            <div class="subcategory-card"><h4>Base Coat</h4><div class="product-tags"><span>Base Gel (Thin)</span><span>Rubber Base Gel (Thick)</span><span>Fiber Base Gel</span></div></div>
+            <div class="subcategory-card"><h4>Functional Gel</h4><div class="product-tags"><span>Tip Glue Gel (Gel X)</span><span>Blooming Gel</span><span>Blooming Liquid</span><span>Russian Self-Leveling Gel</span><span>Reinforce Gel</span><span>Primer / Bonder</span></div></div>
+          </div>
+        </article>
+
+        <article id="art" class="directory-block">
+          <div class="directory-title">
+            <div>
+              <h3>Nail Art Gel &amp; Powder System</h3>
+              <p>High-margin add-on products for nail art brands, salons and training schools.</p>
+            </div>
+            <a href="#quote">Quote Nail Art Products</a>
+          </div>
+          <div class="subcategory-grid">
+            <div class="subcategory-card"><h4>Painting &amp; Art Gel</h4><div class="product-tags"><span>UV Painting Gel In Jar</span><span>Liner Gel</span><span>Cream Painting Gel</span><span>Spider Gel</span></div></div>
+            <div class="subcategory-card"><h4>Art Powder</h4><div class="product-tags"><span>Chrome Powder</span></div></div>
+          </div>
+        </article>
+
+        <article id="acrylic" class="directory-block">
+          <div class="directory-title">
+            <div>
+              <h3>Acrylic &amp; Dipping Nail System</h3>
+              <p>Acrylic powder, dipping powder, liquid and dip glue systems for professional buyers.</p>
+            </div>
+            <a href="#quote">Quote Acrylic / Dipping</a>
+          </div>
+          <div class="subcategory-grid">
+            <div class="subcategory-card"><h4>Acrylic &amp; Dipping Powder</h4><div class="product-tags"><span>Base Color</span><span>Ombre</span><span>Nude</span><span>Neon</span><span>Pure Dipping Powder</span><span>Flower Dipping Color</span><span>Cat Eye Dipping Color</span><span>EMA Monomer</span></div></div>
+            <div class="subcategory-card"><h4>Dip Glue System</h4><div class="product-tags"><span>Dip Prep</span><span>Dip Base</span><span>Dip Activator</span><span>Dip Top</span><span>Dip Brush Saver</span><span>Dip Nourish</span></div></div>
+          </div>
+        </article>
+
+        <article id="prep" class="directory-block">
+          <div class="directory-title">
+            <div>
+              <h3>Nail Prep, Remover &amp; Cleaner</h3>
+              <p>Liquids for preparation, cleaning, brush care and removal.</p>
+            </div>
+            <a href="#quote">Quote Prep / Remover</a>
+          </div>
+          <div class="subcategory-grid">
+            <div class="subcategory-card"><h4>Prep &amp; Cleaner Liquids</h4><div class="product-tags"><span>Acetone</span><span>Brush Clean Oil</span><span>Remover Gel</span><span>Nail Polish Remover</span><span>Gel Polish Remover</span><span>Brush Cleanser</span><span>Nail Prep</span></div></div>
+          </div>
+        </article>
+
+        <article id="polish" class="directory-block">
+          <div class="directory-title">
+            <div>
+              <h3>Nail Polish System</h3>
+              <p>Regular polish and halal nail polish options for retail and regional markets.</p>
+            </div>
+            <a href="#quote">Quote Nail Polish System</a>
+          </div>
+          <div class="subcategory-grid">
+            <div class="subcategory-card"><h4>Oil Based Normal Nail Polish</h4><div class="product-tags"><span>Calcium Add Base Coat</span><span>Clear Base Coat</span><span>Clear Pink Base Coat</span><span>Clear Top Coat</span><span>Purple Clear Top Coat</span><span>Colorful Nail Polish</span><span>Metallic Nail Polish</span></div></div>
+            <div class="subcategory-card"><h4>Water Base Halal Nail Polish</h4><div class="product-tags"><span>Water Base Halal Nail Polish</span></div></div>
+          </div>
+        </article>
+
+        <article id="builder" class="directory-block">
+          <div class="directory-title">
+            <div>
+              <h3>Builder Gel &amp; Extension Gel</h3>
+              <p>Structure and extension products for professional salon systems.</p>
+            </div>
+            <a href="#quote">Quote Builder Gel</a>
+          </div>
+          <div class="subcategory-grid">
+            <div class="subcategory-card"><h4>Builder &amp; Extension</h4><div class="product-tags"><span>Builder Gel In Jar</span><span>Builder Gel In Bottle</span><span>Poly Gel</span><span>No Stick Hand Gel</span><span>5D Model Gel</span></div></div>
+          </div>
+        </article>
+
+        <article id="care" class="directory-block">
+          <div class="directory-title">
+            <div>
+              <h3>Nail Care</h3>
+              <p>Care and treatment products for retail sets, salons and aftercare programs.</p>
+            </div>
+            <a href="#quote">Quote Nail Care</a>
+          </div>
+          <div class="subcategory-grid">
+            <div class="subcategory-card"><h4>Care Products</h4><div class="product-tags"><span>Nourish</span><span>Hand Cream</span><span>Hand Serum</span></div></div>
+          </div>
+        </article>
+
+        <article id="tools" class="directory-block">
+          <div class="directory-title">
+            <div>
+              <h3>Machine &amp; Tools</h3>
+              <p>Salon-use machines and tools to complete a professional supply package.</p>
+            </div>
+            <a href="#quote">Quote Machine &amp; Tools</a>
+          </div>
+          <div class="subcategory-grid">
+            <div class="subcategory-card"><h4>Machines &amp; Tools</h4><div class="product-tags"><span>Drill</span><span>Drill Bit</span><span>Lamp</span><span>Brush</span><span>Fan</span><span>Nail File</span><span>Buffer</span></div></div>
+          </div>
+        </article>
+
+        <article id="salon" class="directory-block">
+          <div class="directory-title">
+            <div>
+              <h3>Salon Products</h3>
+              <p>Salon retail and service products that can be bundled with nail systems.</p>
+            </div>
+            <a href="#quote">Quote Salon Products</a>
+          </div>
+          <div class="subcategory-grid">
+            <div class="subcategory-card"><h4>Salon Care &amp; Spa</h4><div class="product-tags"><span>Massage Oil</span><span>Massage Oil Candle</span><span>Body Scrub</span><span>Body Cream</span></div></div>
+          </div>
+        </article>
+
+        <article id="kits" class="directory-block">
+          <div class="directory-title">
+            <div>
+              <h3>Product In Kits</h3>
+              <p>Ready-to-sell kits for starter brands, salons, distributors and gift sets.</p>
+            </div>
+            <a href="#quote">Quote Product Kits</a>
+          </div>
+          <div class="subcategory-grid">
+            <div class="subcategory-card"><h4>Matching &amp; Starter Kits</h4><div class="product-tags"><span>3 In 1 Matching Color Kits</span><span>2 In 1 Matching Color Kits</span><span>Prep + Bonder Kits</span><span>Water Drop Top Kits</span></div></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="directory-note">
+        Suggested site structure: show these systems on the homepage, then create separate product landing pages for the strongest commercial categories such as Gel Polish System, Base/Top System, Builder Gel, Acrylic &amp; Dipping, Nail Polish, and Product Kits. Each product page should include MOQ, packaging options, certificate support, sample process and inquiry button.
+      </div>
+    </div>
+  </section>
+
+  <section id="new-products">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="label">New Product Collection</div>
+          <h2>Products Ready for Your Private Label</h2>
+          <p>Browse real product images, review professional specifications and open each product for complete OEM/ODM details.</p>
+        </div>
+        <a class="btn btn-dark" href="#quote">Request Combined Quote</a>
+      </div>
+      <div id="uploadedProductGrid" class="upload-product-grid"></div>
+    </div>
+  </section>
+
+  <section id="featured">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="label">Featured Products</div>
+          <h2>Put Real Products in Front of Buyers</h2>
+          <p>These product cards make the homepage feel like a product catalog, not only a company profile. Buyers can immediately see what they can ask for.</p>
+        </div>
+      </div>
+
+      <div class="featured-layout">
+        <div class="feature-visual">
+          <div class="visual-caption">
+            <strong>Private Label Packing Line</strong>
+            <span>Factory workers packing nail gel polish bottles into custom boxes for overseas buyers.</span>
+          </div>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="assets/gel-polish-bottles-variety.png" alt="Private label gel polish bottles">
+            <div class="product-body">
+              <h3>Private Label Gel Polish Collection</h3>
+              <p>Custom color collections for retail brands, distributors and salons.</p>
+              <div class="spec-list">
+                <span><strong>Options:</strong> HEMA-free, TPO-free options by project</span>
+                <span><strong>Packaging:</strong> Bottle, cap, label, box, color card</span>
+              </div>
+              <a class="btn btn-soft" href="#quote">Ask for Gel Polish Quote</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products-premium.png" alt="Builder gel jars and nail product bottles">
+            <div class="product-body">
+              <h3>Builder Gel / BIAB / Extension Gel</h3>
+              <p>Professional structure products for salon and private label brands.</p>
+              <div class="spec-list">
+                <span><strong>Products:</strong> BIAB, builder gel, extension gel, poly gel</span>
+                <span><strong>Samples:</strong> Clear, nude, pink and custom viscosity</span>
+              </div>
+              <a class="btn btn-soft" href="#quote">Request Builder Gel Samples</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/packaging-workers.png" alt="Workers packing private label nail products">
+            <div class="product-body">
+              <h3>Product Kits & Private Label Sets</h3>
+              <p>Starter kits, nail art kits, seasonal gift sets and salon kits.</p>
+              <div class="spec-list">
+                <span><strong>Kit support:</strong> Product matching, insert tray, box, carton</span>
+                <span><strong>Best for:</strong> Startup brands and retail distributors</span>
+              </div>
+              <a class="btn btn-soft" href="#quote">Build My Product Kit</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/shipping-export.png" alt="Export shipment for nail products">
+            <div class="product-body">
+              <h3>Bulk Supply & Distributor Orders</h3>
+              <p>Bulk gel, acrylic powder, base/top and wholesale supply options.</p>
+              <div class="spec-list">
+                <span><strong>Order type:</strong> Bulk supply, repacking, repeat purchase</span>
+                <span><strong>Support:</strong> QC, packing, export document preparation</span>
+              </div>
+              <a class="btn btn-soft" href="#quote">Get Distributor Price</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="factory" class="soft">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="label">Factory Proof</div>
+          <h2>Show the Factory Behind the Products</h2>
+          <p>Products attract buyers first. Factory proof gives them confidence to send an inquiry and discuss OEM/ODM projects.</p>
+        </div>
+      </div>
+      <div class="factory-proof">
+        <article class="factory-card">
+          <img src="assets/factory-hero.png" alt="Modern nail product factory filling line">
+          <div><h3>Modern Production</h3><p>Clean manufacturing environment with filling, packaging and QC operation.</p></div>
+        </article>
+        <article class="factory-card">
+          <img src="assets/gel-polish-bottles-variety.png" alt="Nail gel polish product range">
+          <div><h3>Product Development</h3><p>Multiple bottle types, color collections and formula choices for private label buyers.</p></div>
+        </article>
+        <article class="factory-card">
+          <img src="assets/packaging-workers.png" alt="Workers packing nail polish products">
+          <div><h3>Private Label Packing</h3><p>Custom boxes, labels, color cards, kits and export packing support.</p></div>
+        </article>
+        <article class="factory-card">
+          <img src="assets/shipping-export.png" alt="Export shipment preparation">
+          <div><h3>Export Ready</h3><p>Organized warehouse preparation, carton packing and shipment support for overseas orders.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <div class="wrap">
+      <div class="cert-layout">
+        <div>
+          <div class="label">Certificates & Documents</div>
+          <h2>Support for EU and US Buyer Requirements</h2>
+          <p class="intro">
+            We prepare product documents and coordinate tests according to the product category, formula,
+            private label plan and target market. This gives overseas buyers a clear document path before mass production.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#quote">Tell Us Your Certificate Needs</a>
+          </div>
+        </div>
+        <div class="cert-grid">
+          <div class="cert-card"><strong>SDS / MSDS / COA</strong><span>Product safety and batch document support according to formula and order requirements.</span></div>
+          <div class="cert-card"><strong>Ingredient List</strong><span>Ingredient information support for label, import and product registration preparation.</span></div>
+          <div class="cert-card"><strong>CPNP / MoCRA Information</strong><span>Information preparation support for EU and US-focused buyers by project.</span></div>
+          <div class="cert-card"><strong>HEMA-Free / TPO-Free Options</strong><span>Selected formula options can be recommended according to product system and target market.</span></div>
+          <div class="cert-card"><strong>Testing Coordination</strong><span>Support for heavy metal, microbiology and other requested third-party test coordination.</span></div>
+          <div class="cert-card"><strong>Factory QC</strong><span>Raw material check, sample confirmation, filling inspection, packing check and shipment review.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quote" class="soft">
+    <div class="wrap">
+      <div class="quote-layout">
+        <div>
+          <div class="label">Request Product Quote</div>
+          <h2>Choose Products First, Then We Recommend the Right Solution</h2>
+          <p class="intro">This inquiry form is designed for product catalog buyers. It asks exactly what we need to recommend samples, packaging, documents and pricing.</p>
+          <div class="quote-points">
+            <div><strong>For brand owners</strong><span>Tell us your product category, packaging idea and target market.</span></div>
+            <div><strong>For distributors</strong><span>Ask for fast-moving product lists, bulk supply and repeat order pricing.</span></div>
+            <div><strong>For EU / US buyers</strong><span>Share your document and test requirements before sample confirmation.</span></div>
+          </div>
+        </div>
+
+        <form class="quote-panel">
+          <div id="selectedProductNote" class="selected-product-note"></div>
+          <div class="form-grid">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Your name">
+            </div>
+            <div>
+              <label for="company">Company</label>
+              <input id="company" type="text" placeholder="Company name">
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="name@company.com">
+            </div>
+            <div>
+              <label for="whatsapp">WhatsApp</label>
+              <input id="whatsapp" type="text" placeholder="+8618686858175">
+            </div>
+            <div>
+              <label for="product">Product Category</label>
+              <select id="product">
+                <option>Gel Polish System</option>
+                <option>Base, Top &amp; Functional Gel System</option>
+                <option>Nail Art Gel &amp; Powder System</option>
+                <option>Acrylic &amp; Dipping Nail System</option>
+                <option>Nail Prep, Remover &amp; Cleaner</option>
+                <option>Nail Polish System</option>
+                <option>Builder Gel &amp; Extension Gel</option>
+                <option>Nail Care</option>
+                <option>Machine &amp; Tools</option>
+                <option>Salon Products</option>
+                <option>Product In Kits</option>
+                <option>Not Sure Yet</option>
+              </select>
+            </div>
+            <div>
+              <label for="market">Target Market</label>
+              <select id="market">
+                <option>EU</option>
+                <option>USA</option>
+                <option>Middle East</option>
+                <option>Australia</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="order">Order Type</label>
+              <select id="order">
+                <option>Private Label</option>
+                <option>Bulk Supply</option>
+                <option>Sample Kit</option>
+                <option>Salon Product Set</option>
+                <option>Distributor Wholesale</option>
+              </select>
+            </div>
+            <div>
+              <label for="docs">Documents Needed</label>
+              <select id="docs">
+                <option>SDS / COA / Ingredient List</option>
+                <option>CPNP / MoCRA Information Support</option>
+                <option>Testing Coordination</option>
+                <option>Not Sure Yet</option>
+              </select>
+            </div>
+            <div class="field-full">
+              <label for="message">Product Details</label>
+              <textarea id="message" placeholder="Tell us which products you want to launch, your packaging idea, quantity, target market and certificate requirements."></textarea>
+            </div>
+            <div class="field-full">
+              <button class="btn btn-primary" type="button">Request Product Catalog & Factory Quote</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>GZ New Nail · OEM/ODM Nail Product Factory</span>
+      <span>WhatsApp: +8618686858175</span>
     </div>
   </footer>
+  <div id="catalogProductModal" class="product-modal catalog-product-modal" role="dialog" aria-modal="true" aria-labelledby="catalogModalTitle">
+    <div class="product-modal-panel">
+      <button id="closeCatalogProductModal" class="product-modal-close" type="button" aria-label="Close product details">&times;</button>
+      <div class="product-modal-image">
+        <div id="catalogDetailCarousel" class="detail-carousel"></div>
+      </div>
+      <div class="product-modal-content">
+        <div id="catalogModalCategory" class="label"></div>
+        <h2 id="catalogModalTitle"></h2>
+        <div id="catalogModalPrice" class="factory-price-box"></div>
+        <p id="catalogModalDescription"></p>
+        <div id="catalogModalFeatures" class="listed-product-features"></div>
+        <div id="catalogModalSpecs" class="detail-table"></div>
 
+        <div class="detail-section">
+          <h3>Product Advantages</h3>
+          <ul id="catalogModalBenefits"></ul>
+        </div>
 
+        <div class="detail-section">
+          <h3>Private Label & Customization</h3>
+          <div class="customization-strip">
+            <div><strong>Custom Colors</strong><span>Color matching and collection development</span></div>
+            <div><strong>Custom Packaging</strong><span>Bottles, jars, labels and retail boxes</span></div>
+            <div><strong>Custom Logo</strong><span>Logo printing and private label design</span></div>
+            <div><strong>Bulk Supply</strong><span>Bulk format available from 1KG</span></div>
+            <div><strong>Small Packaging</strong><span>From 100 labeled bottles, mixed colors accepted</span></div>
+          </div>
+        </div>
+
+        <div class="listed-product-actions">
+          <a id="catalogModalWhatsapp" class="btn btn-primary" href="#" target="_blank" rel="noopener">Request Quote on WhatsApp</a>
+          <a id="catalogModalInquiry" class="btn btn-soft" href="#quote">Send Detailed Inquiry</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="removerProductModal" class="product-modal" role="dialog" aria-modal="true" aria-labelledby="removerProductTitle">
+    <div class="product-modal-panel">
+      <button id="closeProductModal" class="product-modal-close" type="button" aria-label="Close product details">&times;</button>
+      <div class="product-modal-image zoomable-media">
+        <img src="assets/newnail-magic-remover-gel-15ml.jpg" alt="Complete view of 15ml Magic Remover Gel and application">
+      </div>
+      <div class="product-modal-content">
+        <div class="label">Nail Prep, Remover & Cleaner</div>
+        <h2 id="removerProductTitle">15ml Magic Remover Gel</h2>
+        <div class="factory-price-box">
+          <div><small>Factory Price Range</small><strong>US$0.35 - 0.90 / bottle</strong></div>
+          <span>Reference price by bottle, label, formula and order quantity.</span>
+        </div>
+        <p>A fast brush-on solution developed to help remove UV gel polish efficiently. After the top coat is lightly filed, the remover helps the cured gel layer lift and peel in approximately 1-3 minutes. It is designed for professional nail salons, nail technicians, distributors and private label nail brands.</p>
+
+        <div class="listed-product-features">
+          <span>Non-Toxic</span><span>HEMA-Free</span><span>Vegan</span><span>CE</span><span>MSDS</span><span>OEM / ODM</span>
+        </div>
+
+        <div class="detail-table">
+          <div><small>Product Type</small><strong>UV Gel Polish Remover</strong></div>
+          <div><small>Net Content</small><strong>15ml / 15g</strong></div>
+          <div><small>Format</small><strong>Brush-On Liquid Gel</strong></div>
+          <div><small>Removal Time</small><strong>Approximately 1-3 Minutes</strong></div>
+          <div><small>Application</small><strong>Salon, Nail Technician, DIY</strong></div>
+          <div><small>Production Lead Time</small><strong>7-15 Working Days</strong></div>
+        </div>
+
+        <div class="detail-section">
+          <h3>Key Benefits</h3>
+          <ul>
+            <li>Brush-on application helps simplify professional gel removal.</li>
+            <li>Gel layer lifts and peels without traditional foil wrapping.</li>
+            <li>Suitable for salon service, retail distribution and private label projects.</li>
+            <li>Custom formula, bottle, label, logo and retail box options available.</li>
+          </ul>
+        </div>
+
+        <div class="detail-section">
+          <h3>Recommended Use</h3>
+          <ol>
+            <li>Lightly file the gel top coat to break the sealed surface.</li>
+            <li>Apply remover evenly over the cured gel, avoiding skin contact.</li>
+            <li>Wait approximately 1-3 minutes for the gel layer to lift.</li>
+            <li>Gently remove loosened gel and clean the nail surface.</li>
+          </ol>
+        </div>
+
+        <div class="detail-section">
+          <h3>Private Label Service</h3>
+          <p>Sample evaluation, OEM/ODM manufacturing, logo printing, label design, bottle selection, custom packaging and export document support are available. Contact our factory team for MOQ, sample cost and market-specific compliance requirements.</p>
+        </div>
+
+        <div class="listed-product-actions">
+          <a class="btn btn-primary" href="https://wa.me/8618686858175?text=Hello%20Newnail%2C%20I%20would%20like%20a%20quotation%20and%20sample%20for%20the%2015ml%20Magic%20Remover%20Gel." target="_blank" rel="noopener">Request Quote on WhatsApp</a>
+          <a class="btn btn-soft" href="#quote" id="modalInquiryButton">Send Detailed Inquiry</a>
+        </div>
+      </div>
+    </div>
+  </div>
   <script>
-    (function () {
-      const carousel = document.getElementById('nnHeroCarousel');
-      if (!carousel) return;
-
-      const slides = Array.from(carousel.querySelectorAll('.nn-hero-slide'));
-      const dots = Array.from(carousel.querySelectorAll('.nn-carousel-dot'));
-      const prevBtn = carousel.querySelector('[data-dir="prev"]');
-      const nextBtn = carousel.querySelector('[data-dir="next"]');
-      let current = 0;
-      let timer = null;
-
-      function showSlide(index) {
-        current = (index + slides.length) % slides.length;
-        slides.forEach((slide, i) => slide.classList.toggle('active', i === current));
-        dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
+    const productCatalog = [
+      {
+        name: "Gel Polish System",
+        short: "Gel Polish",
+        description: "Color and effect gel collections for private label brands, salons and distributors.",
+        groups: [
+          { name: "Core Color Collection", products: ["Color Gel", "French Collection", "One Step Gel", "New Season Arrival"] },
+          { name: "Effect Gel Collection", products: ["Platinum Gel", "Neon Gel", "Glow In Dark Gel", "Diamond Gel", "Temperature Changing Gel", "Cat Eye Gel"] }
+        ]
+      },
+      {
+        name: "Base, Top & Functional Gel System",
+        short: "Base, Top & Functional",
+        description: "A complete performance system for adhesion, shine, protection and specialist nail services.",
+        groups: [
+          { name: "Top Coat", products: ["Stainless Steel Top", "Diamond Top", "Wear Resistant Top", "Glossy Strong Top", "Super Shiny Top", "Velvet Matte Top", "Chrome Top", "Classical Wipe Top", "Crystal Plating Top"] },
+          { name: "Base Coat", products: ["Base Gel (Thin)", "Rubber Base Gel (Thick)", "Fiber Base Gel"] },
+          { name: "Functional Gel", products: ["Tip Glue Gel (Gel X)", "Blooming Gel", "Blooming Liquid", "Russian Self-Leveling Gel", "Reinforce Gel", "Primer / Bonder"] }
+        ]
+      },
+      {
+        name: "Nail Art Gel & Powder System",
+        short: "Nail Art",
+        description: "Professional painting gels and decorative powders for creative salon and retail ranges.",
+        groups: [
+          { name: "Painting & Art Gel", products: ["UV Painting Gel In Jar", "Liner Gel", "Cream Painting Gel", "Spider Gel"] },
+          { name: "Art Powder", products: ["Chrome Powder"] }
+        ]
+      },
+      {
+        name: "Acrylic & Dipping Nail System",
+        short: "Acrylic & Dipping",
+        description: "Coordinated powder, monomer and dip liquids for complete professional systems.",
+        groups: [
+          { name: "Acrylic & Dipping Powder", products: ["Acrylic & Dipping Powder Base Color", "Acrylic & Dipping Powder Ombre", "Acrylic & Dipping Powder Nude", "Acrylic & Dipping Powder Neon", "Pure Dipping Powder", "Flower Dipping Color", "Cat Eye Dipping Color", "EMA Monomer"] },
+          { name: "Dip Glue System", products: ["Dip Prep", "Dip Base", "Dip Activator", "Dip Top", "Dip Brush Saver", "Dip Nourish"] }
+        ]
+      },
+      {
+        name: "Nail Prep, Remover & Cleaner",
+        short: "Prep & Remover",
+        description: "Preparation, removal and cleaning liquids for professional salon workflows.",
+        groups: [
+          { name: "Prep & Cleaner", products: ["Acetone", "Brush Clean Oil", "Nail Polish Remover", "Gel Polish Remover", "Brush Cleanser", "Nail Prep"] },
+          { name: "Remover Gel", products: ["OEM 15ml Remover Gel", "Private Label Remover Gel"] }
+        ]
+      },
+      {
+        name: "Nail Polish System",
+        short: "Nail Polish",
+        description: "Air-dry nail polish lines with coordinated base, color and top coat options.",
+        groups: [
+          { name: "Oil Based Normal Nail Polish", products: ["Calcium Add Base Coat", "Clear Base Coat", "Clear Pink Base Coat", "Clear Top Coat", "Purple Clear Top Coat", "Colorful Nail Polish", "Metallic Nail Polish"] },
+          { name: "Water Based System", products: ["Water Base Halal Nail Polish"] }
+        ]
+      },
+      {
+        name: "Builder Gel & Extension Gel",
+        short: "Builder & Extension",
+        description: "Structure, overlay and extension products for professional nail technicians.",
+        groups: [
+          { name: "Builder & Extension", products: ["Builder Gel In Jar", "Builder Gel In Bottle", "Poly Gel", "No Stick Hand Gel", "5D Model Gel"] }
+        ]
+      },
+      {
+        name: "Nail Care",
+        short: "Nail Care",
+        description: "Aftercare and hand care products for salon services and retail sets.",
+        groups: [
+          { name: "Care Products", products: ["Nourish", "Hand Cream", "Hand Serum"] }
+        ]
+      },
+      {
+        name: "Machine & Tools",
+        short: "Machine & Tools",
+        description: "Equipment and accessories required for a complete professional nail range.",
+        groups: [
+          { name: "Machines", products: ["Drill", "Lamp", "Fan"] },
+          { name: "Tools & Accessories", products: ["Drill Bit", "Brush", "Nail File", "Buffer"] }
+        ]
+      },
+      {
+        name: "Salon Products",
+        short: "Salon Products",
+        description: "Spa and body care products suitable for salons, distributors and gift programs.",
+        groups: [
+          { name: "Salon Care & Spa", products: ["Massage Oil", "Massage Oil Candle", "Body Scrub", "Body Cream"] }
+        ]
+      },
+      {
+        name: "Product In Kits",
+        short: "Product Kits",
+        description: "Coordinated, ready-to-sell sets for brand launches, promotions and distribution.",
+        groups: [
+          { name: "Matching & Starter Kits", products: ["3 In 1 Matching Color Kits", "2 In 1 Matching Color Kits", "Prep + Bonder Kits", "Water Drop Top Kits"] }
+        ]
+      },
+      {
+        name: "OEM / ODM Service",
+        short: "OEM / ODM",
+        description: "Build a market-ready collection with formula, color, bottle, label, packaging and documentation support.",
+        groups: [
+          { name: "Private Label Development", products: ["Custom Formula", "Custom Color Matching", "Bottle & Cap Selection", "Logo & Label Printing"] },
+          { name: "Launch Support", products: ["Custom Packaging", "Sample Development", "Compliance Document Support", "Bulk Production"] }
+        ]
       }
+    ];
 
-      function nextSlide() {
-        showSlide(current + 1);
-      }
+    let activeCatalogIndex = 0;
+    const catalogTabs = document.getElementById("catalogTabs");
+    const catalogMobileTabs = document.getElementById("catalogMobileTabs");
+    const catalogMain = document.getElementById("catalogMain");
+    const catalogSearch = document.getElementById("catalogSearch");
+    const catalogCount = document.getElementById("catalogCount");
 
-      function prevSlide() {
-        showSlide(current - 1);
-      }
+    function productTotal(category) {
+      return category.groups.reduce((sum, group) => sum + group.products.length, 0);
+    }
 
-      function startAuto() {
-        stopAuto();
-        timer = setInterval(nextSlide, 4500);
-      }
-
-      function stopAuto() {
-        if (timer) clearInterval(timer);
-      }
-
-      prevBtn.addEventListener('click', function () {
-        prevSlide();
-        startAuto();
-      });
-
-      nextBtn.addEventListener('click', function () {
-        nextSlide();
-        startAuto();
-      });
-
-      dots.forEach((dot, index) => {
-        dot.addEventListener('click', function () {
-          showSlide(index);
-          startAuto();
+    function renderTabs() {
+      catalogTabs.innerHTML = productCatalog.map((category, index) => `
+        <button class="catalog-tab ${index === activeCatalogIndex ? "active" : ""}" data-index="${index}">
+          <span class="tab-index">${String(index + 1).padStart(2, "0")}</span>
+          <span>${category.short}</span>
+          <span class="tab-count">${productTotal(category)}</span>
+        </button>`).join("");
+      catalogMobileTabs.innerHTML = productCatalog.map((category, index) => `
+        <button class="${index === activeCatalogIndex ? "active" : ""}" data-index="${index}">${category.short}</button>`).join("");
+      document.querySelectorAll("[data-index]").forEach(button => {
+        button.addEventListener("click", () => {
+          activeCatalogIndex = Number(button.dataset.index);
+          catalogSearch.value = "";
+          renderTabs();
+          renderCategory(productCatalog[activeCatalogIndex]);
         });
       });
+    }
 
-      carousel.addEventListener('mouseenter', stopAuto);
-      carousel.addEventListener('mouseleave', startAuto);
+    function escapeAttr(value) {
+      return String(value).replace(/"/g, "&quot;");
+    }
 
-      showSlide(0);
-      startAuto();
-
-      // Inquiry Form Handler
-      const form = document.getElementById('inquiryForm');
-      if (form) {
-        form.addEventListener('submit', function (e) {
-          e.preventDefault();
-          const formData = new FormData(form);
-          let body = `Name: ${formData.get('name')}\n`;
-          body += `Company: ${formData.get('company')}\n`;
-          body += `Email: ${formData.get('email')}\n`;
-          body += `WhatsApp: ${formData.get('whatsapp')}\n`;
-          body += `Product: ${formData.get('product_type')}\n`;
-          body += `Quantity: ${formData.get('quantity')}\n`;
-          body += `Market: ${formData.get('market')}\n`;
-          body += `Private Label: ${formData.get('need_private_label') ? 'Yes' : 'No'}\n`;
-          body += `Docs: ${formData.get('need_docs') ? 'Yes' : 'No'}\n`;
-          body += `Message: ${formData.get('message')}\n`;
-
-          const mailtoLink = `mailto:newnail001@gznewnail.com?subject=OEM Inquiry from ${formData.get('name')}&body=${encodeURIComponent(body)}`;
-          
-          alert('Thank you for your inquiry! We will contact you shortly.');
-          window.location.href = mailtoLink;
-        });
+    function productButton(product, categoryName) {
+      const listedIndex = uploadedProducts.findIndex(item => item.catalogName === product);
+      if (listedIndex >= 0) {
+        const listed = uploadedProducts[listedIndex];
+        const title = listed.listingTitle || listed.name;
+        return `
+          <div class="listed-category-node">
+            <div class="tertiary-category-title">
+              <small>Tertiary Category</small>
+              <strong>${product}</strong>
+            </div>
+            <button class="smart-product catalog-listed" data-product="${escapeAttr(title)}" data-category="${escapeAttr(categoryName)}" data-detail-index="${listedIndex}">
+              <img src="${productAssetBase}${listed.images[0]}" alt="${escapeAttr(title)}">
+              <span>
+                <small>Listed Product</small>
+                ${title}
+                <strong>${listed.customMoq}</strong>
+                <em class="catalog-listed-price">${listed.priceRange}</em>
+              </span>
+            </button>
+          </div>`;
       }
-    })();
+      return `<button class="smart-product" data-product="${escapeAttr(product)}" data-category="${escapeAttr(categoryName)}">${product}</button>`;
+    }
+
+    function removerGelListing(categoryName) {
+      return `
+        <article class="listed-product">
+          <div class="listed-product-media product-detail-trigger zoomable-media" role="button" tabindex="0" aria-label="View full product details">
+            <img src="assets/newnail-magic-remover-gel-15ml.jpg" alt="OEM 15ml Magic Remover Gel product and application">
+            <span class="listed-product-badge">Available for OEM / ODM</span>
+          </div>
+          <div class="listed-product-body">
+            <h5>OEM 15ml Non-Toxic Magic Remover Gel</h5>
+            <div class="factory-price-box">
+              <div><small>Factory Price Range</small><strong>US$0.35 - 0.90 / bottle</strong></div>
+              <span>Reference price by bottle, label, formula and order quantity.</span>
+            </div>
+            <p>A brush-on remover designed for UV gel polish. Apply it after filing the top coat and the gel layer lifts and peels in approximately 1-3 minutes, helping salons remove old gel without traditional foil wrapping. Suitable for professional nail salons, nail technicians and private label brands.</p>
+            <div class="listed-product-features">
+              <span>Non-Toxic</span><span>HEMA-Free</span><span>Vegan</span><span>CE</span><span>MSDS</span><span>OEM / ODM</span>
+            </div>
+            <div class="product-specs">
+              <div><small>Volume</small><strong>15ml / 15g</strong></div>
+              <div><small>Removal Time</small><strong>Approx. 1-3 min</strong></div>
+              <div><small>Application</small><strong>UV Gel Polish</strong></div>
+              <div><small>Lead Time</small><strong>7-15 workdays</strong></div>
+            </div>
+            <p><strong>Customization:</strong> sample service, OEM/ODM production, custom formula, bottle, logo, label and retail packaging support. Contact our factory team for the current MOQ and project quotation.</p>
+            <div class="listed-product-actions">
+              <button class="btn btn-dark product-detail-trigger" type="button">View Full Product Details</button>
+              <button class="btn btn-primary smart-product" data-product="OEM 15ml Non-Toxic Magic Remover Gel" data-category="${categoryName}">Request Price & Sample</button>
+              <a class="btn btn-soft" href="https://wa.me/8618686858175?text=Hello%20Newnail%2C%20I%20am%20interested%20in%20the%2015ml%20Magic%20Remover%20Gel.%20Please%20send%20MOQ%2C%20sample%20and%20OEM%20details." target="_blank" rel="noopener">WhatsApp Factory Team</a>
+            </div>
+          </div>
+        </article>`;
+    }
+
+    function bindProductButtons() {
+      document.querySelectorAll(".smart-product").forEach(button => {
+        button.addEventListener("click", () => {
+          if (button.dataset.detailIndex !== undefined) {
+            openCatalogProduct(Number(button.dataset.detailIndex));
+            return;
+          }
+          const category = button.dataset.category;
+          const product = button.dataset.product;
+          const select = document.getElementById("product");
+          const message = document.getElementById("message");
+          const note = document.getElementById("selectedProductNote");
+          const matchingOption = Array.from(select.options).find(option => option.text === category);
+          if (matchingOption) select.value = matchingOption.value;
+          message.value = `Interested product: ${product}\nCategory: ${category}\n\nPlease send MOQ, private label options, sample cost, lead time and available compliance documents.`;
+          note.textContent = `Selected: ${product}`;
+          note.classList.add("visible");
+          document.getElementById("quote").scrollIntoView({ behavior: "smooth" });
+        });
+      });
+      document.querySelectorAll(".product-detail-trigger").forEach(trigger => {
+        trigger.addEventListener("click", openProductModal);
+        trigger.addEventListener("keydown", event => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openProductModal();
+          }
+        });
+      });
+      bindMagnifier();
+    }
+
+    function renderCategory(category) {
+      const groups = category.groups.map(group => `
+        <section class="smart-subcategory">
+          <div class="subcategory-name">
+            <h4>${group.name}</h4>
+            <span>${group.products.length} products</span>
+          </div>
+          <div class="smart-products">
+            ${group.products.map(product => productButton(product, category.name)).join("")}
+            ${group.name === "Remover Gel" ? removerGelListing(category.name) : ""}
+          </div>
+        </section>`).join("");
+      catalogMain.innerHTML = `
+        <div class="catalog-heading">
+          <div>
+            <div class="label">Product system ${String(activeCatalogIndex + 1).padStart(2, "0")}</div>
+            <h3>${category.name}</h3>
+            <p>${category.description}</p>
+          </div>
+          <a class="btn btn-dark" href="#quote">Request This System</a>
+        </div>
+        <div class="subcategory-list">${groups}</div>`;
+      catalogCount.textContent = `${productCatalog.length} systems · ${productCatalog.reduce((sum, item) => sum + productTotal(item), 0)} product options`;
+      bindProductButtons();
+    }
+
+    function renderSearch(query) {
+      const normalized = query.trim().toLowerCase();
+      if (!normalized) {
+        renderCategory(productCatalog[activeCatalogIndex]);
+        return;
+      }
+      const matches = [];
+      productCatalog.forEach(category => {
+        category.groups.forEach(group => {
+          group.products.forEach(product => {
+            if (`${category.name} ${group.name} ${product}`.toLowerCase().includes(normalized)) {
+              matches.push({ product, category: category.name, group: group.name });
+            }
+          });
+        });
+      });
+      catalogMain.innerHTML = matches.length ? `
+        <div class="catalog-heading">
+          <div><div class="label">Search results</div><h3>${matches.length} matching products</h3><p>Select a product to add it to your inquiry.</p></div>
+        </div>
+        <div class="smart-products" style="margin-top:24px">
+          ${matches.map(item => productButton(item.product, item.category)).join("")}
+        </div>` : `<div class="catalog-empty"><h3>No matching product found</h3><p>Try another product name or ask our team for a custom formula.</p><a class="btn btn-dark" href="#quote">Ask Our Product Team</a></div>`;
+      catalogCount.textContent = `${matches.length} search results`;
+      bindProductButtons();
+    }
+
+    const uploadedProducts = [
+      {
+        name: "Metallic / Chrome Nail System",
+        listingTitle: "15ml Metallic Chrome Nail Polish System",
+        catalogName: "Metallic Nail Polish",
+        category: "Nail Polish System",
+        priceRange: "US$0.42 - 1.25 / bottle",
+        priceNote: "Factory reference price by quantity, formula and packaging.",
+        customMoq: "Custom color, packaging and LOGO. 1KG bulk from 1KG, small bottle label from 100 mixed-color bottles.",
+        images: ["chrome-1.jpg", "chrome-2.png", "chrome-3.png", "chrome-4.png"],
+        summary: "A professional base and top system developed for smooth, high-shine metallic and mirror chrome nail effects.",
+        description: "This coordinated 15ml chrome base and top system creates the smooth surface and protective finish required for professional metallic and mirror nail designs. The self-leveling base supports even chrome powder application, while the scratch-resistant top helps maintain shine and wear.",
+        features: ["15ml", "UV/LED", "60s Cure", "CE", "MSDS", "OEM/ODM"],
+        specs: [["Product Type","Chrome Base & Top System"],["Material","UV-Curable Resin"],["Color","Clear"],["Cure Time","60 seconds"],["Application","Metallic / Mirror Nail Art"],["Wear","Up to 4 weeks"]],
+        benefits: ["Smooth single-layer base for chrome pigments.", "Compatible with major chrome powder colors.", "Self-leveling application helps prevent streaking.", "Scratch-resistant finish protects the mirror effect."]
+      },
+      {
+        name: "Color Gel",
+        listingTitle: "15ml HEMA-Free Private Label UV Color Gel",
+        catalogName: "Color Gel",
+        category: "Gel Polish System",
+        priceRange: "US$0.35 - 0.95 / bottle",
+        priceNote: "Factory reference price by color quantity, bottle and box design.",
+        customMoq: "Custom color, packaging and LOGO. 1KG bulk from 1KG, small bottle label from 100 mixed-color bottles.",
+        images: ["color-gel-1.jpg", "color-gel-2.png", "color-gel-3.jpg", "color-gel-4.jpg"],
+        summary: "Salon-quality 15ml soak-off color gel with rich pigmentation and private label color collection support.",
+        description: "Professional UV/LED color gel created for salons, distributors and private label collections. The resin-based formula provides smooth application, rich color coverage and long-lasting wear, with custom shades and coordinated packaging available for brand projects.",
+        features: ["15ml", "HEMA-Free", "Vegan", "Soak-Off", "CE", "MSDS"],
+        specs: [["Product Type","UV/LED Color Gel"],["Net Content","15ml"],["Material","Resin"],["Application","Salon & DIY"],["Removal","Easy Soak-Off"],["Lead Time","3-7 working days"]],
+        benefits: ["High-pigment color coverage with a smooth finish.", "HEMA-free, vegan and environmentally considerate options.", "Suitable for complete seasonal and core color collections.", "Custom color matching, bottle and label development available."]
+      },
+      {
+        name: "Chrome Top",
+        listingTitle: "15ml Clear Chrome Top Gel",
+        catalogName: "Chrome Top",
+        category: "Base, Top & Functional Gel System",
+        priceRange: "US$0.38 - 1.10 / bottle",
+        priceNote: "Factory reference price by formula, bottle, cap and label choice.",
+        customMoq: "Custom color, packaging and LOGO. 1KG bulk from 1KG, small bottle label from 100 mixed-color bottles.",
+        images: ["chrome-1.jpg", "chrome-2.png", "chrome-3.png", "chrome-4.png"],
+        summary: "Clear chrome-compatible top gel for sealing mirror powder with durable gloss and scratch resistance.",
+        description: "A 15ml professional chrome top designed to seal mirror and metallic powder effects while maintaining clarity and reflectivity. It cures under UV/LED light and forms a hard protective surface that helps resist fine scratches, fading and peeling.",
+        features: ["15ml", "Clear", "UV/LED", "60s Cure", "Scratch Resistant", "CE / MSDS"],
+        specs: [["Product Type","Chrome Top Gel"],["Color","Clear"],["Material","UV-Curable Resin"],["Cure Time","60 seconds"],["Finish","High-Gloss Mirror"],["Service","OEM / ODM"]],
+        benefits: ["Maintains the brilliance of chrome powder effects.", "Hard protective finish helps resist fine scratches.", "Compatible with a broad range of chrome powders.", "Suitable for professional salons and private label systems."]
+      },
+      {
+        name: "Colorful Nail Polish",
+        listingTitle: "15ml Oil-Based Colorful Nail Polish",
+        catalogName: "Colorful Nail Polish",
+        category: "Nail Polish System",
+        priceRange: "US$0.28 - 0.85 / bottle",
+        priceNote: "Factory reference price by color count, brush, bottle and retail packaging.",
+        customMoq: "Custom color, packaging and LOGO. 1KG bulk from 1KG, small bottle label from 100 mixed-color bottles.",
+        images: ["nail-polish-1.png", "nail-polish-2.png", "nail-polish-3.png", "nail-polish-4.png"],
+        summary: "High-pigment 15ml oil-based nail polish with air-dry performance and hundreds of color options.",
+        description: "A salon-quality oil-based nail polish collection developed for smooth, vivid and glossy color. The fast air-dry formula is easy to apply, offers strong pigmentation and supports extensive color customization for retail, salon and distributor brands.",
+        features: ["15ml", "Air Dry", "432 Colors", "High Pigment", "Low Odor", "Custom Logo"],
+        specs: [["Product Type","Oil-Based Nail Polish"],["Net Content","15ml"],["Drying","Air Dry"],["Color Range","432 colors"],["Finish","High Gloss"],["Application","Salon & Retail"]],
+        benefits: ["Vivid color payoff with smooth self-leveling application.", "Fast-drying formula reduces waiting time.", "Low-odor options and HEMA-free positioning available.", "Wide brush supports controlled, even application."]
+      },
+      {
+        name: "EMA Monomer",
+        listingTitle: "Low-Odor All-Season EMA Monomer",
+        catalogName: "EMA Monomer",
+        category: "Acrylic & Dipping Nail System",
+        priceRange: "US$3.20 - 6.80 / kg",
+        priceNote: "Factory reference price by purity, bottle size and carton packing.",
+        customMoq: "Custom packaging and LOGO. 1KG bulk from 1KG, small bottle label from 100 mixed-size bottles.",
+        images: ["ema-1.png", "ema-2.png", "ema-3.png", "ema-4.png"],
+        summary: "Low-odor, all-season EMA acrylic liquid engineered for strong adhesion and controlled professional application.",
+        description: "Professional EMA monomer liquid formulated for use with acrylic nail powder. The low-odor, non-yellowing system provides smooth bead control, strong adhesion and dependable flexibility for salon extensions, overlays and 3D nail art.",
+        features: ["EMA", "Low Odor", "All Season", "Non-Yellowing", "CE", "MSDS"],
+        specs: [["Product Type","EMA Acrylic Liquid"],["Available Sizes","120ml to 1 Gallon"],["Appearance","Clear Liquid"],["Application","Acrylic Powder System"],["Performance","Strong Adhesion"],["Service","OEM / ODM"]],
+        benefits: ["Adjustable drying speed for different climates and techniques.", "Low-odor options support a more comfortable salon environment.", "Non-yellowing clarity and long-lasting performance.", "Compatible with professional acrylic powder systems."]
+      },
+      {
+        name: "Builder Gel In Jar",
+        listingTitle: "30ml Low-Heat Builder Gel In Jar",
+        catalogName: "Builder Gel In Jar",
+        category: "Builder Gel & Extension Gel",
+        priceRange: "US$0.75 - 2.20 / jar",
+        priceNote: "Factory reference price by viscosity, color, jar size and box option.",
+        customMoq: "Custom color, packaging and LOGO. 1KG bulk from 1KG, small jar label from 100 mixed-color jars.",
+        images: ["builder-1.png", "builder-2.jpg", "builder-3.png", "builder-4.png"],
+        summary: "Self-leveling, low-heat builder gel in jar for overlays, strengthening and professional nail extensions.",
+        description: "A salon-grade builder and extension gel with a smooth self-leveling texture, low-heat curing and strong structure. Designed for overlays, apex building and nail extensions, it is available in multiple colors, viscosities and jar sizes for private label projects.",
+        features: ["HEMA-Free", "Low Heat", "Self-Leveling", "Vegan", "CE", "CPSR / MSDS"],
+        specs: [["Product Type","Builder / Extension Gel"],["Standard Size","30ml"],["Available Sizes","30ml to 1KG"],["Curing","UV / LED"],["Removal","Soak-Off Options"],["Lead Time","7-15 working days"]],
+        benefits: ["Low-heat curing helps improve client comfort.", "Self-leveling consistency reduces filing time.", "Non-yellowing color stability supports clean results.", "Suitable for overlays, extensions and structured manicures."]
+      }
+    ];
+
+    const productAssetBase = "assets/catalog-products/";
+    const uploadedProductGrid = document.getElementById("uploadedProductGrid");
+    function productSlides(product, cardIndex) {
+      return product.images.map((image, index) => `<img class="${index === 0 ? "active" : ""}" src="${productAssetBase}${image}" alt="${product.name} product image ${index + 1}">`).join("");
+    }
+    function bindMagnifier(target) {
+      const mediaItems = target ? [target] : Array.from(document.querySelectorAll(".zoomable-media"));
+      mediaItems.forEach(media => {
+        if (media.dataset.zoomBound === "true") return;
+        media.dataset.zoomBound = "true";
+        function updateZoomPosition(event) {
+          const image = media.querySelector("img.active") || media.querySelector("img");
+          if (!image) return;
+          const rect = media.getBoundingClientRect();
+          const x = Math.max(0, Math.min(100, ((event.clientX - rect.left) / rect.width) * 100));
+          const y = Math.max(0, Math.min(100, ((event.clientY - rect.top) / rect.height) * 100));
+          media.style.setProperty("--zoom-x", `${x}%`);
+          media.style.setProperty("--zoom-y", `${y}%`);
+        }
+        media.addEventListener("mousemove", event => {
+          updateZoomPosition(event);
+          media.classList.add("is-zooming");
+        });
+        media.addEventListener("mouseenter", event => {
+          updateZoomPosition(event);
+          media.classList.add("is-zooming");
+        });
+        media.addEventListener("click", event => {
+          if (event.target.closest(".carousel-arrow, .carousel-dots button, .listed-product-badge")) return;
+          updateZoomPosition(event);
+          media.classList.toggle("zoom-locked");
+          media.classList.toggle("is-zooming", media.classList.contains("zoom-locked"));
+        });
+        media.addEventListener("mouseleave", () => {
+          if (!media.classList.contains("zoom-locked")) media.classList.remove("is-zooming");
+        });
+      });
+    }
+    function renderUploadedProducts() {
+      uploadedProductGrid.innerHTML = uploadedProducts.map((product, index) => `
+        <article class="upload-product-card">
+          <div class="mini-carousel zoomable-media" data-carousel="${index}">
+            ${productSlides(product, index)}
+            <button class="carousel-arrow prev" type="button" data-direction="-1" aria-label="Previous image">&#8249;</button>
+            <button class="carousel-arrow next" type="button" data-direction="1" aria-label="Next image">&#8250;</button>
+            <div class="carousel-dots">${product.images.map((_, imageIndex) => `<button type="button" class="${imageIndex === 0 ? "active" : ""}" data-slide="${imageIndex}" aria-label="View image ${imageIndex + 1}"></button>`).join("")}</div>
+          </div>
+          <div class="upload-product-body">
+            <div class="label">${product.category}</div>
+            <h3>${product.listingTitle || product.name}</h3>
+            <div class="factory-price-box">
+              <div><small>Factory Price Range</small><strong>${product.priceRange}</strong></div>
+              <span>${product.priceNote}</span>
+            </div>
+            <p>${product.summary}</p>
+            <button class="btn btn-dark open-uploaded-product" type="button" data-product-index="${index}">View Product Details</button>
+          </div>
+        </article>`).join("");
+
+      document.querySelectorAll(".mini-carousel").forEach(carousel => {
+        let current = 0;
+        const images = Array.from(carousel.querySelectorAll("img"));
+        const dots = Array.from(carousel.querySelectorAll(".carousel-dots button"));
+        function show(index) {
+          current = (index + images.length) % images.length;
+          images.forEach((image, i) => image.classList.toggle("active", i === current));
+          dots.forEach((dot, i) => dot.classList.toggle("active", i === current));
+          carousel.classList.remove("zoom-locked", "is-zooming");
+          carousel.style.setProperty("--zoom-x", "50%");
+          carousel.style.setProperty("--zoom-y", "50%");
+        }
+        carousel.querySelectorAll(".carousel-arrow").forEach(button => button.addEventListener("click", () => show(current + Number(button.dataset.direction))));
+        dots.forEach(dot => dot.addEventListener("click", () => show(Number(dot.dataset.slide))));
+      });
+      document.querySelectorAll(".open-uploaded-product").forEach(button => button.addEventListener("click", () => openCatalogProduct(Number(button.dataset.productIndex))));
+      bindMagnifier();
+    }
+
+    const catalogProductModal = document.getElementById("catalogProductModal");
+    let detailSlideIndex = 0;
+    function renderDetailSlide(index) {
+      const slides = Array.from(document.querySelectorAll("#catalogDetailCarousel img"));
+      const dots = Array.from(document.querySelectorAll("#catalogDetailCarousel .carousel-dots button"));
+      detailSlideIndex = (index + slides.length) % slides.length;
+      slides.forEach((slide, i) => slide.classList.toggle("active", i === detailSlideIndex));
+      dots.forEach((dot, i) => dot.classList.toggle("active", i === detailSlideIndex));
+      const detailCarousel = document.getElementById("catalogDetailCarousel");
+      detailCarousel.classList.remove("zoom-locked", "is-zooming");
+      detailCarousel.style.setProperty("--zoom-x", "50%");
+      detailCarousel.style.setProperty("--zoom-y", "50%");
+    }
+    function openCatalogProduct(index) {
+      const product = uploadedProducts[index];
+      const detailCarousel = document.getElementById("catalogDetailCarousel");
+      detailCarousel.innerHTML = `
+        ${product.images.map((image, imageIndex) => `<img class="${imageIndex === 0 ? "active" : ""}" src="${productAssetBase}${image}" alt="${product.name} detail image ${imageIndex + 1}">`).join("")}
+        <button class="carousel-arrow prev" type="button" aria-label="Previous image">&#8249;</button>
+        <button class="carousel-arrow next" type="button" aria-label="Next image">&#8250;</button>
+        <div class="carousel-dots">${product.images.map((_, imageIndex) => `<button type="button" class="${imageIndex === 0 ? "active" : ""}" data-slide="${imageIndex}" aria-label="View image ${imageIndex + 1}"></button>`).join("")}</div>`;
+      detailSlideIndex = 0;
+      detailCarousel.querySelector(".prev").addEventListener("click", () => renderDetailSlide(detailSlideIndex - 1));
+      detailCarousel.querySelector(".next").addEventListener("click", () => renderDetailSlide(detailSlideIndex + 1));
+      detailCarousel.querySelectorAll(".carousel-dots button").forEach(dot => dot.addEventListener("click", () => renderDetailSlide(Number(dot.dataset.slide))));
+      detailCarousel.classList.add("zoomable-media");
+      bindMagnifier(detailCarousel);
+      document.getElementById("catalogModalCategory").textContent = `${product.category} / ${product.catalogName}`;
+      document.getElementById("catalogModalTitle").textContent = product.listingTitle || product.name;
+      document.getElementById("catalogModalPrice").innerHTML = `<div><small>Factory Price Range</small><strong>${product.priceRange}</strong></div><span>${product.priceNote}</span>`;
+      document.getElementById("catalogModalDescription").textContent = product.description;
+      document.getElementById("catalogModalFeatures").innerHTML = product.features.map(feature => `<span>${feature}</span>`).join("");
+      document.getElementById("catalogModalSpecs").innerHTML = product.specs.map(spec => `<div><small>${spec[0]}</small><strong>${spec[1]}</strong></div>`).join("");
+      document.getElementById("catalogModalBenefits").innerHTML = product.benefits.map(benefit => `<li>${benefit}</li>`).join("");
+      document.getElementById("catalogModalWhatsapp").href = `https://wa.me/8618686858175?text=${encodeURIComponent(`Hello Newnail, I am interested in ${product.listingTitle || product.name}. Please send samples, MOQ, mixed-color private label and packaging options. Reference price range shown on the website: ${product.priceRange}.`)}`;
+      catalogProductModal.classList.add("open");
+      document.body.classList.add("modal-open");
+      document.getElementById("closeCatalogProductModal").focus();
+    }
+    function closeCatalogProduct() {
+      catalogProductModal.classList.remove("open");
+      document.body.classList.remove("modal-open");
+    }
+    document.getElementById("closeCatalogProductModal").addEventListener("click", closeCatalogProduct);
+    document.getElementById("catalogModalInquiry").addEventListener("click", closeCatalogProduct);
+    catalogProductModal.addEventListener("click", event => {
+      if (event.target === catalogProductModal) closeCatalogProduct();
+    });
+
+    const productModal = document.getElementById("removerProductModal");
+    function openProductModal() {
+      productModal.classList.add("open");
+      document.body.classList.add("modal-open");
+      document.getElementById("closeProductModal").focus();
+    }
+    function closeProductModal() {
+      productModal.classList.remove("open");
+      document.body.classList.remove("modal-open");
+    }
+    document.getElementById("closeProductModal").addEventListener("click", closeProductModal);
+    document.getElementById("modalInquiryButton").addEventListener("click", closeProductModal);
+    productModal.addEventListener("click", event => {
+      if (event.target === productModal) closeProductModal();
+    });
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape" && productModal.classList.contains("open")) closeProductModal();
+      if (event.key === "Escape" && catalogProductModal.classList.contains("open")) closeCatalogProduct();
+    });
+
+    catalogSearch.addEventListener("input", event => renderSearch(event.target.value));
+    renderUploadedProducts();
+    renderTabs();
+    renderCategory(productCatalog[activeCatalogIndex]);
   </script>
 </body>
 </html>
