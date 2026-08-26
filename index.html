@@ -767,6 +767,8 @@
       min-height: 120px;
       resize: vertical;
     }
+    .form-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .form-status { min-height: 22px; margin: 8px 0 0; color: var(--muted); font-size: 13px; }
 
     .crawl-links {
       padding: 44px 0;
@@ -1902,28 +1904,28 @@
           </div>
         </div>
 
-        <form class="quote-panel">
+        <form id="quoteForm" class="quote-panel">
           <div id="selectedProductNote" class="selected-product-note"></div>
           <div class="form-grid">
             <div>
               <label for="name">Name</label>
-              <input id="name" type="text" placeholder="Your name">
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
             </div>
             <div>
               <label for="company">Company</label>
-              <input id="company" type="text" placeholder="Company name">
+              <input id="company" name="company" type="text" autocomplete="organization" placeholder="Company name">
             </div>
             <div>
               <label for="email">Email</label>
-              <input id="email" type="email" placeholder="name@company.com">
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="name@company.com" required>
             </div>
             <div>
               <label for="whatsapp">WhatsApp</label>
-              <input id="whatsapp" type="text" placeholder="+8618686858175">
+              <input id="whatsapp" name="whatsapp" type="tel" autocomplete="tel" placeholder="Your WhatsApp number">
             </div>
             <div>
               <label for="product">Product Category</label>
-              <select id="product">
+              <select id="product" name="product">
                 <option>Gel Polish System</option>
                 <option>Base, Top &amp; Functional Gel System</option>
                 <option>Nail Art Gel &amp; Powder System</option>
@@ -1940,7 +1942,7 @@
             </div>
             <div>
               <label for="market">Target Market</label>
-              <select id="market">
+              <select id="market" name="market">
                 <option>EU</option>
                 <option>USA</option>
                 <option>Middle East</option>
@@ -1950,7 +1952,7 @@
             </div>
             <div>
               <label for="order">Order Type</label>
-              <select id="order">
+              <select id="order" name="order">
                 <option>Private Label</option>
                 <option>Bulk Supply</option>
                 <option>Sample Kit</option>
@@ -1960,7 +1962,7 @@
             </div>
             <div>
               <label for="docs">Documents Needed</label>
-              <select id="docs">
+              <select id="docs" name="docs">
                 <option>SDS / COA / Ingredient List</option>
                 <option>CPNP / MoCRA Information Support</option>
                 <option>Testing Coordination</option>
@@ -1969,10 +1971,10 @@
             </div>
             <div class="field-full">
               <label for="message">Product Details</label>
-              <textarea id="message" placeholder="Tell us which products you want to launch, your packaging idea, quantity, target market and certificate requirements."></textarea>
+              <textarea id="message" name="message" required placeholder="Tell us which products you want to launch, your packaging idea, quantity, target market and certificate requirements."></textarea>
             </div>
             <div class="field-full">
-              <button class="btn btn-primary" type="button">Request Product Catalog & Factory Quote</button>
+              <div class="form-actions"><button class="btn btn-primary" type="submit">Send Quote Request on WhatsApp</button><button id="emailQuoteButton" class="btn btn-light" type="button">Send by Email</button></div><p id="quoteFormStatus" class="form-status" role="status" aria-live="polite">We normally reply during China business hours.</p>
             </div>
           </div>
         </form>
@@ -2798,7 +2800,44 @@
       if (event.key === "Escape" && catalogProductModal.classList.contains("open")) closeCatalogProduct();
     });
 
-    catalogSearch.addEventListener("input", event => renderSearch(event.target.value));
+    const quoteForm = document.getElementById("quoteForm");
+    const quoteFormStatus = document.getElementById("quoteFormStatus");
+    const emailQuoteButton = document.getElementById("emailQuoteButton");
+    function quoteRequestText() {
+      const values = Object.fromEntries(new FormData(quoteForm).entries());
+      return ["Hello GZ New Nail, I would like a product catalog and factory quote.", "", `Name: ${values.name || ""}`, `Company: ${values.company || "Not provided"}`, `Email: ${values.email || ""}`, `Buyer WhatsApp: ${values.whatsapp || "Not provided"}`, `Product: ${values.product || ""}`, `Target market: ${values.market || ""}`, `Order type: ${values.order || ""}`, `Documents: ${values.docs || ""}`, "", `Project details: ${values.message || ""}`, "", `Source page: ${window.location.href.split("#")[0]}`].join("\n");
+    }
+    function recordLead(method) {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: "generate_lead", lead_method: method, lead_product: document.getElementById("product").value });
+      if (typeof window.gtag === "function") window.gtag("event", "generate_lead", { method, product_category: document.getElementById("product").value });
+    }
+    function validateQuoteForm() {
+      if (quoteForm.checkValidity()) return true;
+      quoteForm.reportValidity();
+      quoteFormStatus.textContent = "Please complete your name, email and product details.";
+      return false;
+    }
+    quoteForm.addEventListener("submit", event => {
+      event.preventDefault();
+      if (!validateQuoteForm()) return;
+      recordLead("whatsapp");
+      quoteFormStatus.textContent = "Opening WhatsApp with your completed request...";
+      window.open(`https://wa.me/8618686858175?text=${encodeURIComponent(quoteRequestText())}`, "_blank", "noopener");
+    });
+    emailQuoteButton.addEventListener("click", () => {
+      if (!validateQuoteForm()) return;
+      recordLead("email");
+      quoteFormStatus.textContent = "Opening your email app with your completed request...";
+      const subject = `Factory quote request - ${document.getElementById("product").value}`;
+      window.location.href = `mailto:sales@gznewnail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(quoteRequestText())}`;
+    });
+    document.addEventListener("click", event => {
+      const link = event.target.closest("a[href]");
+      if (!link) return;
+      if (link.href.includes("wa.me/")) recordLead("whatsapp_link");
+      if (link.protocol === "mailto:") recordLead("email_link");
+    });    catalogSearch.addEventListener("input", event => renderSearch(event.target.value));
     renderUploadedProducts();
     renderTabs();
     renderCategory(productCatalog[activeCatalogIndex]);
