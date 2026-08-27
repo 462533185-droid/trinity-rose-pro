@@ -9,14 +9,11 @@
   <link rel="canonical" href="https://gznewnail.com/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="GZ New Nail">
-  <meta property="og:title" content="GZ New Nail | OEM/ODM Nail Product Manufacturer">
-  <meta property="og:description" content="OEM/ODM gel polish, builder gel, acrylic, nail care and salon products for private label brands and distributors.">
+  <meta property="og:title" content="GZ New Nail | OEM Nail Product Factory &amp; Product Catalog">
+  <meta property="og:description" content="OEM/ODM nail product manufacturing for private label brands, distributors and salon chains.">
   <meta property="og:url" content="https://gznewnail.com/">
   <meta property="og:image" content="https://gznewnail.com/assets/factory-hero.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="GZ New Nail | OEM/ODM Nail Product Manufacturer">
-  <meta name="twitter:description" content="OEM/ODM nail products, private label packaging, factory QC and export document support.">
-  <meta name="twitter:image" content="https://gznewnail.com/assets/factory-hero.png">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -24,26 +21,31 @@
       {
         "@type": "Organization",
         "@id": "https://gznewnail.com/#organization",
-        "name": "GUANGZHOU NEWNAIL COSMETICS CO.,LTD",
+        "name": "Guangzhou Newnail Cosmetics Co., Ltd.",
+        "alternateName": "GZ New Nail",
         "url": "https://gznewnail.com/",
-        "email": "newnail001@gznewnail.com",
-        "telephone": "+8618686858175",
-        "description": "OEM/ODM nail product manufacturer supporting gel polish, builder gel, acrylic, nail care, salon products and private label packaging."
+        "email": "sales@gznewnail.com",
+        "telephone": "+86-186-8685-8175",
+        "address": {"@type": "PostalAddress", "addressLocality": "Guangzhou", "addressCountry": "CN"},
+        "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "telephone": "+86-186-8685-8175", "email": "sales@gznewnail.com", "availableLanguage": ["English", "Chinese"]}
       },
       {
         "@type": "WebSite",
         "@id": "https://gznewnail.com/#website",
         "url": "https://gznewnail.com/",
         "name": "GZ New Nail",
-        "publisher": { "@id": "https://gznewnail.com/#organization" },
+        "publisher": {"@id": "https://gznewnail.com/#organization"},
         "inLanguage": "en"
       },
       {
-        "@type": "BreadcrumbList",
-        "@id": "https://gznewnail.com/#breadcrumb",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://gznewnail.com/" }
-        ]
+        "@type": "WebPage",
+        "@id": "https://gznewnail.com/#webpage",
+        "url": "https://gznewnail.com/",
+        "name": "GZ New Nail | OEM Nail Product Factory & Product Catalog",
+        "isPartOf": {"@id": "https://gznewnail.com/#website"},
+        "about": {"@id": "https://gznewnail.com/#organization"},
+        "description": "OEM/ODM nail product factory and product catalog for private label brands, distributors and salon chains.",
+        "inLanguage": "en"
       }
     ]
   }
@@ -580,8 +582,6 @@
       line-height: 1.2;
       font-weight: 750;
     }
-    .product-tags a { text-decoration: none; display: inline-block; }
-    .product-tags a:hover span { background: #f3e4df; border-color: #d9a89a; color: #8f6e3d; }
     .directory-note {
       margin-top: 20px;
       padding: 16px 18px;
@@ -733,22 +733,9 @@
       border: 1px solid var(--line);
       border-radius: var(--radius);
     }
-    .answer-card h3 {
-      margin-bottom: 9px;
-      font-size: 18px;
-      line-height: 1.25;
-    }
-    .answer-card p {
-      margin-bottom: 0;
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.65;
-    }
-    .answer-card a {
-      color: var(--rose-deep);
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
+    .answer-card h3 { margin-bottom: 9px; font-size: 18px; line-height: 1.25; }
+    .answer-card p { margin-bottom: 0; color: var(--muted); font-size: 14px; line-height: 1.65; }
+    .answer-card a { color: var(--rose-deep); text-decoration: underline; text-underline-offset: 3px; }
     .quote-layout {
       display: grid;
       grid-template-columns: .85fr 1.15fr;
@@ -801,6 +788,19 @@
       min-height: 120px;
       resize: vertical;
     }
+    .form-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .form-status { min-height: 22px; margin: 8px 0 0; color: var(--muted); font-size: 13px; }
+
+    .crawl-links {
+      padding: 44px 0;
+      background: #fff;
+      border-top: 1px solid var(--line);
+    }
+    .crawl-links h2 { margin: 0 0 18px; font-size: 24px; }
+    .crawl-link-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px 24px; }
+    .crawl-link-grid a { color: var(--blue); font-size: 14px; line-height: 1.45; }
+    .crawl-link-grid a:hover { color: var(--rose-deep); text-decoration: underline; }
+    @media (max-width: 760px) { .crawl-link-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
     footer {
       background: #151515;
@@ -1666,7 +1666,7 @@
             <a href="#quote">Quote Acrylic / Dipping</a>
           </div>
           <div class="subcategory-grid">
-            <div class="subcategory-card"><h4>Acrylic &amp; Dipping Powder</h4><div class="product-tags"><span>Base Color</span><a href="products/acrylic-dipping/base-color-1kg-acrylic-powder.html"><span>1KG Acrylic Powder - Basic Color Collection</span></a><span>Ombre</span><span>Nude</span><span>Neon</span><span>Pure Dipping Powder</span><span>Flower Dipping Color</span><span>Cat Eye Dipping Color</span><span>EMA Monomer</span></div></div>
+            <div class="subcategory-card"><h4>Acrylic &amp; Dipping Powder</h4><div class="product-tags"><span>Base Color</span><span>Ombre</span><span>Nude</span><span>Neon</span><span>Pure Dipping Powder</span><span>Flower Dipping Color</span><span>Cat Eye Dipping Color</span><span>EMA Monomer</span></div></div>
             <div class="subcategory-card"><h4>Dip Glue System</h4><div class="product-tags"><span>Dip Prep</span><span>Dip Base</span><span>Dip Activator</span><span>Dip Top</span><span>Dip Brush Saver</span><span>Dip Nourish</span></div></div>
           </div>
         </article>
@@ -1721,7 +1721,7 @@
           </div>
           <div class="subcategory-grid">
             <div class="subcategory-card"><h4>Hand Cream</h4><div class="product-tags"><span>Strawberry</span><span>Jasmine</span><span>Chamomile</span><span>Milk Protein</span><span>Rose</span><span>Aloe Vera</span><span>Grapefruit</span><span>Honey</span></div></div>
-            <div class="subcategory-card"><h4>Cuticle Oil</h4><div class="product-tags"><span>30ml Cuticle Oil Pen</span></div></div>
+            <div class="subcategory-card"><h4>Cuticle Oil</h4><div class="product-tags"><span>5ml Nourishing Cuticle Oil Pen</span></div></div>
           </div>
         </article>
 
@@ -1804,7 +1804,7 @@
         </div>
         <div class="product-grid">
           <article class="product-card">
-            <img src="assets/gel-polish-bottles-variety.png" alt="Private label gel polish bottles">
+            <img loading="lazy" decoding="async" src="assets/gel-polish-bottles-variety.png" alt="Private label gel polish bottles">
             <div class="product-body">
               <h3>Private Label Gel Polish Collection</h3>
               <p>Custom color collections for retail brands, distributors and salons.</p>
@@ -1816,7 +1816,7 @@
             </div>
           </article>
           <article class="product-card">
-            <img src="assets/products-premium.png" alt="Builder gel jars and nail product bottles">
+            <img loading="lazy" decoding="async" src="assets/products-premium.png" alt="Builder gel jars and nail product bottles">
             <div class="product-body">
               <h3>Builder Gel / BIAB / Extension Gel</h3>
               <p>Professional structure products for salon and private label brands.</p>
@@ -1828,7 +1828,7 @@
             </div>
           </article>
           <article class="product-card">
-            <img src="assets/packaging-workers.png" alt="Workers packing private label nail products">
+            <img loading="lazy" decoding="async" src="assets/packaging-workers.png" alt="Workers packing private label nail products">
             <div class="product-body">
               <h3>Product Kits & Private Label Sets</h3>
               <p>Starter kits, nail art kits, seasonal gift sets and salon kits.</p>
@@ -1840,7 +1840,7 @@
             </div>
           </article>
           <article class="product-card">
-            <img src="assets/shipping-export.png" alt="Export shipment for nail products">
+            <img loading="lazy" decoding="async" src="assets/shipping-export.png" alt="Export shipment for nail products">
             <div class="product-body">
               <h3>Bulk Supply & Distributor Orders</h3>
               <p>Bulk gel, acrylic powder, base/top and wholesale supply options.</p>
@@ -1867,19 +1867,19 @@
       </div>
       <div class="factory-proof">
         <article class="factory-card">
-          <img src="assets/factory-hero.png" alt="Modern nail product factory filling line">
+          <img loading="lazy" decoding="async" src="assets/factory-hero.png" alt="Modern nail product factory filling line">
           <div><h3>Modern Production</h3><p>Clean manufacturing environment with filling, packaging and QC operation.</p></div>
         </article>
         <article class="factory-card">
-          <img src="assets/gel-polish-bottles-variety.png" alt="Nail gel polish product range">
+          <img loading="lazy" decoding="async" src="assets/gel-polish-bottles-variety.png" alt="Nail gel polish product range">
           <div><h3>Product Development</h3><p>Multiple bottle types, color collections and formula choices for private label buyers.</p></div>
         </article>
         <article class="factory-card">
-          <img src="assets/packaging-workers.png" alt="Workers packing nail polish products">
+          <img loading="lazy" decoding="async" src="assets/packaging-workers.png" alt="Workers packing nail polish products">
           <div><h3>Private Label Packing</h3><p>Custom boxes, labels, color cards, kits and export packing support.</p></div>
         </article>
         <article class="factory-card">
-          <img src="assets/shipping-export.png" alt="Export shipment preparation">
+          <img loading="lazy" decoding="async" src="assets/shipping-export.png" alt="Export shipment preparation">
           <div><h3>Export Ready</h3><p>Organized warehouse preparation, carton packing and shipment support for overseas orders.</p></div>
         </article>
       </div>
@@ -1923,22 +1923,10 @@
         <a class="btn btn-light" href="guides/">Read Buyer Guides</a>
       </div>
       <div class="answer-grid">
-        <article class="answer-card">
-          <h3>What does a private label nail manufacturer provide?</h3>
-          <p>A project may include formula selection, colors, bottles, labels, retail boxes, samples, production and available product documents. The final scope depends on the formula, packaging and destination market. <a href="oem/private-label-nail-products.html">See the OEM/ODM process</a>.</p>
-        </article>
-        <article class="answer-card">
-          <h3>Can a new brand start with a smaller order?</h3>
-          <p>Selected standard-formula and standard-packaging projects may start from 100 labeled bottles. The practical MOQ depends on color count, bottle choice, printing method and box requirements. <a href="oem/low-moq-private-label-gel-polish.html">Review low-MOQ options</a>.</p>
-        </article>
-        <article class="answer-card">
-          <h3>Which nail product systems can be developed?</h3>
-          <p>GZ New Nail supports gel polish, base and top, nail art, acrylic and dipping, builder and extension gel, nail polish, nail care, salon products and coordinated kits. <a href="products/">Browse the product catalog</a>.</p>
-        </article>
-        <article class="answer-card">
-          <h3>What should buyers include in an RFQ?</h3>
-          <p>Share your target country, product category, bottle size, color count, quantity per SKU, packaging, logo method, required documents, destination and target timing. This makes quotations easier to compare.</p>
-        </article>
+        <article class="answer-card"><h3>What does a private label nail manufacturer provide?</h3><p>A project may include formula selection, colors, bottles, labels, retail boxes, samples, production and available product documents. The final scope depends on the formula, packaging and destination market. <a href="oem/private-label-nail-products.html">See the OEM/ODM process</a>.</p></article>
+        <article class="answer-card"><h3>Can a new brand start with a smaller order?</h3><p>Selected standard-formula and standard-packaging projects may start from 100 labeled bottles. The practical MOQ depends on color count, bottle choice, printing method and box requirements. <a href="oem/low-moq-private-label-gel-polish.html">Review low-MOQ options</a>.</p></article>
+        <article class="answer-card"><h3>Which nail product systems can be developed?</h3><p>GZ New Nail supports gel polish, base and top, nail art, acrylic and dipping, builder and extension gel, nail polish, nail care, salon products and coordinated kits. <a href="products/">Browse the product catalog</a>.</p></article>
+        <article class="answer-card"><h3>What should buyers include in an RFQ?</h3><p>Share your target country, product category, bottle size, color count, quantity per SKU, packaging, logo method, required documents, destination and target timing. This makes quotations easier to compare.</p></article>
       </div>
     </div>
   </section>
@@ -1957,28 +1945,28 @@
           </div>
         </div>
 
-        <form class="quote-panel">
+        <form id="quoteForm" class="quote-panel">
           <div id="selectedProductNote" class="selected-product-note"></div>
           <div class="form-grid">
             <div>
               <label for="name">Name</label>
-              <input id="name" type="text" placeholder="Your name">
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
             </div>
             <div>
               <label for="company">Company</label>
-              <input id="company" type="text" placeholder="Company name">
+              <input id="company" name="company" type="text" autocomplete="organization" placeholder="Company name">
             </div>
             <div>
               <label for="email">Email</label>
-              <input id="email" type="email" placeholder="name@company.com">
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="name@company.com" required>
             </div>
             <div>
               <label for="whatsapp">WhatsApp</label>
-              <input id="whatsapp" type="text" placeholder="+8618686858175">
+              <input id="whatsapp" name="whatsapp" type="tel" autocomplete="tel" placeholder="Your WhatsApp number">
             </div>
             <div>
               <label for="product">Product Category</label>
-              <select id="product">
+              <select id="product" name="product">
                 <option>Gel Polish System</option>
                 <option>Base, Top &amp; Functional Gel System</option>
                 <option>Nail Art Gel &amp; Powder System</option>
@@ -1995,7 +1983,7 @@
             </div>
             <div>
               <label for="market">Target Market</label>
-              <select id="market">
+              <select id="market" name="market">
                 <option>EU</option>
                 <option>USA</option>
                 <option>Middle East</option>
@@ -2005,7 +1993,7 @@
             </div>
             <div>
               <label for="order">Order Type</label>
-              <select id="order">
+              <select id="order" name="order">
                 <option>Private Label</option>
                 <option>Bulk Supply</option>
                 <option>Sample Kit</option>
@@ -2015,7 +2003,7 @@
             </div>
             <div>
               <label for="docs">Documents Needed</label>
-              <select id="docs">
+              <select id="docs" name="docs">
                 <option>SDS / COA / Ingredient List</option>
                 <option>CPNP / MoCRA Information Support</option>
                 <option>Testing Coordination</option>
@@ -2024,10 +2012,10 @@
             </div>
             <div class="field-full">
               <label for="message">Product Details</label>
-              <textarea id="message" placeholder="Tell us which products you want to launch, your packaging idea, quantity, target market and certificate requirements."></textarea>
+              <textarea id="message" name="message" required placeholder="Tell us which products you want to launch, your packaging idea, quantity, target market and certificate requirements."></textarea>
             </div>
             <div class="field-full">
-              <button class="btn btn-primary" type="button">Request Product Catalog & Factory Quote</button>
+              <div class="form-actions"><button class="btn btn-primary" type="submit">Send Quote Request on WhatsApp</button><button id="emailQuoteButton" class="btn btn-light" type="button">Send by Email</button></div><p id="quoteFormStatus" class="form-status" role="status" aria-live="polite">We normally reply during China business hours.</p>
             </div>
           </div>
         </form>
@@ -2035,6 +2023,32 @@
     </div>
   </section>
 
+  <section class="crawl-links" aria-labelledby="explore-products-title">
+    <div class="wrap">
+      <h2 id="explore-products-title">Explore Nail Product Categories</h2>
+      <nav class="crawl-link-grid" aria-label="Product category links">
+        <a href="products/private-label-gel-polish/">Private Label Gel Polish</a>
+        <a href="products/function-gel/">Base, Top &amp; Function Gel</a>
+        <a href="products/uv-gel-painting/">Nail Art &amp; Painting Gel</a>
+        <a href="products/acrylic-dipping-system/">Acrylic &amp; Dipping System</a>
+        <a href="products/remove-clean/">Nail Prep, Remover &amp; Cleaner</a>
+        <a href="products/nail-polish-system/">Regular &amp; Breathable Nail Polish</a>
+        <a href="products/builder-extension-gel/">Builder &amp; Extension Gel</a>
+        <a href="products/nail-care/">Nail Care Products</a>
+        <a href="products/machine-tools/">Nail Machines &amp; Tools</a>
+        <a href="products/salon-products/">Salon &amp; Spa Products</a>
+        <a href="products/cuticle-oil/5ml-nourishing-cuticle-oil-pen.html">5ml Cuticle Oil Pen</a>
+        <a href="products/">View All Product Pages</a>
+        <a href="oem/private-label-nail-products.html">Private Label Nail Products OEM</a>
+        <a href="oem/low-moq-private-label-gel-polish.html">Low MOQ Gel Polish</a>
+        <a href="oem/hema-free-gel-polish-manufacturer.html">HEMA-Free Gel Polish Options</a>
+        <a href="guides/how-to-start-private-label-gel-polish-brand.html">How to Start a Gel Polish Brand</a>
+        <a href="guides/">Nail Product Buyer Guides</a>
+        <a href="guides/gel-polish-moq-explained.html">Gel Polish MOQ Explained</a>
+        <a href="guides/private-label-gel-polish-packaging-guide.html">Gel Polish Packaging Guide</a>
+      </nav>
+    </div>
+  </section>
   <footer>
     <div class="wrap">
       <span>GZ New Nail · OEM/ODM Nail Product Factory</span>
@@ -2082,7 +2096,7 @@
     <div class="product-modal-panel">
       <button id="closeProductModal" class="product-modal-close" type="button" aria-label="Close product details">&times;</button>
       <div class="product-modal-image zoomable-media">
-        <img src="assets/newnail-magic-remover-gel-15ml.jpg" alt="Complete view of 15ml Magic Remover Gel and application">
+        <img loading="lazy" decoding="async" src="assets/newnail-magic-remover-gel-15ml.jpg" alt="Complete view of 15ml Magic Remover Gel and application">
       </div>
       <div class="product-modal-content">
         <div class="label">Nail Prep, Remover & Cleaner</div>
@@ -2174,7 +2188,7 @@
         short: "Acrylic & Dipping",
         description: "Coordinated powder, monomer and dip liquids for complete professional systems.",
         groups: [
-          { name: "Acrylic & Dipping Powder", products: ["1KG Acrylic Powder - Basic Color Collection", "Acrylic & Dipping Powder Ombre", "Acrylic & Dipping Powder Nude", "Acrylic & Dipping Powder Neon", "Pure Dipping Powder", "Flower Dipping Color", "Cat Eye Dipping Color", "EMA Monomer"] },
+          { name: "Acrylic & Dipping Powder", products: ["Acrylic & Dipping Powder Base Color", "Acrylic & Dipping Powder Ombre", "Acrylic & Dipping Powder Nude", "Acrylic & Dipping Powder Neon", "Pure Dipping Powder", "Flower Dipping Color", "Cat Eye Dipping Color", "EMA Monomer"] },
           { name: "Dip Glue System", products: ["Dip Prep", "Dip Base", "Dip Activator", "Dip Top", "Dip Brush Saver", "Dip Nourish"] }
         ]
       },
@@ -2210,7 +2224,7 @@
         description: "Aftercare and hand care products for salon services and retail sets.",
         groups: [
           { name: "Hand Cream", products: ["Strawberry Hand Cream", "Jasmine Hand Cream", "Chamomile Hand Cream", "Milk Protein Hand Cream", "Rose Hand Cream", "Aloe Vera Hand Cream", "Grapefruit Hand Cream", "Honey Hand Cream"] },
-          { name: "Cuticle Oil", products: ["30ml Cuticle Oil Pen"] }
+          { name: "Cuticle Oil", products: ["5ml Nourishing Cuticle Oil Pen"] }
         ]
       },
       {
@@ -2296,7 +2310,7 @@
               <strong>${product}</strong>
             </div>
             <button class="smart-product catalog-listed" data-product="${escapeAttr(title)}" data-category="${escapeAttr(categoryName)}" data-detail-index="${listedIndex}">
-              <img src="${productAssetBase}${listed.images[0]}" alt="${escapeAttr(title)}">
+              <img loading="lazy" decoding="async" src="${productAssetBase}${listed.images[0]}" alt="${escapeAttr(title)}">
               <span>
                 <small>Listed Product</small>
                 ${title}
@@ -2313,7 +2327,7 @@
       return `
         <article class="listed-product">
           <div class="listed-product-media product-detail-trigger zoomable-media" role="button" tabindex="0" aria-label="View full product details">
-            <img src="assets/newnail-magic-remover-gel-15ml.jpg" alt="OEM 15ml Magic Remover Gel product and application">
+            <img loading="lazy" decoding="async" src="assets/newnail-magic-remover-gel-15ml.jpg" alt="OEM 15ml Magic Remover Gel product and application">
             <span class="listed-product-badge">Available for OEM / ODM</span>
           </div>
           <div class="listed-product-body">
@@ -2663,43 +2677,27 @@
         benefits: ["Light, fast-absorbing texture.", "Daily moisturizing care for hands.", "Suitable for adults and all skin types.", "Available for private label and OEM/ODM projects."]
       },
       {
-        name: "30ml Cuticle Oil Pen",
-        listingTitle: "30ml Cuticle Oil Pen",
-        catalogName: "30ml Cuticle Oil Pen",
+        name: "5ml Nourishing Cuticle Oil Pen",
+        listingTitle: "5ml Nourishing Cuticle Oil Pen - 15 Fragrances",
+        catalogName: "5ml Nourishing Cuticle Oil Pen",
         category: "Nail Care · Cuticle Oil",
-        priceRange: "US$0.50 - 1.00 / piece",
-        priceNote: "Factory reference price for 100+ pieces with standard 30ml pen, brush tip and formula.",
-        customMoq: "MOQ 100 pieces. Custom logo, label, printing, flavor selection and retail box available.",
-        detailUrl: "products/cuticle-oil/30ml-cuticle-oil-pen.html",
-        images: ["cuticle-oil/30ml-cuticle-oil-pen.svg"],
-        summary: "A 30ml brush-pen cuticle oil with fruit seed oil formula and fruit flavor options, designed for private label, salon and retail programs.",
-        description: "A 30ml cuticle oil pen with a brush applicator, developed for daily nail and cuticle care routines. Available with a fruit seed oil formula, multiple fruit flavor options and custom private label packaging for brands, salons, distributors and gift sets.",
-        features: ["30ml", "MOQ 100", "Brush Pen", "Private Label", "OEM/ODM", "Salon & Retail"],
-        specs: [["Product Type","Cuticle Oil"],["Net Content","30ml"],["Application","Nail Care"],["Format","Brush Pen"],["MOQ","100 pieces"],["Reference Price","US$0.50 - 1.00 / piece"]],
-        benefits: ["Brush-tip pen format for clean, precise application.", "Fruit seed oil formula with fruit flavor options.", "Compact 30ml pen suitable for retail, salon and travel use.", "Custom logo, label, packaging and flavor selection available."]
-      },
-      {
-        name: "1KG Acrylic Powder - Basic Color Collection",
-        listingTitle: "1KG Acrylic Powder - Basic Color Collection",
-        catalogName: "1KG Acrylic Powder - Basic Color Collection",
-        category: "Acrylic & Dipping Powder · Base Color",
-        priceRange: "US$22 / kg",
-        priceNote: "Factory reference price for 1kg packaging; final quote depends on color, packaging and order quantity.",
-        customMoq: "Custom color matching and private label packaging available. Contact our factory team for the current MOQ and project quotation.",
-        detailUrl: "products/acrylic-dipping/base-color-1kg-acrylic-powder.html",
-        images: ["acrylic-dipping/base-color/acrylic-powder-color-chart-1.jpg", "acrylic-dipping/base-color/acrylic-powder-color-chart-2.jpg", "acrylic-dipping/base-color/acrylic-powder-color-chart-3.jpg"],
-        summary: "A 1kg professional acrylic powder in a coordinated basic color collection for acrylic and dipping nail systems, available for private label and OEM/ODM projects.",
-        description: "A 1kg acrylic powder developed for professional acrylic and dipping nail systems, offered as a basic color collection with clear, natural pink, pink, white and custom color options. The fine powder supports smooth bead control, even application and durable wear for salon extensions, overlays and DIY nail art, with private label packaging and OEM/ODM services available.",
-        features: ["1kg", "Basic Colors", "Acrylic Powder", "Salon & DIY", "Private Label", "OEM/ODM"],
-        specs: [["Product Type","Acrylic Powder"],["Net Weight","1kg"],["Color","Clear, Natural Pink, Pink, White and custom colors"],["Application","Salon and DIY Nail Art"],["Packaging","Bag"],["Reference Price","US$22 / kg"]],
-        benefits: ["1kg bulk packaging for salon and brand projects.", "Coordinated basic color collection for acrylic and dipping systems.", "Custom color matching and private label packaging available.", "OEM/ODM inquiry support from the factory team."]
+        priceRange: "US$0.20 / piece",
+        priceNote: "Factory price for orders from 100 pieces with standard 5ml pen format.",
+        customMoq: "MOQ 100 pieces. Choose from 15 fragrance options. Custom logo, label and retail packaging available by project.",
+        detailUrl: "products/cuticle-oil/5ml-nourishing-cuticle-oil-pen.html",
+        images: ["cuticle-oil/5ml-nourishing-cuticle-oil-pen.png"],
+        summary: "A portable 5ml brush-on cuticle oil pen available in 15 fragrance options for salons, distributors and private label nail care collections.",
+        description: "A compact 5ml nourishing cuticle oil pen with a controlled brush applicator for daily nail and cuticle care. Available in 15 fragrance options for wholesale, salon, distributor and private label programs.",
+        features: ["5ml", "15 Fragrances", "MOQ 100", "Brush Pen", "Private Label", "OEM/ODM"],
+        specs: [["Product Type","Cuticle Oil"],["Net Content","5ml"],["Fragrance Options","15"],["Application","Nails and cuticles"],["Format","Brush-on twist pen"],["MOQ","100 pieces"],["Factory Price","US$0.20 / piece"]],
+        benefits: ["Brush-tip pen format for clean, controlled application.", "Compact 5ml size for retail, salon kits and travel.", "Fifteen fragrance options for varied collections.", "Custom logo, label and retail packaging available by project."]
       }
     ];
 
     const productAssetBase = "assets/catalog-products/";
     const uploadedProductGrid = document.getElementById("uploadedProductGrid");
     function productSlides(product, cardIndex) {
-      return product.images.map((image, index) => `<img class="${index === 0 ? "active" : ""}" src="${productAssetBase}${image}" alt="${product.name} product image ${index + 1}">`).join("");
+      return product.images.map((image, index) => `<img loading="lazy" decoding="async" class="${index === 0 ? "active" : ""}" src="${productAssetBase}${image}" alt="${product.name} product image ${index + 1}">`).join("");
     }
     function bindMagnifier(target) {
       const mediaItems = target ? [target] : Array.from(document.querySelectorAll(".zoomable-media"));
@@ -2791,7 +2789,7 @@
       const product = uploadedProducts[index];
       const detailCarousel = document.getElementById("catalogDetailCarousel");
       detailCarousel.innerHTML = `
-        ${product.images.map((image, imageIndex) => `<img class="${imageIndex === 0 ? "active" : ""}" src="${productAssetBase}${image}" alt="${product.name} detail image ${imageIndex + 1}">`).join("")}
+        ${product.images.map((image, imageIndex) => `<img loading="lazy" decoding="async" class="${imageIndex === 0 ? "active" : ""}" src="${productAssetBase}${image}" alt="${product.name} detail image ${imageIndex + 1}">`).join("")}
         <button class="carousel-arrow prev" type="button" aria-label="Previous image">&#8249;</button>
         <button class="carousel-arrow next" type="button" aria-label="Next image">&#8250;</button>
         <div class="carousel-dots">${product.images.map((_, imageIndex) => `<button type="button" class="${imageIndex === 0 ? "active" : ""}" data-slide="${imageIndex}" aria-label="View image ${imageIndex + 1}"></button>`).join("")}</div>`;
@@ -2843,7 +2841,44 @@
       if (event.key === "Escape" && catalogProductModal.classList.contains("open")) closeCatalogProduct();
     });
 
-    catalogSearch.addEventListener("input", event => renderSearch(event.target.value));
+    const quoteForm = document.getElementById("quoteForm");
+    const quoteFormStatus = document.getElementById("quoteFormStatus");
+    const emailQuoteButton = document.getElementById("emailQuoteButton");
+    function quoteRequestText() {
+      const values = Object.fromEntries(new FormData(quoteForm).entries());
+      return ["Hello GZ New Nail, I would like a product catalog and factory quote.", "", `Name: ${values.name || ""}`, `Company: ${values.company || "Not provided"}`, `Email: ${values.email || ""}`, `Buyer WhatsApp: ${values.whatsapp || "Not provided"}`, `Product: ${values.product || ""}`, `Target market: ${values.market || ""}`, `Order type: ${values.order || ""}`, `Documents: ${values.docs || ""}`, "", `Project details: ${values.message || ""}`, "", `Source page: ${window.location.href.split("#")[0]}`].join("\n");
+    }
+    function recordLead(method) {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: "generate_lead", lead_method: method, lead_product: document.getElementById("product").value });
+      if (typeof window.gtag === "function") window.gtag("event", "generate_lead", { method, product_category: document.getElementById("product").value });
+    }
+    function validateQuoteForm() {
+      if (quoteForm.checkValidity()) return true;
+      quoteForm.reportValidity();
+      quoteFormStatus.textContent = "Please complete your name, email and product details.";
+      return false;
+    }
+    quoteForm.addEventListener("submit", event => {
+      event.preventDefault();
+      if (!validateQuoteForm()) return;
+      recordLead("whatsapp");
+      quoteFormStatus.textContent = "Opening WhatsApp with your completed request...";
+      window.open(`https://wa.me/8618686858175?text=${encodeURIComponent(quoteRequestText())}`, "_blank", "noopener");
+    });
+    emailQuoteButton.addEventListener("click", () => {
+      if (!validateQuoteForm()) return;
+      recordLead("email");
+      quoteFormStatus.textContent = "Opening your email app with your completed request...";
+      const subject = `Factory quote request - ${document.getElementById("product").value}`;
+      window.location.href = `mailto:sales@gznewnail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(quoteRequestText())}`;
+    });
+    document.addEventListener("click", event => {
+      const link = event.target.closest("a[href]");
+      if (!link) return;
+      if (link.href.includes("wa.me/")) recordLead("whatsapp_link");
+      if (link.protocol === "mailto:") recordLead("email_link");
+    });    catalogSearch.addEventListener("input", event => renderSearch(event.target.value));
     renderUploadedProducts();
     renderTabs();
     renderCategory(productCatalog[activeCatalogIndex]);
