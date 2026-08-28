@@ -69,7 +69,8 @@
     }
 
     * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body { overflow-x: hidden; }
     body {
       margin: 0;
       font-family: Inter, Arial, Helvetica, sans-serif;
@@ -937,18 +938,21 @@
       font-size: 10px;
     }
     .catalog-tab.active .tab-count { background: #f2e7e3; }
-    .catalog-main { padding: 30px; min-width: 0; }
+    .smart-catalog > div { min-width: 0; }
+    .catalog-main { width: 100%; padding: 30px; min-width: 0; }
     .catalog-heading {
       display: flex;
+      min-width: 0;
       justify-content: space-between;
       align-items: flex-start;
       gap: 20px;
       padding-bottom: 22px;
       border-bottom: 1px solid var(--line);
     }
-    .catalog-heading h3 { margin: 5px 0 7px; font-size: 29px; line-height: 1.15; }
-    .catalog-heading p { margin: 0; color: var(--muted); line-height: 1.55; max-width: 690px; }
-    .catalog-heading .btn { flex: 0 0 auto; }
+    .catalog-heading h3 { margin: 5px 0 7px; font-size: 29px; line-height: 1.15; overflow-wrap: anywhere; }
+    .catalog-heading p { margin: 0; color: var(--muted); line-height: 1.55; max-width: 690px; overflow-wrap: anywhere; }
+    .catalog-heading .btn { flex: 0 1 auto; }
+    .catalog-heading-actions { display: flex; min-width: 0; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
     .subcategory-list { display: grid; margin-top: 4px; }
     .smart-subcategory {
       display: grid;
@@ -1399,7 +1403,8 @@
     @media (max-width: 900px) {
       .catalog-tools { position: static; grid-template-columns: 1fr; }
       .catalog-count { padding: 0 2px; }
-      .smart-catalog { grid-template-columns: 1fr; min-height: 0; overflow: visible; }
+      .smart-catalog { grid-template-columns: minmax(0, 1fr); min-height: 0; overflow: visible; }
+      .smart-catalog > div { width: 100%; min-width: 0; }
       .catalog-sidebar { display: none; }
       .catalog-mobile-tabs {
         display: flex;
@@ -1423,8 +1428,12 @@
       .catalog-mobile-tabs button.active { background: #fff; color: #171717; }
       .catalog-main { padding: 22px 18px; }
       .catalog-heading { display: block; }
-      .catalog-heading .btn { margin-top: 16px; }
-      .smart-subcategory { grid-template-columns: 1fr; gap: 12px; }
+      .catalog-heading-actions { justify-content: flex-start; margin-top: 16px; }
+      .catalog-heading .btn { margin-top: 0; }
+      .catalog-heading-actions .btn { max-width: 100%; white-space: normal; text-align: center; }
+      .smart-subcategory { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+      .smart-products, .smart-product, .listed-category-node { min-width: 0; }
+      .listed-category-node { grid-template-columns: minmax(0, 1fr); }
       .product-modal-panel { grid-template-columns: 1fr; }
       .catalog-product-modal .product-modal-panel { grid-template-columns: 1fr; }
       .product-modal-image { min-height: 360px; }
@@ -2138,9 +2147,10 @@
       },
       {
         name: "Nail Art Gel & Powder System",
-        short: "Nail Art",
-        description: "Professional painting gels and decorative powders for creative salon and retail ranges.",
+        short: "Nail Art Gel & Powder",
+        description: "Professional PAT Gel, painting gels and decorative powders for creative salon and retail ranges.",
         groups: [
+          { name: "PAT Gel", products: ["PAT Gel"] },
           { name: "Painting & Art Gel", products: ["UV Painting Gel In Jar", "Liner Gel", "Cream Painting Gel", "Spider Gel"] },
           { name: "Art Powder", products: ["Chrome Powder"] }
         ]
@@ -2226,7 +2236,7 @@
       }
     ];
 
-    let activeCatalogIndex = 0;
+    let activeCatalogIndex = productCatalog.findIndex(category => category.name === "Nail Art Gel & Powder System");
     const catalogTabs = document.getElementById("catalogTabs");
     const catalogMobileTabs = document.getElementById("catalogMobileTabs");
     const catalogMain = document.getElementById("catalogMain");
@@ -2363,14 +2373,17 @@
           </div>
         </section>`).join("");
       catalogMain.innerHTML = `
-        <div class="catalog-heading">
-          <div>
-            <div class="label">Product system ${String(activeCatalogIndex + 1).padStart(2, "0")}</div>
-            <h3>${category.name}</h3>
-            <p>${category.description}</p>
+          <div class="catalog-heading">
+            <div>
+              <div class="label">Product system ${String(activeCatalogIndex + 1).padStart(2, "0")}</div>
+              <h3>${category.name}</h3>
+              <p>${category.description}</p>
+            </div>
+            <div class="catalog-heading-actions">
+              <a class="btn btn-soft" href="products/uv-gel-painting/">Open Nail Art Category</a>
+              <a class="btn btn-dark" href="#quote">Request This System</a>
+            </div>
           </div>
-          <a class="btn btn-dark" href="#quote">Request This System</a>
-        </div>
         <div class="subcategory-list">${groups}</div>`;
       catalogCount.textContent = `${productCatalog.length} systems · ${productCatalog.reduce((sum, item) => sum + productTotal(item), 0)} product options`;
       bindProductButtons();
@@ -2404,6 +2417,21 @@
     }
 
     const uploadedProducts = [
+      {
+        name: "PAT Gel",
+        listingTitle: "Pat Pat Blooming Gel",
+        catalogName: "PAT Gel",
+        category: "Nail Art Gel & Powder System",
+        priceRange: "US$2.50 - 3 / piece",
+        priceNote: "Reference price range by order quantity, colors, logo method and packaging.",
+        customMoq: "MOQ 20 pieces. Custom logo and color options available by project.",
+        images: ["pat-gel/product1.png", "pat-gel/product2.png", "pat-gel/product3.png", "pat-gel/product4.png", "pat-gel/product5.png", "pat-gel/product6.png"],
+        summary: "15ml high-pigment Pat Pat Blooming Gel for DIY users, professional salons and nail art brands.",
+        description: "Pat Gel for blooming nail art effects with six numbered color options, easy application and custom logo or color support.",
+        features: ["15ml", "High Pigment", "Easy Apply", "6 Colors", "Custom Logo", "OEM / ODM"],
+        specs: [["Product Type","PAT Gel / Pat Pat Blooming Gel"],["Net Content","15ml"],["Application","DIY & Professional Salon"],["MOQ","20 pieces"],["Customization","Custom logo and color"],["Certification Shown","MSDS"]],
+        benefits: ["High-pigment color for expressive nail art.", "Pat Pat blooming effect for creative designs.", "Six numbered color options shown on the product page.", "Suitable for private label nail art collections."]
+      },
       {
         name: "Metallic / Chrome Nail System",
         listingTitle: "15ml Metallic Chrome Nail Polish System",
