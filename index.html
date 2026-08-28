@@ -984,6 +984,9 @@
     }
     .smart-product:after { content: "+"; color: #b65b70; font-size: 18px; font-weight: 500; }
     .smart-product:hover { border-color: #b65b70; background: #fff9f7; }
+    .published-product-link { text-decoration: none; }
+    .published-product-link span { min-width: 0; overflow-wrap: anywhere; }
+    .published-product-link small { margin-left: auto; color: #9b4559; font-size: 10px; font-weight: 900; white-space: nowrap; }
     .smart-product.catalog-listed {
       width: 100%;
       min-height: 76px;
@@ -2226,6 +2229,22 @@
         ]
       },
       {
+        name: "All Published Products",
+        short: "All Published Products",
+        description: "Every product detail page currently published on the website, organized by product family for direct access.",
+        groups: [
+          { name: "Acrylic & Dipping", products: ["1KG Acrylic Powder - Basic Color Collection", "3-in-1 Professional Acrylic Dipping System", "EMA Professional Monomer Liquid", "Premium Acrylic Powder Manufacturer"] },
+          { name: "Builder & Extension", products: ["Builder Gel in a Bottle", "Professional Builder Extension Gel"] },
+          { name: "Functional Gel", products: ["HEMA-Free Base Coat", "Magic Mirror Chrome Top Coat", "Professional Seamless Nail Tips", "Tempered Top Coat"] },
+          { name: "Nail Care & Hand Cream", products: ["5ml Nourishing Cuticle Oil Pen", "Vitamin Enriched Cuticle Oil Pen", "Aloe Vera Hand Cream 30g", "Chamomile Hand Cream 30g", "Grapefruit Hand Cream 30g", "Honey Hand Cream 30g", "Jasmine Hand Cream 30g", "Milk Protein Hand Cream 30g", "Rose Hand Cream 30g", "Strawberry Hand Cream 30g", "30g Moisturizing Hand Cream"] },
+          { name: "Nail Polish", products: ["High-Performance Regular Nail Lacquer", "15ml Quick-Dry Vegan Water-Based Nail Polish", "Water-Based Breathable Nail Polish Manufacturer"] },
+          { name: "Private Label Gel Polish", products: ["15ml Signature Gel Polish", "Bulk 18-Free TPO-Free Color Gel Wholesale UV/LED Curing System - 1kg Custom Formula OEM/ODM", "Bulk Professional Gel Polish", "Classic Color Gel Polish"] },
+          { name: "Nail Prep & Remover", products: ["Private Label Air-Dry Acrylic Nail Primer"] },
+          { name: "Salon Products", products: ["Deep Hydration Professional Body Lotion", "Exfoliating Detox Body Scrub"] },
+          { name: "Nail Art", products: ["Pat Pat Blooming Gel", "No-Wipe Teardrop / Jewelry Gel Set"] }
+        ]
+      },
+      {
         name: "OEM / ODM Service",
         short: "OEM / ODM",
         description: "Build a market-ready collection with formula, color, bottle, label, packaging and documentation support.",
@@ -2235,6 +2254,42 @@
         ]
       }
     ];
+
+    const publishedProductLinks = {
+      "1KG Acrylic Powder - Basic Color Collection": "products/acrylic-dipping/base-color-1kg-acrylic-powder.html",
+      "3-in-1 Professional Acrylic Dipping System": "products/acrylic-dipping-system/3-in-1-acrylic-dipping-system.html",
+      "EMA Professional Monomer Liquid": "products/acrylic-dipping-system/ema-professional-monomer-liquid.html",
+      "Premium Acrylic Powder Manufacturer": "products/acrylic-dipping-system/premium-acrylic-powder.html",
+      "Builder Gel in a Bottle": "products/builder-extension-gel/builder-gel-bottle.html",
+      "Professional Builder Extension Gel": "products/builder-extension-gel/professional-builder-extension-gel.html",
+      "5ml Nourishing Cuticle Oil Pen": "products/cuticle-oil/5ml-nourishing-cuticle-oil-pen.html",
+      "Vitamin Enriched Cuticle Oil Pen": "products/nail-care/vitamin-enriched-cuticle-oil-pen.html",
+      "HEMA-Free Base Coat": "products/function-gel/hema-free-base-coat.html",
+      "Magic Mirror Chrome Top Coat": "products/function-gel/magic-mirror-chrome-top-coat.html",
+      "Professional Seamless Nail Tips": "products/function-gel/professional-seamless-nail-tips.html",
+      "Tempered Top Coat": "products/function-gel/tempered-top-coat.html",
+      "Aloe Vera Hand Cream 30g": "products/hand-cream/aloe-vera.html",
+      "Chamomile Hand Cream 30g": "products/hand-cream/chamomile.html",
+      "Grapefruit Hand Cream 30g": "products/hand-cream/grapefruit.html",
+      "Honey Hand Cream 30g": "products/hand-cream/honey.html",
+      "Jasmine Hand Cream 30g": "products/hand-cream/jasmine.html",
+      "Milk Protein Hand Cream 30g": "products/hand-cream/milk-protein.html",
+      "Rose Hand Cream 30g": "products/hand-cream/rose.html",
+      "Strawberry Hand Cream 30g": "products/hand-cream/strawberry.html",
+      "30g Moisturizing Hand Cream": "products/hand-cream-lotion/30g-hand-cream.html",
+      "High-Performance Regular Nail Lacquer": "products/nail-polish-system/high-performance-regular-nail-lacquer.html",
+      "15ml Quick-Dry Vegan Water-Based Nail Polish": "products/nail-polish-system/quick-dry-vegan-water-based-nail-polish.html",
+      "Water-Based Breathable Nail Polish Manufacturer": "products/nail-polish-system/water-based-breathable-nail-polish.html",
+      "15ml Signature Gel Polish": "products/private-label-gel-polish/15ml-signature-gel-polish.html",
+      "Bulk 18-Free TPO-Free Color Gel Wholesale UV/LED Curing System - 1kg Custom Formula OEM/ODM": "products/private-label-gel-polish/bulk-color-gel.html",
+      "Bulk Professional Gel Polish": "products/private-label-gel-polish/bulk-professional-gel-polish.html",
+      "Classic Color Gel Polish": "products/private-label-gel-polish/classic-color-gel.html",
+      "Private Label Air-Dry Acrylic Nail Primer": "products/remove-clean/private-label-air-dry-acrylic-nail-primer.html",
+      "Deep Hydration Professional Body Lotion": "products/salon-products/deep-hydration-body-lotion.html",
+      "Exfoliating Detox Body Scrub": "products/salon-products/exfoliating-detox-body-scrub.html",
+      "Pat Pat Blooming Gel": "products/uv-gel-painting/pat-gel-blooming-gel.html",
+      "No-Wipe Teardrop / Jewelry Gel Set": "products/uv-gel-painting/teardrop-jewelry-gel-set.html"
+    };
 
     let activeCatalogIndex = productCatalog.findIndex(category => category.name === "Nail Art Gel & Powder System");
     const catalogTabs = document.getElementById("catalogTabs");
@@ -2271,7 +2326,13 @@
     }
 
     function productButton(product, categoryName) {
+      const publishedUrl = publishedProductLinks[product];
       const listedIndex = uploadedProducts.findIndex(item => item.catalogName === product);
+      if (categoryName === "All Published Products" && publishedUrl) {
+        const listed = listedIndex >= 0 ? uploadedProducts[listedIndex] : null;
+        const image = listed ? `<img loading="lazy" decoding="async" src="${productAssetBase}${listed.images[0]}" alt="${escapeAttr(product)}">` : "";
+        return `<a class="smart-product published-product-link" href="${publishedUrl}" data-category="${escapeAttr(categoryName)}">${image}<span>${product}</span><small>View product page</small></a>`;
+      }
       if (listedIndex >= 0) {
         const listed = uploadedProducts[listedIndex];
         const title = listed.listingTitle || listed.name;
@@ -2291,6 +2352,9 @@
               </span>
             </button>
           </div>`;
+      }
+      if (publishedUrl) {
+        return `<a class="smart-product published-product-link" href="${publishedUrl}" data-category="${escapeAttr(categoryName)}"><span>${product}</span><small>View product page</small></a>`;
       }
       return `<button class="smart-product" data-product="${escapeAttr(product)}" data-category="${escapeAttr(categoryName)}">${product}</button>`;
     }
