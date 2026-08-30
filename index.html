@@ -1753,7 +1753,8 @@
             <a href="#quote">Quote Product Kits</a>
           </div>
           <div class="subcategory-grid">
-            <div class="subcategory-card"><h4>Matching &amp; Starter Kits</h4><div class="product-tags"><span>3 In 1 Matching Color Kits</span><span>2 In 1 Matching Color Kits</span><span>Prep + Bonder Kits</span><span>Water Drop Top Kits</span></div></div>
+            <div class="subcategory-card"><h4>3 In 1 Matching Color Kits</h4><p><a href="products/product-kits/3-in-1-matching-color-nail-kit.html">3 In 1 Matching Color Nail Kit</a></p><div class="product-tags"><span>UV Gel Polish</span><span>Matching Powder</span><span>Nail Polish</span><span>500+ Color Direction</span></div></div>
+            <div class="subcategory-card"><h4>Other Matching &amp; Starter Kits</h4><div class="product-tags"><span>2 In 1 Matching Color Kits</span><span>Prep + Bonder Kits</span><span>Water Drop Top Kits</span></div></div>
           </div>
         </article>
       </div>
@@ -2225,7 +2226,8 @@
         short: "Product Kits",
         description: "Coordinated, ready-to-sell sets for brand launches, promotions and distribution.",
         groups: [
-          { name: "Matching & Starter Kits", products: ["3 In 1 Matching Color Kits", "2 In 1 Matching Color Kits", "Prep + Bonder Kits", "Water Drop Top Kits"] }
+          { name: "3 In 1 Matching Color Kits", products: ["3 In 1 Matching Color Nail Kit"] },
+          { name: "Other Matching & Starter Kits", products: ["2 In 1 Matching Color Kits", "Prep + Bonder Kits", "Water Drop Top Kits"] }
         ]
       },
       {
@@ -2241,7 +2243,8 @@
           { name: "Private Label Gel Polish", products: ["15ml Signature Gel Polish", "20ml Platinum Gel", "Bulk 18-Free TPO-Free Color Gel Wholesale UV/LED Curing System - 1kg Custom Formula OEM/ODM", "Bulk Professional Gel Polish", "Classic Color Gel Polish"] },
           { name: "Nail Prep & Remover", products: ["Private Label Air-Dry Acrylic Nail Primer"] },
           { name: "Salon Products", products: ["Deep Hydration Professional Body Lotion", "Exfoliating Detox Body Scrub"] },
-          { name: "Nail Art", products: ["Pat Pat Blooming Gel", "No-Wipe Teardrop / Jewelry Gel Set", "Moonlight Aurora Chrome Powder"] }
+          { name: "Nail Art", products: ["Pat Pat Blooming Gel", "No-Wipe Teardrop / Jewelry Gel Set", "Moonlight Aurora Chrome Powder"] },
+          { name: "Product Kits", products: ["3 In 1 Matching Color Nail Kit"] }
         ]
       },
       {
@@ -2291,7 +2294,8 @@
       "Exfoliating Detox Body Scrub": "products/salon-products/exfoliating-detox-body-scrub.html",
       "Pat Pat Blooming Gel": "products/uv-gel-painting/pat-gel-blooming-gel.html",
       "No-Wipe Teardrop / Jewelry Gel Set": "products/uv-gel-painting/teardrop-jewelry-gel-set.html",
-      "Moonlight Aurora Chrome Powder": "products/uv-gel-painting/moonlight-aurora-chrome-powder.html"
+      "Moonlight Aurora Chrome Powder": "products/uv-gel-painting/moonlight-aurora-chrome-powder.html",
+      "3 In 1 Matching Color Nail Kit": "products/product-kits/3-in-1-matching-color-nail-kit.html"
     };
 
     let activeCatalogIndex = productCatalog.findIndex(category => category.name === "Nail Art Gel & Powder System");
@@ -2484,6 +2488,22 @@
     }
 
     const uploadedProducts = [
+      {
+        name: "3 In 1 Matching Color Nail Kit",
+        listingTitle: "3 In 1 Matching Color Nail Kit",
+        catalogName: "3 In 1 Matching Color Nail Kit",
+        category: "Product In Kits",
+        priceRange: "Factory quotation by project",
+        priceNote: "Confirm current colors, formats, packaging, quantity and destination requirements.",
+        customMoq: "Color matching, private label logo and packaging development available by project.",
+        detailUrl: "products/product-kits/3-in-1-matching-color-nail-kit.html",
+        images: ["products/3-in-1/1.webp", "products/3-in-1/2.webp"],
+        summary: "A coordinated color kit combining UV gel polish, matching powder and nail polish for salon and private label collections.",
+        description: "One shade direction across three nail systems, with reference formats shown as 15ml gel polish, 28g matching powder and 15ml nail polish.",
+        features: ["UV Gel Polish", "Matching Powder", "Nail Polish", "500+ Colors", "Salon Collections", "OEM / ODM"],
+        specs: [["Product Type","3 In 1 Matching Color Nail Kit"],["Included Systems","UV gel polish, matching powder and nail polish"],["Reference Formats","15ml gel, 28g powder, 15ml polish"],["Color Direction","500+ matching color options shown"],["Best For","Salons, distributors and private label brands"],["Customization","Color, logo and packaging by project"]],
+        benefits: ["Keeps one color direction consistent across three service formats.", "Supports salon collections and distributor product planning.", "Reference image shows 500+ matching color options.", "Custom color, logo and packaging support by project."]
+      },
       {
         name: "Moonlight Aurora Chrome Powder",
         listingTitle: "Moonlight Aurora Chrome Powder",
