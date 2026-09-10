@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://gznewnail.com/</loc>
-    <lastmod>2026-08-29</lastmod>
   </url>
   <url>
     <loc>https://gznewnail.com/oem/private-label-nail-products.html</loc>
@@ -22,7 +21,6 @@
   </url>
   <url>
     <loc>https://gznewnail.com/guides/</loc>
-    <lastmod>2026-08-27</lastmod>
   </url>
   <url>
     <loc>https://gznewnail.com/guides/gel-polish-moq-explained.html</loc>
@@ -30,7 +28,6 @@
   </url>
   <url>
     <loc>https://gznewnail.com/guides/private-label-gel-polish-packaging-guide.html</loc>
-    <lastmod>2026-08-27</lastmod>
   </url>
   <url>
     <loc>https://gznewnail.com/guides/bulk-gel-polish-sourcing-pitfalls.html</loc>
@@ -218,5 +215,20 @@
   <url>
     <loc>https://gznewnail.com/products/machine-tools/72w-half-moon-led-nail-lamp.html</loc>
     <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://gznewnail.com/guides/custom-logo-nail-products-process.html</loc>
+  </url>
+  <url>
+    <loc>https://gznewnail.com/guides/nail-product-sample-approval-checklist.html</loc>
+  </url>
+  <url>
+    <loc>https://gznewnail.com/guides/nail-product-qc-checklist-importers.html</loc>
+  </url>
+  <url>
+    <loc>https://gznewnail.com/guides/hema-free-tpo-free-verification-guide.html</loc>
+  </url>
+  <url>
+    <loc>https://gznewnail.com/guides/china-nail-product-factory-buyer-guide.html</loc>
   </url>
 </urlset>
