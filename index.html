@@ -2270,8 +2270,8 @@ body.luxury-editorial{font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;fo
         ]
       },
       {
-        name: "OEM / ODM Service",
-        short: "OEM / ODM",
+        name: "BULK/OEM/ODM",
+        short: "BULK/OEM/ODM",
         description: "Build a market-ready collection with formula, color, bottle, label, packaging and documentation support.",
         groups: [
           { name: "Private Label Development", products: ["Custom Formula", "Custom Color Matching", "Bottle & Cap Selection", "Logo & Label Printing"] },
@@ -2279,6 +2279,10 @@ body.luxury-editorial{font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;fo
         ]
       }
     ];
+
+    // Keep desktop and mobile categories in the same buyer-first order.
+    const bulkCategoryIndex = productCatalog.findIndex(category => category.short === "BULK/OEM/ODM");
+    if (bulkCategoryIndex > 0) productCatalog.unshift(productCatalog.splice(bulkCategoryIndex, 1)[0]);
 
     const publishedProductLinks = {
       "1KG Acrylic Powder - Basic Color Collection": "products/acrylic-dipping/base-color-1kg-acrylic-powder.html",
@@ -2324,7 +2328,7 @@ body.luxury-editorial{font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;fo
       "72W Half Moon LED Nail Lamp": "products/machine-tools/72w-half-moon-led-nail-lamp.html"
     };
 
-    let activeCatalogIndex = productCatalog.findIndex(category => category.name === "Nail Art Gel & Powder System");
+    let activeCatalogIndex = 0;
     const catalogTabs = document.getElementById("catalogTabs");
     const catalogMobileTabs = document.getElementById("catalogMobileTabs");
     const catalogMain = document.getElementById("catalogMain");
