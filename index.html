@@ -3,6 +3,7 @@
 <html lang="en">
 
 <head>
+<script defer src="/assets/analytics.js?v=20260914"></script>
 
   <meta charset="utf-8">
 
@@ -6362,15 +6363,7 @@ body.luxury-editorial{font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;fo
 
     }
 
-    function recordLead(method) {
-
-      window.dataLayer = window.dataLayer || [];
-
-      window.dataLayer.push({ event: "generate_lead", lead_method: method, lead_product: document.getElementById("product").value });
-
-      if (typeof window.gtag === "function") window.gtag("event", "generate_lead", { method, product_category: document.getElementById("product").value });
-
-    }
+    function recordLead(method) { if(window.nnTrack) window.nnTrack('quote_handoff', {contact_method:method}); }
 
     function validateQuoteForm() {
 
