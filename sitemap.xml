@@ -1,18 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://gznewnail.com/guides/winter-metallic-liquid-chrome-and-platinum-gel-sourcing-guide.html</loc>
-    <lastmod>2026-11-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://gznewnail.com/guides/autumn-retro-amber-tortoiseshell-gel-sourcing-guide.html</loc>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
     <loc>https://gznewnail.com/guides/summer-festival-neon-jelly-gel-sourcing-guide.html</loc>
     <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -110,7 +98,7 @@
   </url>
   <url>
     <loc>https://gznewnail.com/guides/</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-08-27</lastmod>
   </url>
   <url>
     <loc>https://gznewnail.com/guides/gel-polish-moq-explained.html</loc>
@@ -386,6 +374,13 @@
     <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://gznewnail.com/products/product-kits/healing-products-gift-box.html</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <lastmod>2026-08-30</lastmod>
   </url>
   <url>
     <loc>https://gznewnail.com/products/acrylic-dipping-system/cover-pink-ombre-acrylic-powder.html</loc>
